@@ -1,0 +1,1226 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<meta name='generator' content='ExamView HTML Generator 8.1.6.69144'>
+	<meta name='robots' content='noindex,nofollow'>
+	<title>Reading Level 1 Test 9</title>
+	<style type='text/css'>
+		.spacer { line-height:.7em; }
+		.title { font-size:13pt; font-weight:bold; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		.qnumber { font-size:12pt; font-family:"Times New Roman", "Times", serif; color:#000000; text-align:right; }
+		.choice { font-size:12pt; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		.default { font-size:12pt; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		.qinfo { font-size:12pt; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		.points { font-size:8pt; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		TD.pad { padding: 0pt 4pt 0pt 4pt; }
+		.font1 { font-family:"Times New Roman", "Times", serif; }
+		.font2 { font-family:"Times New Roman", "Times", serif; }
+		.font3 { font-family:"Times New Roman", "Times", serif; }
+	</style>
+<script type='text/javascript' language='JavaScript1.1'>
+<!--
+	// Copyright (c) 2000-2008 eInstruction Corp.
+	var listMap = '1111111100000111111111111111111111';
+	var qtypeMap = '0000000099999888888822222288888888';
+	var ansMap = new Array(34);
+	var ptsMap = new Array(34);
+	ansMap[0] = '47';
+	ptsMap[0] = 1;
+	ansMap[1] = '44';
+	ptsMap[1] = 1;
+	ansMap[2] = '57';
+	ptsMap[2] = 1;
+	ansMap[3] = '42';
+	ptsMap[3] = 1;
+	ansMap[4] = '43';
+	ptsMap[4] = 1;
+	ansMap[5] = '52';
+	ptsMap[5] = 1;
+	ansMap[6] = '53';
+	ptsMap[6] = 1;
+	ansMap[7] = '5c';
+	ptsMap[7] = 1;
+	ansMap[8] = '';
+	ptsMap[8] = 1;
+	ansMap[9] = '';
+	ptsMap[9] = 1;
+	ansMap[10] = '';
+	ptsMap[10] = 1;
+	ansMap[11] = '';
+	ptsMap[11] = 1;
+	ansMap[12] = '';
+	ptsMap[12] = 6;
+	ansMap[13] = '4d';
+	ptsMap[13] = 1;
+	ansMap[14] = '49';
+	ptsMap[14] = 1;
+	ansMap[15] = '58';
+	ptsMap[15] = 1;
+	ansMap[16] = '55';
+	ptsMap[16] = 1;
+	ansMap[17] = '53';
+	ptsMap[17] = 1;
+	ansMap[18] = '56';
+	ptsMap[18] = 1;
+	ansMap[19] = '56';
+	ptsMap[19] = 1;
+	ansMap[20] = '54';
+	ptsMap[20] = 1;
+	ansMap[21] = '54';
+	ptsMap[21] = 1;
+	ansMap[22] = '56';
+	ptsMap[22] = 1;
+	ansMap[23] = '59';
+	ptsMap[23] = 1;
+	ansMap[24] = '5b';
+	ptsMap[24] = 1;
+	ansMap[25] = '59';
+	ptsMap[25] = 1;
+	ansMap[26] = '59';
+	ptsMap[26] = 1;
+	ansMap[27] = '5b';
+	ptsMap[27] = 1;
+	ansMap[28] = '5c';
+	ptsMap[28] = 1;
+	ansMap[29] = '58';
+	ptsMap[29] = 1;
+	ansMap[30] = '5a';
+	ptsMap[30] = 1;
+	ansMap[31] = '49';
+	ptsMap[31] = 1;
+	ansMap[32] = '41';
+	ptsMap[32] = 1;
+	ansMap[33] = '47';
+	ptsMap[33] = 1;
+	function HandleSubmit(f)
+	{
+		var	MAGIC = 840;
+		var	totalCorrect = 0;
+		var	totalPossible = 0;
+		var	numCorrect = 0;
+		var	numPossible = 0;
+		var	numBlank = 0;
+		var	index;
+		var	msg;
+		var	i;
+
+		f.student_name.value = StripSpaces(f.student_name.value);
+		f.student_id.value = StripSpaces(f.student_id.value);
+		f.student_email.value = StripSpaces(f.student_email.value);
+
+		FixMR(f);
+		FixMTF(f);
+		index = 0;
+		for (i=0; i < f.length; ++i) {
+			if (f.elements[i].name.indexOf(":") > 0) {
+				if (listMap.charAt(index) == "1") {
+					listIndex = f.elements[i].selectedIndex;
+					text = StripSpaces(f.elements[i].options[listIndex].value);
+				} else {
+					f.elements[i].value = StripSpaces(f.elements[i].value);
+					text = f.elements[i].value;
+				}
+
+				if (text.length == 0)
+					++numBlank;
+				++index;
+			}
+		}
+
+		if (f.student_name.value == "") {
+			alert("Student name cannot be blank.");
+			return(false);
+		}
+
+		if (numBlank > 0) {
+			if (numBlank == 1)
+				msg = "1 question";
+			else
+				msg = numBlank + " questions";
+			if (!confirm("You have not answered " + msg +
+				"  Are you sure you want to end the test?"))
+				return(false);
+		}
+
+		index = 0;
+		var scoreDetails = new Array();
+		for (i=0; i < f.length; ++i) {
+			if (f.elements[i].name.indexOf(":") > 0) {
+				if (listMap.charAt(index) == "1") {
+					listIndex = f.elements[i].selectedIndex;
+					text = f.elements[i].options[listIndex].value;
+				} else
+					text = f.elements[i].value;
+
+				numPossible = ptsMap[index] * MAGIC;
+				if (ansMap[index] == "")
+					scoreDetails[index] = "?--";
+				else {
+					var scoreResult = ScoreAnswer(index, text, numPossible);
+					numCorrect = scoreResult.numPoints;
+					scoreDetails[index] = (scoreResult.isCorrect) ? " " : "X";
+					scoreDetails[index] += (Math.round(numCorrect * 100 / MAGIC) / 100).toString();
+					totalCorrect += numCorrect;
+					totalPossible += numPossible;
+				}
+
+				scoreDetails[index] += "/" + (numPossible / MAGIC);
+				++index;
+			}
+		}
+
+		f.score_details.value = scoreDetails.join("|");
+		f.score_correct.value = Math.round(totalCorrect * 100 / MAGIC) / 100;
+		f.score_possible.value = Math.round(totalPossible * 100 / MAGIC) / 100;
+		if (totalPossible > 0)
+			f.score_percent.value = Math.round(100.0 * totalCorrect / totalPossible);
+		else
+			f.score_percent.value = 0;
+
+		return(true);
+	}
+
+	function TranslateAnswer(s, answerIndex)
+	{
+		var	value;
+		var	newString;
+		var	code;
+		var	i;
+
+		value = (answerIndex % 31) + 1;
+		newString = "";
+		for (i=0; i < s.length; i += 2) {
+			code = parseInt(s.substring(i, i + 2), 16);
+			newString += String.fromCharCode(code ^ value);
+		}
+
+		return(newString);
+	}
+
+	function ScoreAnswer(answerIndex, responseText, pointsPossible)
+	{
+		var answerText = TranslateAnswer(ansMap[answerIndex], answerIndex);
+		var qtype = qtypeMap.charAt(answerIndex);
+		var nrExactMatch = false;
+		var result = new Array();
+
+		result.numPoints = 0;
+		result.isCorrect = false;
+
+		if (qtype == "3" && answerText.substring(0, 2) == "p:") {
+			answerText = answerText.substr(2);
+			if (responseText.toUpperCase() == answerText.toUpperCase())
+				result.isCorrect = true;
+			else
+				result.numPoints = MultiResponseCompare(responseText, answerText, pointsPossible);
+		} else if (qtype == "6") {
+			if (answerText.substring(0, 2) == "==") {
+				answerText = answerText.substr(2);
+				nrExactMatch = true;
+			}
+			if (NumericCompare(responseText, answerText, nrExactMatch))
+				result.isCorrect = true;
+		} else if (qtype == "7") {
+			if (CompletionCompare(responseText, answerText))
+				result.isCorrect = true;
+		} else if (responseText.toUpperCase() == answerText.toUpperCase())
+			result.isCorrect = true;
+
+		if (result.isCorrect)
+			result.numPoints = pointsPossible;
+
+		return(result);
+	}
+
+	function StripSpaces(s)
+	{
+		var	len;
+		var	i;
+
+		len = s.length;
+		for (i=len - 1; i >= 0 && s.charAt(i) == " "; --i)
+			len = i;
+
+		if (len == 0)
+			s = "";
+		else if (len != s.length)
+			s = s.substring(0, len);
+
+		return(s);
+	}
+
+	function MultiResponseCompare(responseText, answerText, pointsPossible)
+	{
+	}
+
+	function NumericCompare(response, answer, exactMatch)
+	{
+	}
+
+
+	function CompletionCompare(responseText, answerText)
+	{
+		return(false);
+	}
+
+    function StripLeadingSpaces(s)
+	{
+		var	len;
+		var	i = 0;
+		var index = -1;
+
+		len = s.length;
+		while(i < len && s.charAt(i) == " ")
+		{
+			index = ++i;			
+	    }
+
+		if (len == 0)
+			s = "";
+		else if (index > -1)
+			s = s.substring(index, len);
+
+		return(s);
+	}
+	
+	function FixMTF(f)
+	{
+	}
+
+	function FixMR(f)
+	{
+	}
+
+	function AllowReset()
+	{
+		return(window.confirm("Do you want to clear all of your answers?"));
+	}
+
+	function Restart()
+	{
+		if (AllowReset()) {
+			document.TestForm.onreset = function() { };
+			document.TestForm.reset();
+			document.TestForm.onreset = function() { AllowReset(); };
+		}
+	}
+// -->
+</script>
+</head>
+<body onResize='if(document.layers && navigator.appVersion.indexOf("Win") < 0){history.go(0);}'
+bgcolor='#FFFFFF' style='background-image:url(RL1T9_files/header.gif); background-repeat:no-repeat'>
+<noscript>
+	<h3><font color='#FF0000'>Javascript not enabled</font></h3>
+</noscript>
+<script type='text/javascript' language='JavaScript'>
+<!--
+if (navigator.appName.indexOf("Netscape") >= 0) {
+	if (parseInt(navigator.appVersion.charAt(0)) < 4)
+		alert("This document requires Netscape Navigator version 4.0 or later.");
+} else if (navigator.appName.indexOf("Explorer") >= 0) {
+	if (parseInt(navigator.appVersion.charAt(0)) < 4)
+		alert("This document requires Internet Explorer version 4.0 or later.");
+}
+// -->
+</script>
+<form name='TestForm' action='http://score.examview.com/cgi-bin/results.cgi' method='POST'
+	onSubmit='return(HandleSubmit(this))' onReset='return(AllowReset())'>
+<input type='hidden' name='product_version' value='8.1.103.69470'>
+<input type='hidden' name='instructor_name' value='Matthew Manning'>
+<input type='hidden' name='instructor_formalname' value='Mr. Manning'>
+<input type='hidden' name='instructor_email' value='matthew.manning@m.kckps.org'>
+<input type='hidden' name='instructor_org' value='None'>
+<input type='hidden' name='instructor_city' value='None'>
+<input type='hidden' name='instructor_state' value='KS'>
+<input type='hidden' name='test_name' value='Reading Level 1 Test 9'>
+<input type='hidden' name='other_label' value='Other'>
+<input type='hidden' name='test_mixed_questions' value='1'>
+<input type='hidden' name='score_correct' value='0'>
+<input type='hidden' name='score_possible' value='0'>
+<input type='hidden' name='score_percent' value='0'>
+<input type='hidden' name='score_subjective' value='5'>
+<input type='hidden' name='score_details' value=''>
+<input type='hidden' name='score_showresults' value='1'>
+<div class='spacer'>&nbsp;</div>
+<div class='default'>
+	<div style='margin-left:1em'>
+	<b>Name:</b>&nbsp;<input type='text' name='student_name' size='30'> &nbsp;&nbsp;
+	<b>ID:</b>&nbsp;<input type='text' name='student_id' size='12'><br>
+	<div class='spacer'>&nbsp;</div>
+	<b>Email:</b>&nbsp;<input type='text' name='student_email' size='45'><br><br>
+	</div>
+</div>
+<div class='title'>Reading Level 1 Test 9</div>
+
+<table align='left' width='100%' border='0' cellpadding='0' cellspacing='0'>
+<tr><td colspan='3'><br></td></tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><span style='font-size:14pt'>Reading Comprehension
+Review<br><br></span></b><div style='text-align:center'><b><span style='font-size:14pt'>Art in the
+Community</span></b><br></div><br>On a street in New Orleans is an old building. It used to be a
+grocery store. But now it is vacant. On the boards covering the windows are stickers. Each sticker
+says &#8220;I wish this was . . . &#8221; Someone has written &#8220;full of food&#8221; on one of
+the stickers. <br><br>When we think of public art, we often think of sculptures or other large works
+of art in city centers. Candy Chang&#8217;s art, however, is somewhere else. Chang makes her art in a
+city&#8217;s older or poorer neighborhoods. She uses the outside walls of vacant buildings as her
+canvas. She paints, writes messages, or puts stickers on them. Chang wants to reach out to people
+with her art. She sees it as the start of a conversation&#8212;a conversation with local residents.
+<br><br>In 2010, Chang started the &#8220;I Wish This Was&#8221; project in New Orleans. Chang asked
+residents to look at the abandoned buildings in their community. She wanted them to think about what
+else could be there. She printed hundreds of small stickers and stuck them on these buildings. The
+stickers said, &#8220;I wish this was&#8221; in large letters and included a space for people to
+write. Anyone could write anything. Chang was amazed at the reaction. Hundreds of residents wrote on
+the stickers. Someone wrote, &#8220;I wish this was a grocery store.&#8221; Another person wrote,
+&#8220;I wish this was Heaven.&#8221; <br><br>There are many abandoned buildings in neighborhoods
+around the world. It&#8217;s hard for residents to create a close neighborhood if the streets are
+full of empty buildings. By making art that gives residents a voice, Chang hopes to build stronger
+communities. Chang&#8217;s art projects get residents thinking and talking about problems in their
+community. This initiative may help city planners to create better cities&#8212;ones that truly meet
+the needs of residents.<br><br><b><span style='font-size:12pt'>DIRECTIONS: Read each statement and
+decide if it is True or False according to the reading passage.</span></b></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:1' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;1.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Most of Candy Chang&#8217;s art involves sculptures and large paintings.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:2' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;2.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Most of Candy Chang&#8217;s art can be found in neighborhoods where rich people
+live.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:3' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;3.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Candy Chang looks at her art as a way to communicate with people.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:4' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;4.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>The &#8220;I Wish This Was&#8221; project involved only one abandoned building
+in New Orleans.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:5' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;5.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Candy Chang wrote her plans for the building on stickers, and attached the
+stickers to the building.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:6' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;6.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Candy Chang was surprised at the way people responded to her art project.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:7' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;7.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>According to the article, empty buildings may negatively affect a
+neighborhood.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:8' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;8.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>According to the article, Candy Chang&#8217;s project might serve as a guide for
+city planners.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><span style='font-size:14pt'>Reading Comprehension
+Extension<br><br></span></b><div style='text-align:center'><b><span style='font-size:14pt'>The
+Recycled Orchestra<br></span><br></b></div><b>Paragraph A</b><br>Not far from Asunci<span
+style='color:#252525'>&#243;</span>n, the capital of Paraguay, is the village of Cateura. It sits on
+top of a massive landfill<sup>1</sup> that receives 1,500 tons of new trash each day. The village is
+home to several thousand families who make a living by sorting through the waste, separating out
+whatever is useful or whatever can be sold to the local recycling industry. According to
+UNICEF<sup>2</sup>, Cateura is a community with extreme poverty, illiteracy, and pollution.
+Amazingly, it&#8217;s also home to an orchestra&#8212;one made up of local children whose instruments
+are made entirely from recycled trash.<br><b><br>Paragraph B</b><br>&#8220;Los Reciclados,&#8221; or
+The Recycled Orchestra, was formed several years ago when environmentalist and musician Favio
+Ch&#225;vez decided to open a music school. He partnered with a local garbage picker Nicol&#225;s
+G&#243;mez&#8212;a genius at building useful things from trash. There was no money for real
+instruments, so together they made instruments from the trash around them. Oil drums became violins
+and cellos, water pipes and bottle caps turned into flutes, and packing crates grew into guitars. The
+fact that the instruments are made from recycled trash has a practical purpose as well: The kids can
+safely carry them. For many children, it was impossible to give them a violin to take home because
+they had nowhere to keep it and their parents were afraid they would be robbed. A real violin would
+be worth more than a house in Cateura.&nbsp;&nbsp; <br><b><br>Paragraph C</b><br>Ch&#225;vez started
+training just a few children, but today the orchestra is made up of 35 kids from Cateura. Ch&#225;vez
+gives music lessons to another 200, who also learn how to build their own recycled instruments.
+Cateura may seem like the unlikeliest of homes for a classical music community. But for the children
+who&#8217;ve come to love it, music has given them a greater purpose. These ingenious musicians have
+managed to transform their reality into beautiful symphonies by Mozart and Beethoven. As one young
+musician says, &#8220;My life would be worthless without music.&#8221;<br><b><br>Paragraph
+D</b><br>The Recycled Orchestra has become the focus of international attention over the last few
+years. It is the subject of a documentary film about the kids, <i>Landfill Harmonic</i>, which has
+gone viral. The orchestra has gone on a tour of several South American countries, with plans to tour
+soon in the U.S. and Europe. Meanwhile, Ch&#225;vez will continue his work in Cateura. &quot;Sports
+can be competitive. Music causes children to connect and feel they are building something together.
+Our orchestra feels special because the children make beauty out of garbage.&quot;<br><br><span
+style='font-size:9pt'><sup>1 </sup><b>landfill</b>: <i>n. </i>a place where garbage is buried in the
+ground<br><sup>2</sup> <b>UNICEF</b>: United Nations Children&#8217;s Fund<br><br></span><span
+style='font-size:12pt'><b>DIRECTIONS: The article has four paragraphs, a&#8211;d. Write the letter of
+the paragraph which contains the following information.</b></span></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;9.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Information about how the orchestra has become famous &#8211; Paragraph
+___</div><div style='font-size:2pt'></div>
+		<textarea name='SA:9' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;10.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>A summary of the growth of the orchestra &#8211; Paragraph ___</div><div style='font-size:2pt'></div>
+		<textarea name='SA:10' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;11.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>A description of the village of Cateura &#8211; Paragraph ___</div><div style='font-size:2pt'></div>
+		<textarea name='SA:11' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;12.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Reasons why the instruments were made from recycled materials &#8211; Paragraph
+___</div><div style='font-size:2pt'></div>
+		<textarea name='SA:12' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;13.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>DIRECTIONS: Fill in the blanks with words or phrases from the article.
+Don&#8217;t use more than two words or numbers for each blank.<br><br></b><br>Every day (a)
+_____________ of new garbage arrives in Cateura.<br>Favio Ch<span
+style='color:#252525'>&#225;</span>vez has two occupations: He is an environmentalist and a (b)
+_______________.<br>Ch<span style='color:#252525'>&#225;</span>vez and G<span
+style='color:#252525'>&#243;</span>mez make guitars from (c)&nbsp; _____________.<br>Today there are
+(d) _____________ members of the orchestra and Ch<span style='color:#252525'>&#225;</span>vez also
+has (e) ______________ music students.<br>Favio Ch<span style='color:#252525'>&#225;</span>vez thinks
+that playing music together can make children cooperative, while playing sports may make them (f)
+_____________</div><div style='font-size:2pt'></div>
+		<textarea name='SA:13' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><span style='font-size:14pt'>Reading Skills<br><br></span></b><div
+style='text-align:center'><b><span style='font-size:14pt'>How to Turn Anything into Something
+Else<br></span></b></div><br>Philadelphia is well-known for its&#160;public art.<b> </b>There are
+some famous sculptures, such as the LOVE sculpture in JFK Plaza, where tourists often stand to have
+their photos taken. There are also well-known murals<sup>1</sup>. One of the most interesting of
+these is called &#8220;How to Turn Anything into Something Else.&#8221; It was created by 31
+students, ages 10&#8211;15. The students worked with a group of artists from a nationally known art
+collective. They helped the students access their own imaginations.<br><br>The students took a piece
+of paper and drew the head of an animal at the top. When they had finished drawing it, they folded
+the paper so that only the neck of their drawing was visible. Then it was passed to the next student,
+who drew a torso<sup>2</sup> of an animal. The folding and passing was repeated until an entire
+creature was drawn on the paper. This exercise was designed to show students that art does not have
+to end the way it begins. The students created hundreds of images over the summer. They were directly
+included in the mural.<br><br><span style='font-size:9pt'><sup>1</sup><b> mural</b>: <i>n. </i>a
+large painting that is painted directly on a wall<br><sup>2</sup> <b>torso</b>: <i>n. </i>the part of
+the body between the neck and the legs<br></span><br><b>DIRECTIONS: Read the sentences below. Choose
+the correct option (a&#8211;h) that the underlined word refers to in the article. One option is
+extra.</b><br></div><div class='default'><table cellpadding='0' cellspacing='0' width='95%'
+border='0'><tr valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td
+width='96%'><span class='default'>the head of an animal</span></td></tr><tr
+valign='baseline'><td><div class='choice'>b.</div></td><td><span class='default'>hundreds of images
+of creatures</span></td></tr><tr valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>murals in Philadelphia</span></td></tr><tr valign='baseline'><td><div
+class='choice'>d.</div></td><td><span class='default'>the students</span></td></tr><tr
+valign='baseline'><td><div class='choice'>e.</div></td><td><span class='default'>the folded piece of
+paper</span></td></tr><tr valign='baseline'><td><div class='choice'>f.</div></td><td><span
+class='default'>the mural &#8220;How to Turn Anything Into Something Else&#8221;</span></td></tr><tr
+valign='baseline'><td><div class='choice'>g.</div></td><td><span class='default'>the Love
+sculpture</span></td></tr><tr valign='baseline'><td><div class='choice'>h.</div></td><td><span
+class='default'>the group of artists</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:14' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;14.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>One of the most interesting of <u>these</u> is called &#8220;How to Turn
+Anything into Something Else&#8221;.</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:15' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;15.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'><u>It</u> was created by 31 students.</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:16' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;16.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'><u>They</u> helped the students access their own imaginations.</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:17' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;17.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>They helped the students access <u>their</u> own imaginations.</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:18' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;18.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>When they had finished drawing <u>it</u>, they folded the paper so that only
+the neck of their drawing was visible.</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:19' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;19.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>Then <u>it</u> was passed to the next student, who drew a torso<sup>2</sup> of
+an animal.</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:20' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;20.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'><u>They</u> were directly incorporated into the mural.</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><span style='font-size:14pt'>TED Talk Comprehension<br><br></span><span
+style='font-size:12pt'>DIRECTIONS: Read the excerpt from Candy Chang&#8217;s 2012 TED Talk and answer
+the questions.</span><span style='font-size:14pt'><br></span></b><div
+style='text-align:center'><b><span style='font-size:14pt'><br>CANDY CHANG&#8212;Before I Die, I Want
+to . . .</span><br></b></div><b><br>Paragraph 1<br><br></b>There are a lot of ways the people around
+us can help improve our lives. We don&#8217;t bump into every neighbor, so a lot of wisdom never gets
+passed on, though we do share the same public spaces. . . .<br><br><b>Paragraph 2<br><br></b>I live
+near this house, and I thought about how I could make it a nicer space for my neighborhood, and I
+also thought about something that changed my life forever.<br><br><b>Paragraph 3<br><br></b>In 2009,
+I lost someone I loved very much. Her name was Joan, and she was a mother to me, and her death was
+sudden and unexpected. And I thought about death a lot, and this made me feel deep gratitude for the
+time I&#8217;ve had, and brought clarity to the things that are meaningful to my life now. But I
+struggle to maintain this perspective in my daily life. I feel like it&#8217;s easy to get caught up
+in the day-to-day, and forget what really matters to you.<br><br><b>Paragraph 4<br><br></b>So, with
+help from old and new friends, I turned the side of this abandoned house into a giant chalkboard and
+stenciled it with a fill-in-the-blank sentence: &#8220;Before I die, I want to ...&#8221;&nbsp; So
+anyone walking by can pick up a piece of chalk, reflect on their lives, and share their personal
+aspirations in public space.<br><br><b>Paragraph 5<br><br></b>I didn&#8217;t know what to expect from
+this experiment, but by the next day, the wall was entirely filled out, and it kept growing...</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:21' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;21.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>In paragraph 1, the phrase <i>bump into </i>is closest in meaning to . .
+.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>meet unexpectedly</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>become close to</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span class='default'>speak
+with</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:22' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;22.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>In paragraph 2, the person named Joan was . . .</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>someone who had once lived in the abandoned house</span></td></tr><tr
+valign='baseline'><td><div class='choice'>b.</div></td><td><span class='default'>an important person
+in Candy Chang&#8217;s life</span></td></tr><tr valign='baseline'><td><div
+class='choice'>c.</div></td><td><span class='default'>a friend who helped Candy Chang with her
+project</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:23' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;23.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>In paragraph 2, Candy Change says &#8220;I feel like it&#8217;s easy to get
+caught up in the day-to-day ...&#8221; The phrase <i>get caught up in the day to day</i> means . .
+.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>become busy with ordinary things in life</span></td></tr><tr
+valign='baseline'><td><div class='choice'>b.</div></td><td><span class='default'>finally complete an
+important project</span></td></tr><tr valign='baseline'><td><div
+class='choice'>c.</div></td><td><span class='default'>struggle with problems and
+loss</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:24' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;24.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>What does the &#8220;Before I die, I want to ...&#8221; project have in common
+with the &#8220;I Wish This Was&#8221; project?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>Both involved putting stickers on a wall.</span></td></tr><tr
+valign='baseline'><td><div class='choice'>b.</div></td><td><span class='default'>Both involved using
+chalk to write messages.</span></td></tr><tr valign='baseline'><td><div
+class='choice'>c.</div></td><td><span class='default'>Both involved messages left by
+neighbors.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:25' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;25.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>In which paragraph does Candy Chang explain how she did her project?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>Paragraph 1</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>Paragraph 4</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span class='default'>Paragraph
+5</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:26' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;26.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>In which paragraph does Candy Chang give the results of her project?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>Paragraph 2</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>Paragraph 3</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span class='default'>Paragraph
+5</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><span style='font-size:14pt'>Vocabulary <br><br></span>DIRECTIONS: Match the
+words (a&#8211;h) below with their definitions below.</b></div><div class='default'><table
+cellpadding='0' cellspacing='0' width='95%' border='0'><tr valign='baseline'><td width='4%'><div
+class='choice'>a.</div></td><td width='96%'><span class='default'>abandoned</span></td></tr><tr
+valign='baseline'><td><div class='choice'>b.</div></td><td><span
+class='default'>neighborhood</span></td></tr><tr valign='baseline'><td><div
+class='choice'>c.</div></td><td><span class='default'>reach out</span></td></tr><tr
+valign='baseline'><td><div class='choice'>d.</div></td><td><span
+class='default'>initiative</span></td></tr><tr valign='baseline'><td><div
+class='choice'>e.</div></td><td><span class='default'>reaction</span></td></tr><tr
+valign='baseline'><td><div class='choice'>f.</div></td><td><span
+class='default'>messages</span></td></tr><tr valign='baseline'><td><div
+class='choice'>g.</div></td><td><span class='default'>public</span></td></tr><tr
+valign='baseline'><td><div class='choice'>h.</div></td><td><span
+class='default'>stickers</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:27' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;27.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>a section of a town or a city</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:28' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;28.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>open and available to many people, not just a few</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:29' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;29.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>empty; not in use</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:30' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;30.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>communications; information that is sent to someone</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:31' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;31.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>response; the way someone feels when something happens</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:32' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;32.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>pieces of paper that can be attached to some surface</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:33' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;33.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>to try to communicate with someone; to try to get someone involved</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:34' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;34.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>a project; a plan; a program</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+</table>
+<br clear='all'>
+<br>
+<br>
+<table align='left' width='100%' cellpadding='0' cellspacing='0' border='0'>
+<tr>
+    <td bgcolor='#000000'>
+    <div style='font-size:1pt'>&nbsp;</div>
+    </td>
+</tr>
+<tr>
+    <td><input type='image' src='RL1T9_files/submit.gif' alt='Grade and Submit'>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href='#' onclick='Restart(); return false'><img
+	    src='RL1T9_files/restart.gif' border='0' alt='Start Over'></a>
+    </td>
+</tr>
+</table>
+</form>
+</body>
+</html>

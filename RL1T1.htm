@@ -1,0 +1,1199 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<meta name='generator' content='ExamView HTML Generator 8.1.6.69144'>
+	<meta name='robots' content='noindex,nofollow'>
+	<title>Level 1 Reading Test 1</title>
+	<style type='text/css'>
+		.spacer { line-height:.7em; }
+		.title { font-size:13pt; font-weight:bold; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		.qnumber { font-size:12pt; font-family:"Times New Roman", "Times", serif; color:#000000; text-align:right; }
+		.choice { font-size:12pt; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		.default { font-size:12pt; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		.qinfo { font-size:12pt; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		.points { font-size:8pt; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		TD.pad { padding: 0pt 4pt 0pt 4pt; }
+		.font1 { font-family:"Times New Roman", "Times", serif; }
+		.font2 { font-family:"Times New Roman", "Times", serif; }
+		.font3 { font-family:"Arial", "Helvetica", sans-serif; }
+	</style>
+<script type='text/javascript' language='JavaScript1.1'>
+<!--
+	// Copyright (c) 2000-2008 eInstruction Corp.
+	var listMap = '1111111111000001111111111111111111';
+	var qtypeMap = '0000000222999992222222222288888888';
+	var ansMap = new Array(34);
+	var ptsMap = new Array(34);
+	ansMap[0] = '47';
+	ptsMap[0] = 1;
+	ansMap[1] = '56';
+	ptsMap[1] = 1;
+	ansMap[2] = '45';
+	ptsMap[2] = 1;
+	ansMap[3] = '50';
+	ptsMap[3] = 1;
+	ansMap[4] = '43';
+	ptsMap[4] = 1;
+	ansMap[5] = '40';
+	ptsMap[5] = 1;
+	ansMap[6] = '53';
+	ptsMap[6] = 1;
+	ansMap[7] = '49';
+	ptsMap[7] = 1;
+	ansMap[8] = '48';
+	ptsMap[8] = 1;
+	ansMap[9] = '48';
+	ptsMap[9] = 1;
+	ansMap[10] = '';
+	ptsMap[10] = 1;
+	ansMap[11] = '';
+	ptsMap[11] = 1;
+	ansMap[12] = '';
+	ptsMap[12] = 1;
+	ansMap[13] = '';
+	ptsMap[13] = 1;
+	ansMap[14] = '';
+	ptsMap[14] = 1;
+	ansMap[15] = '52';
+	ptsMap[15] = 1;
+	ansMap[16] = '53';
+	ptsMap[16] = 1;
+	ansMap[17] = '50';
+	ptsMap[17] = 1;
+	ansMap[18] = '51';
+	ptsMap[18] = 1;
+	ansMap[19] = '55';
+	ptsMap[19] = 1;
+	ansMap[20] = '54';
+	ptsMap[20] = 1;
+	ansMap[21] = '54';
+	ptsMap[21] = 1;
+	ansMap[22] = '55';
+	ptsMap[22] = 1;
+	ansMap[23] = '5b';
+	ptsMap[23] = 1;
+	ansMap[24] = '5a';
+	ptsMap[24] = 1;
+	ansMap[25] = '5b';
+	ptsMap[25] = 1;
+	ansMap[26] = '5c';
+	ptsMap[26] = 1;
+	ansMap[27] = '5a';
+	ptsMap[27] = 1;
+	ansMap[28] = '5e';
+	ptsMap[28] = 1;
+	ansMap[29] = '5c';
+	ptsMap[29] = 1;
+	ansMap[30] = '57';
+	ptsMap[30] = 1;
+	ansMap[31] = '40';
+	ptsMap[31] = 1;
+	ansMap[32] = '46';
+	ptsMap[32] = 1;
+	ansMap[33] = '46';
+	ptsMap[33] = 1;
+	function HandleSubmit(f)
+	{
+		var	MAGIC = 840;
+		var	totalCorrect = 0;
+		var	totalPossible = 0;
+		var	numCorrect = 0;
+		var	numPossible = 0;
+		var	numBlank = 0;
+		var	index;
+		var	msg;
+		var	i;
+
+		f.student_name.value = StripSpaces(f.student_name.value);
+		f.student_id.value = StripSpaces(f.student_id.value);
+		f.student_email.value = StripSpaces(f.student_email.value);
+
+		FixMR(f);
+		FixMTF(f);
+		index = 0;
+		for (i=0; i < f.length; ++i) {
+			if (f.elements[i].name.indexOf(":") > 0) {
+				if (listMap.charAt(index) == "1") {
+					listIndex = f.elements[i].selectedIndex;
+					text = StripSpaces(f.elements[i].options[listIndex].value);
+				} else {
+					f.elements[i].value = StripSpaces(f.elements[i].value);
+					text = f.elements[i].value;
+				}
+
+				if (text.length == 0)
+					++numBlank;
+				++index;
+			}
+		}
+
+		if (f.student_name.value == "") {
+			alert("Student name cannot be blank.");
+			return(false);
+		}
+
+		if (numBlank > 0) {
+			if (numBlank == 1)
+				msg = "1 question";
+			else
+				msg = numBlank + " questions";
+			if (!confirm("You have not answered " + msg +
+				"  Are you sure you want to end the test?"))
+				return(false);
+		}
+
+		index = 0;
+		var scoreDetails = new Array();
+		for (i=0; i < f.length; ++i) {
+			if (f.elements[i].name.indexOf(":") > 0) {
+				if (listMap.charAt(index) == "1") {
+					listIndex = f.elements[i].selectedIndex;
+					text = f.elements[i].options[listIndex].value;
+				} else
+					text = f.elements[i].value;
+
+				numPossible = ptsMap[index] * MAGIC;
+				if (ansMap[index] == "")
+					scoreDetails[index] = "?--";
+				else {
+					var scoreResult = ScoreAnswer(index, text, numPossible);
+					numCorrect = scoreResult.numPoints;
+					scoreDetails[index] = (scoreResult.isCorrect) ? " " : "X";
+					scoreDetails[index] += (Math.round(numCorrect * 100 / MAGIC) / 100).toString();
+					totalCorrect += numCorrect;
+					totalPossible += numPossible;
+				}
+
+				scoreDetails[index] += "/" + (numPossible / MAGIC);
+				++index;
+			}
+		}
+
+		f.score_details.value = scoreDetails.join("|");
+		f.score_correct.value = Math.round(totalCorrect * 100 / MAGIC) / 100;
+		f.score_possible.value = Math.round(totalPossible * 100 / MAGIC) / 100;
+		if (totalPossible > 0)
+			f.score_percent.value = Math.round(100.0 * totalCorrect / totalPossible);
+		else
+			f.score_percent.value = 0;
+
+		return(true);
+	}
+
+	function TranslateAnswer(s, answerIndex)
+	{
+		var	value;
+		var	newString;
+		var	code;
+		var	i;
+
+		value = (answerIndex % 31) + 1;
+		newString = "";
+		for (i=0; i < s.length; i += 2) {
+			code = parseInt(s.substring(i, i + 2), 16);
+			newString += String.fromCharCode(code ^ value);
+		}
+
+		return(newString);
+	}
+
+	function ScoreAnswer(answerIndex, responseText, pointsPossible)
+	{
+		var answerText = TranslateAnswer(ansMap[answerIndex], answerIndex);
+		var qtype = qtypeMap.charAt(answerIndex);
+		var nrExactMatch = false;
+		var result = new Array();
+
+		result.numPoints = 0;
+		result.isCorrect = false;
+
+		if (qtype == "3" && answerText.substring(0, 2) == "p:") {
+			answerText = answerText.substr(2);
+			if (responseText.toUpperCase() == answerText.toUpperCase())
+				result.isCorrect = true;
+			else
+				result.numPoints = MultiResponseCompare(responseText, answerText, pointsPossible);
+		} else if (qtype == "6") {
+			if (answerText.substring(0, 2) == "==") {
+				answerText = answerText.substr(2);
+				nrExactMatch = true;
+			}
+			if (NumericCompare(responseText, answerText, nrExactMatch))
+				result.isCorrect = true;
+		} else if (qtype == "7") {
+			if (CompletionCompare(responseText, answerText))
+				result.isCorrect = true;
+		} else if (responseText.toUpperCase() == answerText.toUpperCase())
+			result.isCorrect = true;
+
+		if (result.isCorrect)
+			result.numPoints = pointsPossible;
+
+		return(result);
+	}
+
+	function StripSpaces(s)
+	{
+		var	len;
+		var	i;
+
+		len = s.length;
+		for (i=len - 1; i >= 0 && s.charAt(i) == " "; --i)
+			len = i;
+
+		if (len == 0)
+			s = "";
+		else if (len != s.length)
+			s = s.substring(0, len);
+
+		return(s);
+	}
+
+	function MultiResponseCompare(responseText, answerText, pointsPossible)
+	{
+	}
+
+	function NumericCompare(response, answer, exactMatch)
+	{
+	}
+
+
+	function CompletionCompare(responseText, answerText)
+	{
+		return(false);
+	}
+
+    function StripLeadingSpaces(s)
+	{
+		var	len;
+		var	i = 0;
+		var index = -1;
+
+		len = s.length;
+		while(i < len && s.charAt(i) == " ")
+		{
+			index = ++i;			
+	    }
+
+		if (len == 0)
+			s = "";
+		else if (index > -1)
+			s = s.substring(index, len);
+
+		return(s);
+	}
+	
+	function FixMTF(f)
+	{
+	}
+
+	function FixMR(f)
+	{
+	}
+
+	function AllowReset()
+	{
+		return(window.confirm("Do you want to clear all of your answers?"));
+	}
+
+	function Restart()
+	{
+		if (AllowReset()) {
+			document.TestForm.onreset = function() { };
+			document.TestForm.reset();
+			document.TestForm.onreset = function() { AllowReset(); };
+		}
+	}
+// -->
+</script>
+</head>
+<body onResize='if(document.layers && navigator.appVersion.indexOf("Win") < 0){history.go(0);}'
+bgcolor='#FFFFFF' style='background-image:url(RL1T1_files/header.gif); background-repeat:no-repeat'>
+<noscript>
+	<h3><font color='#FF0000'>Javascript not enabled</font></h3>
+</noscript>
+<script type='text/javascript' language='JavaScript'>
+<!--
+if (navigator.appName.indexOf("Netscape") >= 0) {
+	if (parseInt(navigator.appVersion.charAt(0)) < 4)
+		alert("This document requires Netscape Navigator version 4.0 or later.");
+} else if (navigator.appName.indexOf("Explorer") >= 0) {
+	if (parseInt(navigator.appVersion.charAt(0)) < 4)
+		alert("This document requires Internet Explorer version 4.0 or later.");
+}
+// -->
+</script>
+<form name='TestForm' action='http://score.examview.com/cgi-bin/results.cgi' method='POST'
+	onSubmit='return(HandleSubmit(this))' onReset='return(AllowReset())'>
+<input type='hidden' name='product_version' value='8.1.103.69470'>
+<input type='hidden' name='instructor_name' value='Matthew Manning'>
+<input type='hidden' name='instructor_formalname' value='Mr. Manning'>
+<input type='hidden' name='instructor_email' value='matthew.manning@m.kckps.org'>
+<input type='hidden' name='instructor_org' value='None'>
+<input type='hidden' name='instructor_city' value='None'>
+<input type='hidden' name='instructor_state' value='KS'>
+<input type='hidden' name='test_name' value='Level 1 Reading Test 1'>
+<input type='hidden' name='other_label' value='Other'>
+<input type='hidden' name='test_mixed_questions' value='1'>
+<input type='hidden' name='score_correct' value='0'>
+<input type='hidden' name='score_possible' value='0'>
+<input type='hidden' name='score_percent' value='0'>
+<input type='hidden' name='score_subjective' value='5'>
+<input type='hidden' name='score_details' value=''>
+<input type='hidden' name='score_showresults' value='1'>
+<div class='spacer'>&nbsp;</div>
+<div class='default'>
+	<div style='margin-left:1em'>
+	<b>Name:</b>&nbsp;<input type='text' name='student_name' size='30'> &nbsp;&nbsp;
+	<b>ID:</b>&nbsp;<input type='text' name='student_id' size='12'><br>
+	<div class='spacer'>&nbsp;</div>
+	<b>Email:</b>&nbsp;<input type='text' name='student_email' size='45'><br><br>
+	</div>
+</div>
+<div class='title'>Level 1 Reading Test 1</div>
+
+<table align='left' width='100%' border='0' cellpadding='0' cellspacing='0'>
+<tr><td colspan='3'><br></td></tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><span style='font-size:14pt'>Reading Comprehension
+Review<br><br></span></b><div style='text-align:center'><b><span style='font-size:14pt'>The Power to
+Change</span><br></b><br></div>In 2011, Kylie Dunn, a writer from Australia, decided to shake up her
+life. Every month for a year, she decided to try two new activities. In February 2012, for example,
+one of her goals was to eat less meat for 30 days. Later, she wrote a letter to a friend or relative
+every day for a month. In just 12 months, she changed her life in more than 20 different
+ways.<br><br><b>A YEAR OF CHANGE<br></b><br>Dunn was inspired to try her project after watching a TED
+Talk by Matt Cutts. To get ideas for activities, she watched hundreds of other TED Talks. Her first
+activity, in November 2011, was inspired by Jessi Arrington&#8217;s talk &#8220;Wear Nothing
+New.&#8221; Dunn tried each activity for 30 days, and then wrote about her experiences in a blog
+called &#8220;My Year of TED.&#8221;<br><br>Finally, when her project was over, Dunn talked about her
+experiences at a TEDx conference in Hobart, Australia. Dunn&#8217;s talk in January 2014 inspired
+other people to change their attitudes and their lives. Before her project, Dunn says, she
+didn&#8217;t think she had the courage to change her life. The project showed her she had more
+strength than she thought.<br><br><b>A MILLION STORIES<br><br></b>&#8220;People who watch TED Talks .
+. . end up shifting their view of the future,&#8221; says Chris Anderson, the curator of TED. He says
+that TED&#8217;s goal isn&#8217;t to make a single big change. TED&#8217;s impact is the millions of
+stories of small changes. Individual changes like Kylie Dunn&#8217;s are happening every day.
+Together, these changes have the power to change the future in a positive way. As Anderson explains,
+&#8220;Instead of thinking of &#091;the future&#093; as an unstoppable force . . . &#091;people
+can&#093; play a part in shaping it.&#8221;<br><div
+style='margin-left:31pt;margin-right:63pt'><b><br></b></div><div style='margin-right:63pt'><span
+style='font-size:9pt'><b>courage: </b><i>n</i>. a willingness to do something that is difficult or
+dangerous<br></span></div><div style='margin-right:93pt'><span style='font-size:9pt'><b>shifting:
+</b><i>v</i>. moving, changing<br><b>view:&nbsp; </b><i>n</i>. an opinion or way of thinking about
+something<br></span></div><div style='margin-right:0pt'><span style='font-size:9pt'><b>curator:
+</b><i>n</i>. a person who selects and manages a collection of art, videos, etc.<br><br></span><span
+style='font-size:12pt'><b>DIRECTIONS: Read each statement and decide if it is True or False according
+to the reading passage.</b></span></div></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:1' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;1.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Kylie Dunn decided to try one new activity every two months.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:2' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;2.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>For one month, on each day, Kylie Dunn wrote a letter to someone she
+knew.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:3' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;3.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Kylie Dunn&#8217;s inspiration to change her life came from reading
+blogs.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:4' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;4.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Kylie Dunn got the idea for her first activity from Jessi Arrington&#8217;s TED
+Talk.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:5' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;5.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Kylie Dunn is continuing her project today.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:6' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;6.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Kylie Dunn&#8217;s talk inspired other people to try new things.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:7' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;7.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Chris Anderson&#8217;s view of the future is an optimistic (hopeful) one.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><span style='font-size:14pt'>Reading Comprehension
+Extension<br><br></span>DIRECTIONS: Read the passage and answer the questions.<span
+style='font-size:14pt'><br></span></b><div style='text-align:center'><b><span
+style='font-size:14pt'>Morgan Spurlock<br></span></b></div>Morgan Spurlock is an American film-maker,
+humorist, and writer, as well as a TED speaker. He is probably best known for his 2004 documentary
+film<sup>1</sup>, <i>Supersize Me</i>. This movie probably changed the eating habits of millions of
+people. After seeing this film, I don&#8217;t believe anyone could look at fast food in the same
+way.&nbsp; In the movie, Spurlock does an experiment: For 30 days, he eats three meals a day from
+McDonald&#8217;s, and nothing else. His diet caused him shocking physical and emotional problems. He
+was healthy and fit when he started his experiment. In 30 days, he gained 11 kg (25 pounds). He also
+had liver problems and became depressed. It took him over a year to return to his normal weight of 84
+kg (185 pounds) and become healthy again. Spurlock was nominated for an Academy Award<sup>2</sup> for
+best documentary film that year&#8212;an award that he should have won.&nbsp; <br><br>A few years
+later, Spurlock produced a television series called <i>30 Days</i>.&nbsp; In this series, someone
+(often Spurlock himself) lives the life of someone else. For example, in one episode, he stays in a
+prison for 30 days. In another, he works as a coal miner for 30 days. Not everyone agrees that 30
+days is enough to really know what it was like to be in prison, or to mine coal, or to understand
+another person&#8217;s lifestyle. However, his shows gave us a glimpse<i><sup>3</sup></i> into
+dangerous and unfamiliar ways of living,<br> <br><span style='font-size:10pt'><sup>1</sup>
+<b>documentary films: </b><i>n.</i> factual movies about real people and real events<br><sup>2
+</sup><b>the Academy Awards:</b> <i>n.</i> prizes given every year for the best movie, best director,
+best actor, etc. (also called &#8220;the Oscars&#8221;)<br><sup>3</sup><b>glimpse:</b> <i>n.</i> a
+quick look</span></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:8' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;8.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>The author&#8217;s attitude towards Morgan Spurlock and his work is generally .
+. . </div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>positive</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>neutral (neither negative nor
+positive)</span></td></tr><tr valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>negative</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:9' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;9.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Morgan Spurlock&#8217;s experiment was to . . .</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>eat only fast food for 30 days</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>go on a diet to lose some
+weight</span></td></tr><tr valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>try to complete a movie in 30 days</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:10' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;10.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>After making the movie <i>Supersize Me</i>, . . .</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>Morgan Spurlock&#8217;s health was permanently damaged.</span></td></tr><tr
+valign='baseline'><td><div class='choice'>b.</div></td><td><span class='default'>it took a long time
+for Morgan Spurlock&#8217;s health to recover.</span></td></tr><tr valign='baseline'><td><div
+class='choice'>c.</div></td><td><span class='default'>Morgan Spurlock&#8217;s health immediately
+returned to normal.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;11.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>DIRECTIONS: Write Fact if the statement is a fact and Opinion if the
+statement is an opinion.<br><br></b>Morgan Spurlock has more than one job.&nbsp;&nbsp;&nbsp;&nbsp;
+__________</div><div style='font-size:2pt'></div>
+		<textarea name='SA:11' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;12.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>DIRECTIONS: Write Fact if the statement is a fact and Opinion if the
+statement is an opinion.<br><br></b>People changed their opinion of fast food because of
+Spurlock&#8217;s movie.&nbsp;&nbsp;&nbsp;&nbsp; ___________</div><div style='font-size:2pt'></div>
+		<textarea name='SA:12' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;13.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>DIRECTIONS: Write Fact if the statement is a fact and Opinion if the
+statement is an opinion.<br><br></b><i>Supersize Me</i> did not win an Academy Award for the best
+documentary of 2004.&nbsp;&nbsp;&nbsp;&nbsp; ____________</div><div style='font-size:2pt'></div>
+		<textarea name='SA:13' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;14.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>DIRECTIONS: Write Fact if the statement is a fact and Opinion if the
+statement is an opinion.<br><br></b>Thirty days is not enough time to really explore the experience
+of being in prison or working in a mine.&nbsp;&nbsp;&nbsp;&nbsp; ___________</div><div style='font-size:2pt'></div>
+		<textarea name='SA:14' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;15.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>DIRECTIONS: Write Fact if the statement is a fact and Opinion if the
+statement is an opinion.<br><br></b>The show <i>Thirty Days</i> provided a useful view into the lives
+of other people.&nbsp;&nbsp;&nbsp;&nbsp; __________</div><div style='font-size:2pt'></div>
+		<textarea name='SA:15' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><span style='font-size:14pt'>Reading Skills<br><br></span>DIRECTIONS: Read
+the passage. Select one of the transition words listed below to complete each sentence.<br></b><div
+style='text-align:center'><b><span style='font-size:14pt'><br>Traveling
+Independently<br></span></b><br></div>My parents have always loved to travel. About two years ago,
+they read a book called &#8220;The Independent Traveler.&#8221; (A) ___________ that, they had always
+traveled with large tour groups or else they had gone on cruise ships. But (B) _____________ reading
+this book, they started planning a trip to Brazil.&nbsp; (C) __________, they took a course in
+conversational Portuguese. (D) ___________, they researched their destination on the Internet and
+decided on their own where to go and what to see. (E) __________, they arranged to stay with
+Brazilian families rather than at luxury hotels. They had a wonderful trip! And they are planning to
+take a trip across Africa. They are going to write a blog describing what they do every day.
+(F)&nbsp; _________, when they return, they hope to use those notes to write their own book about
+travelling independently.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:16' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;16.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>(A) </div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>First</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>Before</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:17' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;17.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>(B)</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>Before</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>After</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:18' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;18.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>(C)</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>Next</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>First</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:19' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;19.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>(D)</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>After</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>Then</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:20' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;20.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>(E) </div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>Finally</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>Second</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:21' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;21.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>(F)</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>Later</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>After</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><span style='font-size:14pt'>TED Talk Comprehension<br><br></span>DIRECTIONS:
+Read the excerpt from Matt Cutts&#8217; TED Talk. Then answer the questions.<br></b><div
+style='text-align:center'><b><span style='font-size:14pt'><br>Matt Cutts&#8212;Try Something New for
+30 Days<br><br></span></b></div>A few years ago, I felt like I was stuck in a rut. I decided to
+follow in the footsteps of the American film-maker, Morgan Spurlock, and to try something new for 30
+days. The idea is actually pretty simple. Think about something you&#8217;ve always wanted to add to
+your life. Then try it for the next 30 days. It turns out, 30 days is just about the right amount of
+time to add a new habit or subtract a habit from your life.<br><br>There are a few things I learned
+while doing these 30-day challenges. The first thing I learned is that the months didn&#8217;t fly
+by, forgotten. Instead, the time was much more memorable. One&nbsp; challenge was to take a picture
+every day for a month. And I remember exactly where I was and what I was doing each day I took a
+photo.. I also noticed that, as I started to do harder 30-day challenges, my self-confidence grew. I
+went from being a computer nerd1 to the kind of guy who bikes to work&#8212;for fun. And last year, I
+hiked up Mt. Kilimanjaro, the highest mountain in Africa. I would never have been that adventurous
+before I started my 30-day challenges.<br><br>I also figured out that if you really want something
+badly enough, you can do anything for 30 days. Have you ever wanted to write a novel? Every November,
+tens of thousands of people try to write their own 50,000-word novel in 30 days. All you have to do
+is write 1,667 words a day for a month. So I did. By the way, the secret is not to go to sleep until
+you&#8217;ve written your words for the day. You might not get enough&nbsp; sleep, but you&#8217;ll
+finish your&nbsp; novel. Now, is my book the next great American novel? No. I wrote it in a month.
+It&#8217;s awful. But for the rest of my life, I don&#8217;t have to say, &#8220;I&#8217;m a computer
+scientist&#8221; Now, if I want to, I can say, &#8220;I&#8217;m a novelist.&#8221;<br><br>So
+here&#8217;s my question to you: What are you waiting for? I guarantee you the next 30 days are going
+to pass whether you like it or not, so why not think about something you have always wanted to try,
+and give it a shot for the next 30 days.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:22' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;22.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>When Matt Cutts says, &#8220;I was stuck in a rut,&#8221; he means that
+he...</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>was feeling depressed</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>wasn&#8217;t trying anything
+new</span></td></tr><tr valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>had very little money</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:23' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;23.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Cutts says that a period of 30 days is...</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>long enough to completely change one&#8217;s life</span></td></tr><tr
+valign='baseline'><td><div class='choice'>b.</div></td><td><span class='default'>the right amount of
+time to try a new activity</span></td></tr><tr valign='baseline'><td><div
+class='choice'>c.</div></td><td><span class='default'>not enough time to give up a bad
+habit</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:24' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;24.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Why does Cutts mention hiking up Mt. Kilimanjaro?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>It is a challenge he always wanted to experience.</span></td></tr><tr
+valign='baseline'><td><div class='choice'>b.</div></td><td><span class='default'>It was the subject
+of an earlier TED Talk that he gave.</span></td></tr><tr valign='baseline'><td><div
+class='choice'>c.</div></td><td><span class='default'>It indicates that he had more confidence in
+himself.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:25' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;25.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Which of these is the main idea of paragraph 3?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>Cutts wishes that he could have written a better novel.</span></td></tr><tr
+valign='baseline'><td><div class='choice'>b.</div></td><td><span class='default'>Cutts now considers
+himself a novelist, not a computer scientist.</span></td></tr><tr valign='baseline'><td><div
+class='choice'>c.</div></td><td><span class='default'>Cutts didn&#8217;t write a great novel, but at
+least he finished it.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:26' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;26.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>The phrase &#8220;give it a shot&#8221; in the last paragraph means...</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>attempt something</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>think about something</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span class='default'>suggest
+something</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><span style='font-size:14pt'>Vocabulary <br><br></span>DIRECTIONS: Match the
+first part of each sentence with the second part of the sentence (A-H) to form logical
+sentences.</b></div><div class='default'><table cellpadding='0' cellspacing='0' width='95%'
+border='0'><tr valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td
+width='96%'><span class='default'>...when I took a more challenging job.</span></td></tr><tr
+valign='baseline'><td><div class='choice'>b.</div></td><td><span class='default'>...a month to finish
+this project.</span></td></tr><tr valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>...to travel to a dozen different countries.</span></td></tr><tr
+valign='baseline'><td><div class='choice'>d.</div></td><td><span class='default'>...despite the
+problems I have faced.</span></td></tr><tr valign='baseline'><td><div
+class='choice'>e.</div></td><td><span class='default'>...always inspires me.</span></td></tr><tr
+valign='baseline'><td><div class='choice'>f.</div></td><td><span class='default'>...a big impact on
+my life.</span></td></tr><tr valign='baseline'><td><div class='choice'>g.</div></td><td><span
+class='default'>...they can help shape the future.</span></td></tr><tr valign='baseline'><td><div
+class='choice'>h.</div></td><td><span class='default'>...the experiences I had when I was
+traveling</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:27' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;27.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>One individual change may seem unimportant, but taken together...</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:28' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;28.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>I recently changed my diet, and it had...</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:29' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;29.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>One of my goals for the next ten years is...</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:30' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;30.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>My boss gave our team...</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:31' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;31.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>I wrote a blog about...</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:32' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;32.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>My attitude towards work changed...</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:33' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;33.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>I have tried to have a positive outlook...</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:34' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;34.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>Looking at the paintings in the art museum...</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+</table>
+<br clear='all'>
+<br>
+<br>
+<table align='left' width='100%' cellpadding='0' cellspacing='0' border='0'>
+<tr>
+    <td bgcolor='#000000'>
+    <div style='font-size:1pt'>&nbsp;</div>
+    </td>
+</tr>
+<tr>
+    <td><input type='image' src='RL1T1_files/submit.gif' alt='Grade and Submit'>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href='#' onclick='Restart(); return false'><img
+	    src='RL1T1_files/restart.gif' border='0' alt='Start Over'></a>
+    </td>
+</tr>
+</table>
+</form>
+</body>
+</html>

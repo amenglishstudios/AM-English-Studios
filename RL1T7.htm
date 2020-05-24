@@ -1,0 +1,1228 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<meta name='generator' content='ExamView HTML Generator 8.1.6.69144'>
+	<meta name='robots' content='noindex,nofollow'>
+	<title>Reading Level 1 Test 7</title>
+	<style type='text/css'>
+		.spacer { line-height:.7em; }
+		.title { font-size:13pt; font-weight:bold; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		.qnumber { font-size:12pt; font-family:"Times New Roman", "Times", serif; color:#000000; text-align:right; }
+		.choice { font-size:12pt; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		.default { font-size:12pt; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		.qinfo { font-size:12pt; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		.points { font-size:8pt; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		TD.pad { padding: 0pt 4pt 0pt 4pt; }
+		.font1 { font-family:"Times New Roman", "Times", serif; }
+		.font2 { font-family:"Times New Roman", "Times", serif; }
+	</style>
+<script type='text/javascript' language='JavaScript1.1'>
+<!--
+	// Copyright (c) 2000-2008 eInstruction Corp.
+	var listMap = '1111111100000000000000000011111100000000';
+	var qtypeMap = '0000000099999999999777777722222277777777';
+	var ansMap = new Array(40);
+	var ptsMap = new Array(40);
+	ansMap[0] = '47';
+	ptsMap[0] = 1;
+	ansMap[1] = '44';
+	ptsMap[1] = 1;
+	ansMap[2] = '57';
+	ptsMap[2] = 1;
+	ansMap[3] = '42';
+	ptsMap[3] = 1;
+	ansMap[4] = '51';
+	ptsMap[4] = 1;
+	ansMap[5] = '52';
+	ptsMap[5] = 1;
+	ansMap[6] = '53';
+	ptsMap[6] = 1;
+	ansMap[7] = '4e';
+	ptsMap[7] = 1;
+	ansMap[8] = '';
+	ptsMap[8] = 1;
+	ansMap[9] = '';
+	ptsMap[9] = 1;
+	ansMap[10] = '';
+	ptsMap[10] = 1;
+	ansMap[11] = '';
+	ptsMap[11] = 1;
+	ansMap[12] = '';
+	ptsMap[12] = 1;
+	ansMap[13] = '';
+	ptsMap[13] = 1;
+	ansMap[14] = '';
+	ptsMap[14] = 1;
+	ansMap[15] = '';
+	ptsMap[15] = 1;
+	ansMap[16] = '';
+	ptsMap[16] = 1;
+	ansMap[17] = '';
+	ptsMap[17] = 1;
+	ansMap[18] = '';
+	ptsMap[18] = 1;
+	ansMap[19] = '757a70';
+	ptsMap[19] = 1;
+	ansMap[20] = '747b71';
+	ptsMap[20] = 1;
+	ansMap[21] = '746362';
+	ptsMap[21] = 1;
+	ansMap[22] = '756263';
+	ptsMap[22] = 1;
+	ansMap[23] = '79767c';
+	ptsMap[23] = 1;
+	ansMap[24] = '78777d';
+	ptsMap[24] = 1;
+	ansMap[25] = '786f6e';
+	ptsMap[25] = 1;
+	ansMap[26] = '58';
+	ptsMap[26] = 1;
+	ansMap[27] = '5d';
+	ptsMap[27] = 1;
+	ansMap[28] = '5c';
+	ptsMap[28] = 1;
+	ansMap[29] = '5d';
+	ptsMap[29] = 1;
+	ansMap[30] = '5c';
+	ptsMap[30] = 1;
+	ansMap[31] = '43';
+	ptsMap[31] = 1;
+	ansMap[32] = '76636e676c76';
+	ptsMap[32] = 1;
+	ansMap[33] = '667b73666077';
+	ptsMap[33] = 1;
+	ansMap[34] = '747661606d67706160';
+	ptsMap[34] = 1;
+	ansMap[35] = '68646e602576606b7660';
+	ptsMap[35] = 1;
+	ansMap[36] = '766975726362';
+	ptsMap[36] = 1;
+	ansMap[37] = '7472636362696b7e';
+	ptsMap[37] = 1;
+	ansMap[38] = '6c6d6e6166617c616766';
+	ptsMap[38] = 1;
+	ansMap[39] = '7a6c677a687d606667';
+	ptsMap[39] = 1;
+	function HandleSubmit(f)
+	{
+		var	MAGIC = 840;
+		var	totalCorrect = 0;
+		var	totalPossible = 0;
+		var	numCorrect = 0;
+		var	numPossible = 0;
+		var	numBlank = 0;
+		var	index;
+		var	msg;
+		var	i;
+
+		f.student_name.value = StripSpaces(f.student_name.value);
+		f.student_id.value = StripSpaces(f.student_id.value);
+		f.student_email.value = StripSpaces(f.student_email.value);
+
+		FixMR(f);
+		FixMTF(f);
+		index = 0;
+		for (i=0; i < f.length; ++i) {
+			if (f.elements[i].name.indexOf(":") > 0) {
+				if (listMap.charAt(index) == "1") {
+					listIndex = f.elements[i].selectedIndex;
+					text = StripSpaces(f.elements[i].options[listIndex].value);
+				} else {
+					f.elements[i].value = StripSpaces(f.elements[i].value);
+					text = f.elements[i].value;
+				}
+
+				if (text.length == 0)
+					++numBlank;
+				++index;
+			}
+		}
+
+		if (f.student_name.value == "") {
+			alert("Student name cannot be blank.");
+			return(false);
+		}
+
+		if (numBlank > 0) {
+			if (numBlank == 1)
+				msg = "1 question";
+			else
+				msg = numBlank + " questions";
+			if (!confirm("You have not answered " + msg +
+				"  Are you sure you want to end the test?"))
+				return(false);
+		}
+
+		index = 0;
+		var scoreDetails = new Array();
+		for (i=0; i < f.length; ++i) {
+			if (f.elements[i].name.indexOf(":") > 0) {
+				if (listMap.charAt(index) == "1") {
+					listIndex = f.elements[i].selectedIndex;
+					text = f.elements[i].options[listIndex].value;
+				} else
+					text = f.elements[i].value;
+
+				numPossible = ptsMap[index] * MAGIC;
+				if (ansMap[index] == "")
+					scoreDetails[index] = "?--";
+				else {
+					var scoreResult = ScoreAnswer(index, text, numPossible);
+					numCorrect = scoreResult.numPoints;
+					scoreDetails[index] = (scoreResult.isCorrect) ? " " : "X";
+					scoreDetails[index] += (Math.round(numCorrect * 100 / MAGIC) / 100).toString();
+					totalCorrect += numCorrect;
+					totalPossible += numPossible;
+				}
+
+				scoreDetails[index] += "/" + (numPossible / MAGIC);
+				++index;
+			}
+		}
+
+		f.score_details.value = scoreDetails.join("|");
+		f.score_correct.value = Math.round(totalCorrect * 100 / MAGIC) / 100;
+		f.score_possible.value = Math.round(totalPossible * 100 / MAGIC) / 100;
+		if (totalPossible > 0)
+			f.score_percent.value = Math.round(100.0 * totalCorrect / totalPossible);
+		else
+			f.score_percent.value = 0;
+
+		return(true);
+	}
+
+	function TranslateAnswer(s, answerIndex)
+	{
+		var	value;
+		var	newString;
+		var	code;
+		var	i;
+
+		value = (answerIndex % 31) + 1;
+		newString = "";
+		for (i=0; i < s.length; i += 2) {
+			code = parseInt(s.substring(i, i + 2), 16);
+			newString += String.fromCharCode(code ^ value);
+		}
+
+		return(newString);
+	}
+
+	function ScoreAnswer(answerIndex, responseText, pointsPossible)
+	{
+		var answerText = TranslateAnswer(ansMap[answerIndex], answerIndex);
+		var qtype = qtypeMap.charAt(answerIndex);
+		var nrExactMatch = false;
+		var result = new Array();
+
+		result.numPoints = 0;
+		result.isCorrect = false;
+
+		if (qtype == "3" && answerText.substring(0, 2) == "p:") {
+			answerText = answerText.substr(2);
+			if (responseText.toUpperCase() == answerText.toUpperCase())
+				result.isCorrect = true;
+			else
+				result.numPoints = MultiResponseCompare(responseText, answerText, pointsPossible);
+		} else if (qtype == "6") {
+			if (answerText.substring(0, 2) == "==") {
+				answerText = answerText.substr(2);
+				nrExactMatch = true;
+			}
+			if (NumericCompare(responseText, answerText, nrExactMatch))
+				result.isCorrect = true;
+		} else if (qtype == "7") {
+			if (CompletionCompare(responseText, answerText))
+				result.isCorrect = true;
+		} else if (responseText.toUpperCase() == answerText.toUpperCase())
+			result.isCorrect = true;
+
+		if (result.isCorrect)
+			result.numPoints = pointsPossible;
+
+		return(result);
+	}
+
+	function StripSpaces(s)
+	{
+		var	len;
+		var	i;
+
+		len = s.length;
+		for (i=len - 1; i >= 0 && s.charAt(i) == " "; --i)
+			len = i;
+
+		if (len == 0)
+			s = "";
+		else if (len != s.length)
+			s = s.substring(0, len);
+
+		return(s);
+	}
+
+	function MultiResponseCompare(responseText, answerText, pointsPossible)
+	{
+	}
+
+	function NumericCompare(response, answer, exactMatch)
+	{
+	}
+
+
+	function CompletionCompare(responseText, answerText)
+	{
+		var	startIndex;
+		var	endIndex;
+		var	partialText;
+       
+        responseText = StripLeadingSpaces(StripSpaces(responseText));        
+        responseText = responseText.toUpperCase();
+		answerText = answerText.toUpperCase();
+
+		startIndex = 0;
+		do {
+			endIndex = answerText.indexOf("\r", startIndex);
+			if (endIndex < 0)
+				partialText = answerText.substring(startIndex);
+			else
+				partialText = answerText.substring(startIndex, endIndex);
+            
+            partialText = StripLeadingSpaces(StripSpaces(partialText));
+			if ((responseText == partialText) && (responseText.length > 0))
+			     return(true);
+
+			startIndex = endIndex + 1;
+		} while (endIndex >= 0);
+		return(false);
+	}
+
+    function StripLeadingSpaces(s)
+	{
+		var	len;
+		var	i = 0;
+		var index = -1;
+
+		len = s.length;
+		while(i < len && s.charAt(i) == " ")
+		{
+			index = ++i;			
+	    }
+
+		if (len == 0)
+			s = "";
+		else if (index > -1)
+			s = s.substring(index, len);
+
+		return(s);
+	}
+	
+	function FixMTF(f)
+	{
+	}
+
+	function FixMR(f)
+	{
+	}
+
+	function AllowReset()
+	{
+		return(window.confirm("Do you want to clear all of your answers?"));
+	}
+
+	function Restart()
+	{
+		if (AllowReset()) {
+			document.TestForm.onreset = function() { };
+			document.TestForm.reset();
+			document.TestForm.onreset = function() { AllowReset(); };
+		}
+	}
+// -->
+</script>
+</head>
+<body onResize='if(document.layers && navigator.appVersion.indexOf("Win") < 0){history.go(0);}'
+bgcolor='#FFFFFF' style='background-image:url(RL1T7_files/header.gif); background-repeat:no-repeat'>
+<noscript>
+	<h3><font color='#FF0000'>Javascript not enabled</font></h3>
+</noscript>
+<script type='text/javascript' language='JavaScript'>
+<!--
+if (navigator.appName.indexOf("Netscape") >= 0) {
+	if (parseInt(navigator.appVersion.charAt(0)) < 4)
+		alert("This document requires Netscape Navigator version 4.0 or later.");
+} else if (navigator.appName.indexOf("Explorer") >= 0) {
+	if (parseInt(navigator.appVersion.charAt(0)) < 4)
+		alert("This document requires Internet Explorer version 4.0 or later.");
+}
+// -->
+</script>
+<form name='TestForm' action='http://score.examview.com/cgi-bin/results.cgi' method='POST'
+	onSubmit='return(HandleSubmit(this))' onReset='return(AllowReset())'>
+<input type='hidden' name='product_version' value='8.1.103.69470'>
+<input type='hidden' name='instructor_name' value='Matthew Manning'>
+<input type='hidden' name='instructor_formalname' value='Mr. Manning'>
+<input type='hidden' name='instructor_email' value='matthew.manning@m.kckps.org'>
+<input type='hidden' name='instructor_org' value='None'>
+<input type='hidden' name='instructor_city' value='None'>
+<input type='hidden' name='instructor_state' value='KS'>
+<input type='hidden' name='test_name' value='Reading Level 1 Test 7'>
+<input type='hidden' name='other_label' value='Other'>
+<input type='hidden' name='test_mixed_questions' value='1'>
+<input type='hidden' name='score_correct' value='0'>
+<input type='hidden' name='score_possible' value='0'>
+<input type='hidden' name='score_percent' value='0'>
+<input type='hidden' name='score_subjective' value='11'>
+<input type='hidden' name='score_details' value=''>
+<input type='hidden' name='score_showresults' value='1'>
+<div class='spacer'>&nbsp;</div>
+<div class='default'>
+	<div style='margin-left:1em'>
+	<b>Name:</b>&nbsp;<input type='text' name='student_name' size='30'> &nbsp;&nbsp;
+	<b>ID:</b>&nbsp;<input type='text' name='student_id' size='12'><br>
+	<div class='spacer'>&nbsp;</div>
+	<b>Email:</b>&nbsp;<input type='text' name='student_email' size='45'><br><br>
+	</div>
+</div>
+<div class='title'>Reading Level 1 Test 7</div>
+
+<table align='left' width='100%' border='0' cellpadding='0' cellspacing='0'>
+<tr><td colspan='3'><br></td></tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><span style='font-size:14pt'>Reading Comprehension
+Review<br><br></span></b><div style='text-align:center'><b><span style='font-size:14pt'>GOING
+VIRAL</span><u><span style='font-size:14pt'><br></span><br></u></b></div>In 1968, the artist Andy
+Warhol predicted, &#8220;In the future, everybody will be world-famous for 15 minutes.&#8221; Today,
+it seems his prediction is becoming true.<br><br>The tune is simple, and the lyrics don&#8217;t make
+sense. But in 2011, 13-year-old Rebecca Black&#8217;s song &#8220;Friday&#8221; became a sensation.
+Black recorded the song as a music video for a small record company. The company posted it on
+YouTube. In its first month online, very few people saw it. Then a popular blogger wrote about the
+video. He called &#8220;Friday&#8221; the worst video ever made.<br><br><b>200 MILLION
+VIEWS<br></b>Suddenly, the video went viral. Everyone wanted to see if &#8220;Friday&#8221; was
+really so bad. People often watched the video on Friday. Soon, other people posted similar music
+videos, inspired by &#8220;Friday.&#8221; For example, a famous comedian posted a video called
+&#8220;Thursday.&#8221; It had the same tune but different words. Its lyrics didn&#8217;t make sense
+either, but they were very funny. By the end of 2011, &#8220;Friday&#8221; had over 200 million
+views. It was one of the most-watched videos on YouTube. Black was famous.<br><br><b>INSTANT
+FAME<br></b>In the 21st century, our definition of fame has changed. Online video-sharing sites like
+YouTube make it possible for ordinary people&#8212;instead of movie companies or magazines, for
+example&#8212;to decide who is famous. We all now have more ownership of our own pop culture, and
+no-one has to green-light our ideas&#8212;you can upload your own videos or publish your own work at
+any time. However, this fame may not be based on any actual talent. You could be famous for being a
+very bad singer or just doing something ridiculous. For some people, this can mean that fame happens
+when we don&#8217;t expect it or even when we don&#8217;t want it. <br><br>Realistically, though,
+your chances of becoming famous are still fairly small. In fact, 90 percent of videos viewed on
+YouTube are of people, like pop stars, who are already famous.<br><br><b><span
+style='font-size:12pt'>DIRECTIONS: Read each statement and decide if it is True or False according to
+the reading passage.</span></b></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:1' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;1.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>According to the article, Andy Warhol said that he would be famous for only a
+short time.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:2' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;2.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Rebecca Black posted her video on YouTube herself.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:3' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;3.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>The video &#8220;Friday&#8221; did not become popular as soon as it was
+posted.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:4' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;4.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Rebecca Black also wrote the song &#8220;Thursday.&#8221;</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:5' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;5.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>The song &#8220;Thursday&#8221; sounded similar to Rebecca Black&#8217;s
+&#8220;Friday&#8221;.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:6' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;6.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>In 2011, the song &#8220;Friday&#8221; was watched over 200 million times on
+YouTube.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:7' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;7.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>According to the author, people can be famous for being talented or
+untalented.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:8' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;8.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>90% of all the videos viewed on YouTube are made by people who are not yet
+famous.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><span style='font-size:14pt'>Reading Comprehension
+Extension<br><br></span></b><div style='text-align:center'><b><span style='font-size:14pt'>The
+Bicycle Fad<br></span><br></b></div><b>Paragraph 1<br><br></b>A fad is a sudden, enthusiastic
+interest in a product, a fashion, or an idea. A fad catches on when the number of people following it
+increases quickly. After a certain amount of time, however&#8212;it can be weeks, months, or
+years&#8212;interest becomes less. It may not completely disappear, but it becomes far less intense.
+In the Internet Age, people are so well-connected that a fad&#8212;such as the interest in viral
+videos&#8212;can appear quickly and then disappear in the same amount of time. There were fads,
+however, long before the Internet existed.<br><br><div style='margin-left:3pt'><b>Paragraph
+2<br><br></b>One example was the bicycle fad of the late 1800s. Early forms of the
+bicycle&#8212;called the velocipede&#8212;had appeared in the early part of the 19<sup>th</sup>
+century, but they were not very practical. One type of velocipede, introduced in France in 1865, was
+so uncomfortable to ride that it was called &#8220;the boneshaker.&#8221; The high-wheelers (called
+&#8220;penny-farthings&#8221; in the U.K.) of the early 1880s came next. These had one large wheel in
+front&#8212;up to 64 inches (163 centimeters) in diameter&#8212;and a much smaller one in back. To be
+able to ride these not only took a lot of skill, but also cost a lot of money. A typical high-wheeler
+cost about the same as a six months&#8217; salary for the average worker of the time. You also needed
+to be very brave, as accidents were common. The so-called &#8220;safety bicycle,&#8221; first
+manufactured in Coventry, U.K. in 1885, looked much more like the bicycles we are familiar with
+today, and was the first machine to be called a &#8220;bicycle.&#8221;<br><br><b>Paragraph
+3<br><br></b>By the late 1880s, bicycling had become a huge fad in North America and Europe, and
+&#8212;unlike many fads&#8212;it had a lot of consequences. By 1890, there were around 300 bicycle
+factories just in the U.S., and in that year, they made more than a million bicycles. Bicycles were
+used not only for basic transportation but also for leisure. The late 1800s was a time when the
+middle class started to have more free time. Bicycle races became popular. Bicycle clubs were formed
+and huge numbers of people would go for rides in the country on weekends. Bicyclists demanded that
+national and local governments improve roads. Both men and women participated in the fad. As bicycles
+became safer and cheaper, more women had access to the personal freedom that bicycles gave them, and
+so the bicycle became a symbol of the&#160;&#8220;New Woman&#160;&#8220;of the late nineteenth
+century, especially in the U.K. and the U.S. It even changed women&#8217;s clothing. The long dresses
+women had worn prior to the fad were not suitable for bicycling, and &#8220;bicycle suits&#8221;
+became a common form of dress. <br><br><b>Paragraph 4<br><br></b>By about 1910, interest in bicycles
+began to decrease, as interest in cars and motorcycles grew. For the next 60 years, in the U.S. and
+Europe, bicycles were mainly used by children who were too young to drive. In the 1970s, bicycles
+were rediscovered. Adults began to use them as a cheap, environmentally friendly alternative to cars.
+New types of bicycles&#8212;such as mountain bikes&#8212;were used for recreation. This was the start
+of a new bicycle fad that continues to this very day.</div></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;9.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>DIRECTIONS: Write the number of the paragraph (1&#8211;4) next to its main
+purpose below.<span style='font-size:14pt'><br></span></b><div style='text-align:center'><b><span
+style='font-size:14pt'><br></span></b></div>To discuss the decline of the bicycle fad and then an
+increase in interest years later &#8211; Paragraph _____</div><div style='font-size:2pt'></div>
+		<textarea name='SA:9' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;10.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>DIRECTIONS: Write the number of the paragraph (1&#8211;4) next to its main
+purpose below.<span style='font-size:14pt'><br></span></b><div style='text-align:center'><b><span
+style='font-size:14pt'><br></span></b></div>To list some of the effects of the bicycle fad &#8211;
+Paragraph _____</div><div style='font-size:2pt'></div>
+		<textarea name='SA:10' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;11.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>DIRECTIONS: Write the number of the paragraph (1&#8211;4) next to its main
+purpose below.<span style='font-size:14pt'><br></span></b><div style='text-align:center'><b><span
+style='font-size:14pt'><br></span></b></div>To give a definition of <i>fad</i> and provide examples
+&#8211; Paragraph _____</div><div style='font-size:2pt'></div>
+		<textarea name='SA:11' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;12.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>DIRECTIONS: Write the number of the paragraph (1&#8211;4) next to its main
+purpose below.<span style='font-size:14pt'><br></span></b><div style='text-align:center'><b><span
+style='font-size:14pt'><br></span></b></div>To give a brief history of the development of the bicycle
+&#8211; Paragraph _____</div><div style='font-size:2pt'></div>
+		<textarea name='SA:12' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;13.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>DIRECTIONS: Answer the questions with words or phrases from the
+article.<br><br></b>What is a two-word phrase in paragraph 1 meaning &#8220;becomes
+popular&#8221;?</div><div style='font-size:2pt'></div>
+		<textarea name='SA:13' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;14.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>DIRECTIONS: Answer the questions with words or phrases from the
+article.<br><br></b>What is a word in paragraph 2 that means &#8220;made in a factory, usually in
+large quantities&#8221;?</div><div style='font-size:2pt'></div>
+		<textarea name='SA:14' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;15.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>DIRECTIONS: Answer the questions with words or phrases from the
+article.<br><br></b>What is a word in paragraph 2 that means &#8220;the money earned from a
+job&#8221;?</div><div style='font-size:2pt'></div>
+		<textarea name='SA:15' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;16.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>DIRECTIONS: Answer the questions with words or phrases from the
+article.<br><br></b>What is a word in paragraph 3 that means &#8220;results or effects&#8221;?</div><div style='font-size:2pt'></div>
+		<textarea name='SA:16' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;17.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>DIRECTIONS: Answer the questions with words or phrases from the
+article.<br><br></b>What is a word in paragraph 3 that means &#8220;activities done to have fun or
+relax&#8221;?</div><div style='font-size:2pt'></div>
+		<textarea name='SA:17' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;18.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>DIRECTIONS: Answer the questions with words or phrases from the
+article.<br><br></b>What is a two-word phrase in paragraph 3 that means &#8220;before&#8221; or
+&#8220;earlier than&#8221;?</div><div style='font-size:2pt'></div>
+		<textarea name='SA:18' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;19.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>DIRECTIONS: Answer the questions with words or phrases from the
+article.<br><br></b>What is a word in paragraph 4 that means &#8220;become less&#8221;?</div><div style='font-size:2pt'></div>
+		<textarea name='SA:19' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><span style='font-size:14pt'>Reading Skills<br><br></span></b><div
+style='text-align:center'><b><span style='font-size:14pt'>Gangnam
+Style<br></span></b></div><br>&#8220;Gangnam Style,&#8221; by Korean star Psy, was released in July
+2012. He expected the song to be a hit in Korea, but the video for the song also became a worldwide
+sensation. While popular in his own country, Psy was not well-known in the rest of the world. But a
+week after releasing the video for the song, a famous rapper tweeted about how great the video was.
+Suddenly, many other famous people posted messages about the video. Millions of people read the
+messages and went to view the video on YouTube. Within days, &#8220;Gangnam Style&#8221; went viral.
+Today, the video has been watched over 2 billion times.<br><br><b>DIRECTIONS: Read the passage above.
+Complete each sentence below with the word <i>and</i> or <i>but</i>.</b></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;20.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>The song &#8220;Gangnam Style&#8221; was recorded ____________________ released
+in 2012.</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:20' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;21.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>The song was written ____________________ performed by Korean star Psy.</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:21' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;22.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Psy thought that his song might be successful in Korea, ____________________ it
+became a global success.</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:22' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;23.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Before 2012, Psy was popular in Korea, ____________________ not in the rest of
+the world.</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:23' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;24.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>A famous rapper tweeted about Psy&#8217;s song ____________________ suddenly it
+became famous</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:24' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;25.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Many people saw messages about the video online ____________________ then went
+to YouTube to watch it.</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:25' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;26.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Gangnam&#8217;s song was viewed over a billion times in 2012,
+____________________ today, fewer people watch it.</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:26' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><span style='font-size:14pt'>TED Talk Comprehension<br><br></span><span
+style='font-size:12pt'>DIRECTIONS: Read the excerpt from Kevin Allocca&#8217;s 2011 TED Talk and
+answer the questions.</span><span style='font-size:14pt'><br></span></b><div
+style='text-align:center'><b><span style='font-size:14pt'><br>Kevin Allocca&#8212;Why Videos Go
+Viral<br></span></b></div><br>Hi. I&#8217;m Kevin Allocca. I&#8217;m the trends manager at YouTube,
+and I professionally watch YouTube videos. It&#8217;s true. So we&#8217;re going to talk a little bit
+today about how videos go viral and then why that even matters. We all want to be stars&#8212;
+celebrities, singers, comedians&#8212;and when I was younger, that seemed so very, very hard to do.
+But now Web video has made it so that any of us or any of the creative things that we do can become
+completely famous in a part of our world&#8217;s culture. Any one of you could be famous on the
+Internet by next Saturday. But there are over 48 hours of video uploaded to YouTube every minute. And
+of that, only a tiny percentage ever goes viral and gets tons of views and becomes a cultural moment.
+So how does it happen? Three things: tastemakers, communities of participation, and unexpectedness.
+...<br><br> ... Last year, Bear Vasquez posted this video that he had shot outside his home in
+Yosemite National Park. In 2010, it was viewed 23 million times. This is a chart of what it looked
+like when it first became popular last summer. But he didn&#8217;t actually set out to make a viral
+video, Bear. He just wanted to share a rainbow. Because that&#039;s what you do when your name is
+Yosemite Mountain Bear. And he had posted lots of nature videos in fact. . . .<br><br>And this video
+had actually been posted all the way back in January. So what happened here? Jimmy Kimmel, actually.
+Jimmy Kimmel posted this tweet that would eventually propel the video to be as popular as it would
+become. Because tastemakers like Jimmy Kimmel introduce us to new and interesting things and bring
+them to a larger audience.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:27' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;27.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Kevin Allocca&#8217;s main reason for giving this talk is to explain . .
+.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>how to make videos at home</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>what he does at YouTube</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span class='default'>why some videos
+become popular</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:28' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;28.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>According to Kevin Allocca, most people who make videos . . .</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>will never become famous</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>upload them to YouTube on
+Saturdays</span></td></tr><tr valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>become &#8220;cultural moments&#8221;</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:29' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;29.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>The speaker says, &#8220;But he (Bear Valdez) didn&#8217;t actually set out to
+make a viral video.&#8221; The phrase <i>set out</i> is closest in meaning to . . .</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>plan</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>need</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>appear</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:30' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;30.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>According to Allocca, why did Bear Valdez post his video online?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>to encourage people to visit Yosemite National Park</span></td></tr><tr
+valign='baseline'><td><div class='choice'>b.</div></td><td><span class='default'>to try to become
+famous</span></td></tr><tr valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>to share something he thought was amazing</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:31' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;31.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Kevin Allocca says that Bear Valdez&#8217;s video became famous because of . .
+.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>the fact that it was something unexpected</span></td></tr><tr
+valign='baseline'><td><div class='choice'>b.</div></td><td><span class='default'>a community of
+participation</span></td></tr><tr valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>a tastemaker</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:32' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;32.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>According to Allocca, Jimmy Kimmel helped the video become popular by . .
+.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>talking about it on his TV show</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>posting a message about it on
+Twitter</span></td></tr><tr valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>uploading it to YouTube</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><span style='font-size:14pt'>Vocabulary <br><br></span>DIRECTIONS: Complete
+the sentences with the correct word from the box.<br></b><br><div style='font-size:2pt'></div><table
+cellpadding='0' cellspacing='0' width='57%' border='0'><tr valign='top'><td valign='middle'
+class='pad' style=' border-left:0.8pt solid #000000; border-top:0.8pt solid #000000;'><div
+style='text-indent:4pt'>definition </div></td><td valign='middle' class='pad' style='
+border-top:0.8pt solid #000000;'><div style='text-indent:4pt'>expect</div></td><td valign='middle'
+class='pad' style=' border-top:0.8pt solid #000000;'><div style='text-indent:4pt'>make sense
+</div></td><td valign='middle' class='pad' style=' border-top:0.8pt solid #000000; border-right:0.8pt
+solid #000000;'><div style='text-indent:4pt'>posted</div></td></tr><tr valign='top'><td
+valign='middle' class='pad' style=' border-left:0.8pt solid #000000; border-bottom:0.8pt solid
+#000000;'><div style='text-indent:4pt'>predicted</div></td><td valign='middle' class='pad' style='
+border-bottom:0.8pt solid #000000;'><div style='text-indent:4pt'>sensation</div></td><td
+valign='middle' class='pad' style=' border-bottom:0.8pt solid #000000;'><div
+style='text-indent:4pt'>suddenly</div></td><td valign='middle' class='pad' style=' border-right:0.8pt
+solid #000000; border-bottom:0.8pt solid #000000;'><div
+style='text-indent:4pt'>talent</div></td></tr><tr height='0' style='border:none'><td
+width='26%'></td><td width='23%'></td><td width='24%'></td><td width='27%'></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;33.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Although the singer has a lot of musical ____________________, she didn&#8217;t
+win the contest.</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:33' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;34.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>I read a couple of negative reviews of that book, so I didn&#8217;t
+____________________ to like it very much. I was quite surprised that I enjoyed it.</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:34' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;35.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>In the 1950s, some music critics ____________________ that Elvis Presley would
+be famous only for a few months, but his music is still enjoyed today.</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:35' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;36.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>I thought that movie was confusing. It just didn&#8217;t ____________________ to
+me.</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:36' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;37.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>A lot of my friends liked the photos from my vacation that I
+____________________ on Facebook.</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:37' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;38.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Almost no one knew about that comedian until he appeared on national television.
+And then, ____________________, he was famous!</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:38' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;39.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>The ____________________ of the word <i>fame </i>has changed over time.</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:39' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;40.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>That band was not an overnight ____________________. It took a long time for
+them to become well known.</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:40' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+</table>
+<br clear='all'>
+<br>
+<br>
+<table align='left' width='100%' cellpadding='0' cellspacing='0' border='0'>
+<tr>
+    <td bgcolor='#000000'>
+    <div style='font-size:1pt'>&nbsp;</div>
+    </td>
+</tr>
+<tr>
+    <td><input type='image' src='RL1T7_files/submit.gif' alt='Grade and Submit'>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href='#' onclick='Restart(); return false'><img
+	    src='RL1T7_files/restart.gif' border='0' alt='Start Over'></a>
+    </td>
+</tr>
+</table>
+</form>
+</body>
+</html>

@@ -1,0 +1,1233 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<meta name='generator' content='ExamView HTML Generator 8.1.6.69144'>
+	<meta name='robots' content='noindex,nofollow'>
+	<title>Reading Level 1 Test 8</title>
+	<style type='text/css'>
+		.spacer { line-height:.7em; }
+		.title { font-size:13pt; font-weight:bold; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		.qnumber { font-size:12pt; font-family:"Times New Roman", "Times", serif; color:#000000; text-align:right; }
+		.choice { font-size:12pt; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		.default { font-size:12pt; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		.qinfo { font-size:12pt; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		.points { font-size:8pt; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		TD.pad { padding: 0pt 4pt 0pt 4pt; }
+		.font1 { font-family:"Times New Roman", "Times", serif; }
+		.font2 { font-family:"Times New Roman", "Times", serif; }
+		.font3 { font-family:"Times New Roman", "Times", serif; }
+	</style>
+<script type='text/javascript' language='JavaScript1.1'>
+<!--
+	// Copyright (c) 2000-2008 eInstruction Corp.
+	var listMap = '1111111111111000000000000011111111111111';
+	var qtypeMap = '0000000022222999999999999922222255555555';
+	var ansMap = new Array(40);
+	var ptsMap = new Array(40);
+	ansMap[0] = '55';
+	ptsMap[0] = 1;
+	ansMap[1] = '44';
+	ptsMap[1] = 1;
+	ansMap[2] = '57';
+	ptsMap[2] = 1;
+	ansMap[3] = '42';
+	ptsMap[3] = 1;
+	ansMap[4] = '51';
+	ptsMap[4] = 1;
+	ansMap[5] = '40';
+	ptsMap[5] = 1;
+	ansMap[6] = '41';
+	ptsMap[6] = 1;
+	ansMap[7] = '5c';
+	ptsMap[7] = 1;
+	ansMap[8] = '4a';
+	ptsMap[8] = 1;
+	ansMap[9] = '48';
+	ptsMap[9] = 1;
+	ansMap[10] = '48';
+	ptsMap[10] = 1;
+	ansMap[11] = '4e';
+	ptsMap[11] = 1;
+	ansMap[12] = '4e';
+	ptsMap[12] = 1;
+	ansMap[13] = '';
+	ptsMap[13] = 1;
+	ansMap[14] = '';
+	ptsMap[14] = 1;
+	ansMap[15] = '';
+	ptsMap[15] = 1;
+	ansMap[16] = '';
+	ptsMap[16] = 1;
+	ansMap[17] = '';
+	ptsMap[17] = 1;
+	ansMap[18] = '';
+	ptsMap[18] = 1;
+	ansMap[19] = '';
+	ptsMap[19] = 1;
+	ansMap[20] = '';
+	ptsMap[20] = 1;
+	ansMap[21] = '';
+	ptsMap[21] = 1;
+	ansMap[22] = '';
+	ptsMap[22] = 1;
+	ansMap[23] = '';
+	ptsMap[23] = 1;
+	ansMap[24] = '';
+	ptsMap[24] = 1;
+	ansMap[25] = '';
+	ptsMap[25] = 1;
+	ansMap[26] = '5a';
+	ptsMap[26] = 1;
+	ansMap[27] = '5f';
+	ptsMap[27] = 1;
+	ansMap[28] = '5c';
+	ptsMap[28] = 1;
+	ansMap[29] = '5d';
+	ptsMap[29] = 1;
+	ansMap[30] = '5d';
+	ptsMap[30] = 1;
+	ansMap[31] = '43';
+	ptsMap[31] = 1;
+	ansMap[32] = '4c';
+	ptsMap[32] = 1;
+	ansMap[33] = '5a';
+	ptsMap[33] = 1;
+	ansMap[34] = '4a';
+	ptsMap[34] = 1;
+	ansMap[35] = '5c';
+	ptsMap[35] = 1;
+	ansMap[36] = '5f';
+	ptsMap[36] = 1;
+	ansMap[37] = '5e';
+	ptsMap[37] = 1;
+	ansMap[38] = '46';
+	ptsMap[38] = 1;
+	ansMap[39] = '50';
+	ptsMap[39] = 1;
+	function HandleSubmit(f)
+	{
+		var	MAGIC = 840;
+		var	totalCorrect = 0;
+		var	totalPossible = 0;
+		var	numCorrect = 0;
+		var	numPossible = 0;
+		var	numBlank = 0;
+		var	index;
+		var	msg;
+		var	i;
+
+		f.student_name.value = StripSpaces(f.student_name.value);
+		f.student_id.value = StripSpaces(f.student_id.value);
+		f.student_email.value = StripSpaces(f.student_email.value);
+
+		FixMR(f);
+		FixMTF(f);
+		index = 0;
+		for (i=0; i < f.length; ++i) {
+			if (f.elements[i].name.indexOf(":") > 0) {
+				if (listMap.charAt(index) == "1") {
+					listIndex = f.elements[i].selectedIndex;
+					text = StripSpaces(f.elements[i].options[listIndex].value);
+				} else {
+					f.elements[i].value = StripSpaces(f.elements[i].value);
+					text = f.elements[i].value;
+				}
+
+				if (text.length == 0)
+					++numBlank;
+				++index;
+			}
+		}
+
+		if (f.student_name.value == "") {
+			alert("Student name cannot be blank.");
+			return(false);
+		}
+
+		if (numBlank > 0) {
+			if (numBlank == 1)
+				msg = "1 question";
+			else
+				msg = numBlank + " questions";
+			if (!confirm("You have not answered " + msg +
+				"  Are you sure you want to end the test?"))
+				return(false);
+		}
+
+		index = 0;
+		var scoreDetails = new Array();
+		for (i=0; i < f.length; ++i) {
+			if (f.elements[i].name.indexOf(":") > 0) {
+				if (listMap.charAt(index) == "1") {
+					listIndex = f.elements[i].selectedIndex;
+					text = f.elements[i].options[listIndex].value;
+				} else
+					text = f.elements[i].value;
+
+				numPossible = ptsMap[index] * MAGIC;
+				if (ansMap[index] == "")
+					scoreDetails[index] = "?--";
+				else {
+					var scoreResult = ScoreAnswer(index, text, numPossible);
+					numCorrect = scoreResult.numPoints;
+					scoreDetails[index] = (scoreResult.isCorrect) ? " " : "X";
+					scoreDetails[index] += (Math.round(numCorrect * 100 / MAGIC) / 100).toString();
+					totalCorrect += numCorrect;
+					totalPossible += numPossible;
+				}
+
+				scoreDetails[index] += "/" + (numPossible / MAGIC);
+				++index;
+			}
+		}
+
+		f.score_details.value = scoreDetails.join("|");
+		f.score_correct.value = Math.round(totalCorrect * 100 / MAGIC) / 100;
+		f.score_possible.value = Math.round(totalPossible * 100 / MAGIC) / 100;
+		if (totalPossible > 0)
+			f.score_percent.value = Math.round(100.0 * totalCorrect / totalPossible);
+		else
+			f.score_percent.value = 0;
+
+		return(true);
+	}
+
+	function TranslateAnswer(s, answerIndex)
+	{
+		var	value;
+		var	newString;
+		var	code;
+		var	i;
+
+		value = (answerIndex % 31) + 1;
+		newString = "";
+		for (i=0; i < s.length; i += 2) {
+			code = parseInt(s.substring(i, i + 2), 16);
+			newString += String.fromCharCode(code ^ value);
+		}
+
+		return(newString);
+	}
+
+	function ScoreAnswer(answerIndex, responseText, pointsPossible)
+	{
+		var answerText = TranslateAnswer(ansMap[answerIndex], answerIndex);
+		var qtype = qtypeMap.charAt(answerIndex);
+		var nrExactMatch = false;
+		var result = new Array();
+
+		result.numPoints = 0;
+		result.isCorrect = false;
+
+		if (qtype == "3" && answerText.substring(0, 2) == "p:") {
+			answerText = answerText.substr(2);
+			if (responseText.toUpperCase() == answerText.toUpperCase())
+				result.isCorrect = true;
+			else
+				result.numPoints = MultiResponseCompare(responseText, answerText, pointsPossible);
+		} else if (qtype == "6") {
+			if (answerText.substring(0, 2) == "==") {
+				answerText = answerText.substr(2);
+				nrExactMatch = true;
+			}
+			if (NumericCompare(responseText, answerText, nrExactMatch))
+				result.isCorrect = true;
+		} else if (qtype == "7") {
+			if (CompletionCompare(responseText, answerText))
+				result.isCorrect = true;
+		} else if (responseText.toUpperCase() == answerText.toUpperCase())
+			result.isCorrect = true;
+
+		if (result.isCorrect)
+			result.numPoints = pointsPossible;
+
+		return(result);
+	}
+
+	function StripSpaces(s)
+	{
+		var	len;
+		var	i;
+
+		len = s.length;
+		for (i=len - 1; i >= 0 && s.charAt(i) == " "; --i)
+			len = i;
+
+		if (len == 0)
+			s = "";
+		else if (len != s.length)
+			s = s.substring(0, len);
+
+		return(s);
+	}
+
+	function MultiResponseCompare(responseText, answerText, pointsPossible)
+	{
+	}
+
+	function NumericCompare(response, answer, exactMatch)
+	{
+	}
+
+
+	function CompletionCompare(responseText, answerText)
+	{
+		return(false);
+	}
+
+    function StripLeadingSpaces(s)
+	{
+		var	len;
+		var	i = 0;
+		var index = -1;
+
+		len = s.length;
+		while(i < len && s.charAt(i) == " ")
+		{
+			index = ++i;			
+	    }
+
+		if (len == 0)
+			s = "";
+		else if (index > -1)
+			s = s.substring(index, len);
+
+		return(s);
+	}
+	
+	function FixMTF(f)
+	{
+	}
+
+	function FixMR(f)
+	{
+	}
+
+	function AllowReset()
+	{
+		return(window.confirm("Do you want to clear all of your answers?"));
+	}
+
+	function Restart()
+	{
+		if (AllowReset()) {
+			document.TestForm.onreset = function() { };
+			document.TestForm.reset();
+			document.TestForm.onreset = function() { AllowReset(); };
+		}
+	}
+// -->
+</script>
+</head>
+<body onResize='if(document.layers && navigator.appVersion.indexOf("Win") < 0){history.go(0);}'
+bgcolor='#FFFFFF' style='background-image:url(Rl1T8_files/header.gif); background-repeat:no-repeat'>
+<noscript>
+	<h3><font color='#FF0000'>Javascript not enabled</font></h3>
+</noscript>
+<script type='text/javascript' language='JavaScript'>
+<!--
+if (navigator.appName.indexOf("Netscape") >= 0) {
+	if (parseInt(navigator.appVersion.charAt(0)) < 4)
+		alert("This document requires Netscape Navigator version 4.0 or later.");
+} else if (navigator.appName.indexOf("Explorer") >= 0) {
+	if (parseInt(navigator.appVersion.charAt(0)) < 4)
+		alert("This document requires Internet Explorer version 4.0 or later.");
+}
+// -->
+</script>
+<form name='TestForm' action='http://score.examview.com/cgi-bin/results.cgi' method='POST'
+	onSubmit='return(HandleSubmit(this))' onReset='return(AllowReset())'>
+<input type='hidden' name='product_version' value='8.1.103.69470'>
+<input type='hidden' name='instructor_name' value='Matthew Manning'>
+<input type='hidden' name='instructor_formalname' value='Mr. Manning'>
+<input type='hidden' name='instructor_email' value='matthew.manning@m.kckps.org'>
+<input type='hidden' name='instructor_org' value='None'>
+<input type='hidden' name='instructor_city' value='None'>
+<input type='hidden' name='instructor_state' value='KS'>
+<input type='hidden' name='test_name' value='Reading Level 1 Test 8'>
+<input type='hidden' name='other_label' value='Other'>
+<input type='hidden' name='test_mixed_questions' value='1'>
+<input type='hidden' name='score_correct' value='0'>
+<input type='hidden' name='score_possible' value='0'>
+<input type='hidden' name='score_percent' value='0'>
+<input type='hidden' name='score_subjective' value='13'>
+<input type='hidden' name='score_details' value=''>
+<input type='hidden' name='score_showresults' value='1'>
+<div class='spacer'>&nbsp;</div>
+<div class='default'>
+	<div style='margin-left:1em'>
+	<b>Name:</b>&nbsp;<input type='text' name='student_name' size='30'> &nbsp;&nbsp;
+	<b>ID:</b>&nbsp;<input type='text' name='student_id' size='12'><br>
+	<div class='spacer'>&nbsp;</div>
+	<b>Email:</b>&nbsp;<input type='text' name='student_email' size='45'><br><br>
+	</div>
+</div>
+<div class='title'>Reading Level 1 Test 8</div>
+
+<table align='left' width='100%' border='0' cellpadding='0' cellspacing='0'>
+<tr><td colspan='3'><br></td></tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><span style='font-size:14pt'>Reading Comprehension
+Review<br><br></span></b><div style='text-align:center'><b><span style='font-size:12pt'>NEWSWATCH
+June 21, 2012</span><span style='font-size:14pt'><br><br>LIONS KILLED NEAR
+NAIROBI</span></b><br></div><br>Yesterday morning, six lions were killed in Kitengela, just 15
+kilometers south of Nairobi National Park. The killings have sent shock waves across Kenya and around
+the world.<br><br>Nairobi National Park is one of the most visited protected areas in Africa. The
+park is just a ten-minute ride from downtown Nairobi, and is therefore a popular tourist destination.
+However, the park&#8217;s location close to residential areas and farmlands has led to conflicts
+between farmers and lions.<br><br>Part of the problem is that the park is fenced only to the east,
+north, and west&#8212;the sides closest to the city. Consequently, zebras and other wild animals are
+able to migrate across the park&#8217;s unfenced southern border. Lions and other predators follow
+them. Some cross into residential areas such as Kitengela, and kill farmers&#8217; livestock. As a
+result, the farmers become angry and kill the big cats. This seems to be the cause of the latest
+killings. <br><br>The Kenyan government says it will find and arrest the killers of the Kitengela
+Six. Local community leaders, however, argue that the government does not really take seriously the
+farmers&#8217; livestock losses. Because of this conflict, says conservationist Paula Kahumbu, Kenya
+must find &#8220;a lasting solution that will enable people to benefit from living lions.&#8221;
+<br><br>Kahumbu and other conservationists are afraid for the lions&#8217; future. For much of the
+past decade, Kenya has been losing 100 lions a year. This is largely due to habitat loss, but also
+because of lion killings. Unless there is a way to solve the human&#8211;lion conflict, Kenya&#8217;s
+lions could disappear in 20 years.<br><br><b><span style='font-size:12pt'>DIRECTIONS: Read each
+statement and decide if it is True or False according to the reading passage.</span></b></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:1' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;1.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Many tourists visit Nairobi National Park.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:2' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;2.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>There is a fence around all four sides of the park.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:3' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;3.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>When zebras and other animals leave the park, lions follow them.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:4' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;4.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Lions killed six farmers near Kitengela.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:5' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;5.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Local leaders from Kitengela believe that the Kenyan government doesn&#8217;t
+understand how serious the problem is.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:6' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;6.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>According to the article, Paula Kahumbu believes she has found a solution to the
+lion-farmer problem.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:7' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;7.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Over the last 10 years, 100 lions have been killed in Kenya.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:8' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;8.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Conservationists say that lions could completely disappear from Kenya in 20
+years.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><span style='font-size:14pt'>Reading Comprehension
+Extension<br><br></span></b><b><span style='font-size:12pt'>DIRECTIONS: Read the passage and answer
+the questions.</span><span style='font-size:14pt'><br></span></b><div
+style='text-align:center'><b><span style='font-size:14pt'><br>The Whooping
+Crane<br></span><br></b></div>The beautiful whooping crane is the tallest bird in North America,
+standing about 5 feet (1.5 meters) tall. The western population lives in north-western Canada during
+the summer, and migrates to coastal Texas for the winter months. The eastern population spends its
+summers in Wisconsin and winters in Florida. <br><br>When Europeans first came to the continent of
+North America, it is estimated that there were about 10,000 whooping cranes. However, during the
+19<sup>th</sup> century, people hunted the crane and gathered their eggs. By 1870, the population was
+down to around 1,400 birds. The species nearly disappeared in the mid-twentieth century and a 1941
+count found only 16 living adults. <br><br>But since then, these birds have taken a step back from
+extinction. Captive breeding programs and successful re-introduction programs have raised the number
+of birds to nearly 600, including some 200 or so in captivity<sup>1</sup>. Their biggest threat is
+loss of feeding grounds. The areas where the birds spend their winter are protected, but the
+freshwater wetlands where they feed are in some cases almost completely dry due to
+drought<sup>2</sup>.<br><br>One of the measures used to boost the population of the cranes is
+particularly innovative. It is called costume-rearing<sup>3</sup>. Handlers wear hand
+puppets<sup>4</sup> on their arm to feed and interact with the chicks<sup>5</sup> that are born in
+captivity. Sometimes <b><u>they</u></b> even wear full-length crane costumes to hide the human form.
+Handlers<sup>6</sup> use this costume-rearing technique to make sure the chicks are familiar with
+other whooping cranes when they are finally ready to be released back into the wild. <br><br>The
+whooping crane remains an endangered species, but their growing numbers are a success story for
+conservationists<sup>7</sup><i>.<br></i><br><span style='font-size:9pt'><sup>1
+</sup><b>captivity</b>: <i>n. </i>the condition of being kept in a place (such as a zoo or a prison)
+and not being able to leave<br><sup>2</sup> <b>drought</b>: <i>n. </i>a long-lasting lack of
+rainfall<br><sup>3</sup><b><sup> </sup>costume-rearing</b>: a costume is clothing worn to hide
+one&#8217;s identity; rearing means taking care of animals or young children.<br><sup>4</sup> <b>hand
+puppet</b>: a doll that is controlled by putting one&#8217;s hand in it<br><sup>5&nbsp;
+</sup><b>chicks</b>: <i>n. </i>baby birds<br><sup>6</sup> <b>handlers</b>: <i>n. </i>people who feed
+and care for animals (in a zoo, for example)<br><sup>7</sup> <b>conservationists</b>: <i>n.
+</i>people who want to protect animals and other aspects of nature</span></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:9' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;9.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Where do birds that spend their summers in Canada go in the winter?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>Florida</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>Wisconsin</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>Texas</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:10' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;10.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>When was the population of whooping cranes at its lowest point?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>In the 1870&#8217;s.</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>In the 1940&#8217;s.</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span class='default'>In the last few
+years.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:11' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;11.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>What is the biggest danger now threatening whooping cranes?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>hunting</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>development of their
+habitat</span></td></tr><tr valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>lack of water</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:12' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;12.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>The bolded word <i>they</i> in paragraph 4 refers to . . .</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>whooping cranes</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>handlers</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span class='default'>hand
+puppets</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:13' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;13.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Which of the following statements is NOT true of costume-rearing?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>Handlers sometimes wear costumes to look like the birds.</span></td></tr><tr
+valign='baseline'><td><div class='choice'>b.</div></td><td><span class='default'>Handlers use hand
+puppets to give food to the baby birds.</span></td></tr><tr valign='baseline'><td><div
+class='choice'>c.</div></td><td><span class='default'>Handlers dress the birds in special clothes to
+keep them warm.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;14.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>DIRECTIONS: Decide if this sentence is a main idea (M) or detail (D) in the
+article.</b><br><br>The whooping crane is about 1.5 meters tall.</div><div style='font-size:2pt'></div>
+		<textarea name='SA:14' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;15.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>DIRECTIONS: Decide if this sentence is a main idea (M) or detail (D) in the
+article.</b><br><br>Whooping cranes almost disappeared completely, but now the population is
+growing.</div><div style='font-size:2pt'></div>
+		<textarea name='SA:15' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;16.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>DIRECTIONS: Decide if this sentence is a main idea (M) or detail (D) in the
+article.</b><br><br>Costume-rearing has helped the whooping crane survive.</div><div style='font-size:2pt'></div>
+		<textarea name='SA:16' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;17.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>DIRECTIONS: Decide if this sentence is a main idea (M) or detail (D) in the
+article.</b><br><br>The hand puppets and costumes worn by handlers match the color and shape of the
+adult whooping cranes.</div><div style='font-size:2pt'></div>
+		<textarea name='SA:17' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;18.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>DIRECTIONS: Decide if this sentence is a main idea (M) or detail (D) in the
+article.</b><br><br>There are two populations of whooping cranes which follow different migration
+paths.</div><div style='font-size:2pt'></div>
+		<textarea name='SA:18' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><span style='font-size:14pt'>Reading Skills<br><br></span></b><div
+style='text-align:center'><b><span style='font-size:14pt'>Sentences about
+Tigers</span></b><br></div><br>A. Tigers are disappearing from India due to the loss of their
+habitat.<br><br>B. The animals that tigers hunted in the past are also disappearing. Therefore,
+tigers sometimes kill local people&#8217;s livestock.<br><br>C. It is illegal to kill tigers. Wild
+tigers are still hunted, however, because their bones, whiskers, and other body parts can be sold as
+medicines for a lot of money.<br><br>D. The huge demand for medicines made from tigers has led to an
+increase in the killing of tigers.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;19.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>Read sentence A above. Write the word or phrase that shows cause and
+effect.<br></b><br>_______________</div><div style='font-size:2pt'></div>
+		<textarea name='SA:19' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;20.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>Read sentence B above. Write the word or phrase that shows cause and
+effect.<br></b><br>_______________</div><div style='font-size:2pt'></div>
+		<textarea name='SA:20' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;21.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>Read sentence C above. Write the word or phrase that shows cause and
+effect.<br></b><br>_______________</div><div style='font-size:2pt'></div>
+		<textarea name='SA:21' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;22.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>Read sentence D above. Write the word or phrase that shows cause and
+effect.<br></b><br>_______________</div><div style='font-size:2pt'></div>
+		<textarea name='SA:22' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;23.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>Identify the following sentence as a <i>Cause</i> or an <i>Effect</i>
+according to the information in sentences A&#8211;D.<br></b><br>Sentence A - Much of tigers&#8217;
+habitat has disappeared. _____________</div><div style='font-size:2pt'></div>
+		<textarea name='SA:23' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;24.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>Identify the following sentence as a <i>Cause</i> or an <i>Effect</i>
+according to the information in sentences A&#8211;D.<br></b><br>Sentence B - Tigers sometimes hunt
+livestock rather than wild animals. _____________</div><div style='font-size:2pt'></div>
+		<textarea name='SA:24' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;25.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>Identify the following sentence as a <i>Cause</i> or an <i>Effect</i>
+according to the information in sentences A&#8211;D.<br></b><br>Sentence C - Tigers&#8217; body parts
+are used as medicine. _______________</div><div style='font-size:2pt'></div>
+		<textarea name='SA:25' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;26.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>Identify the following sentence as a <i>Cause</i> or an <i>Effect</i>
+according to the information in sentences A&#8211;D.<br></b><br>Sentence D - The number of tigers
+that have been killed has increased rapidly. _______________</div><div style='font-size:2pt'></div>
+		<textarea name='SA:26' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><span style='font-size:14pt'>TED Talk Comprehension<br><br></span><span
+style='font-size:12pt'>DIRECTIONS: Read the following excerpt from Richard Turere&#8217;s 2013 TED
+Talk and answer the questions.</span><span style='font-size:14pt'><br></span></b><div
+style='text-align:center'><b><span style='font-size:14pt'><br>Richard Turere&#8212;My Invention That
+Made Peace With Lions</span><br></b></div><b><br>Part 1<br><br></b>This is where I live. I live in
+Kenya, at the south parts of the Nairobi National Park. Those are my dad&#8217;s cows at the back,
+and behind the cows, that&#8217;s the Nairobi National Park. Nairobi National Park is not fenced in
+the south widely, which means wild animals like zebras migrate out of the park freely. So predators
+like lions follow them, and this is what they do. They kill our livestock. This is one of the cows
+which was killed at night, and I just woke up in the morning and I found it dead, and I felt so bad,
+because it was the only bull we had. . . .<br><br>So I had to find a way of solving this problem. And
+the first idea I got was to use fire, because I thought lions were scared of fire. But I came to
+realize that that didn&#8217;t really help, because it was even helping the lions to see through the
+cowshed<sup>1</sup>. So I didn&#8217;t give up. I continued.<br><br>And a second idea I got was to
+use a scarecrow<sup>2</sup>. I was trying to trick the lions &#091;into thinking&#093; that I was
+standing near the cowshed. But lions are very clever. They will come the first day and they see the
+scarecrow, and they go back, but the second day, they&#8217;ll come and they say, this thing is not
+moving here, it&#8217;s always here. So he jumps in and kills the animals.<br><br>So one night, I was
+walking around the cowshed with a torch, and that day, the lions didn&#8217;t come. And I discovered
+that lions are afraid of a moving light. So I had an idea.<br><br><b>Part 2<br><br></b>Since I was a
+small boy, I used to work in my room for the whole day, and I even took apart my mom&#8217;s new
+radio, and that day she almost killed me, but I learned a lot about electronics. So I got an old car
+battery, &#091;and&#093; an indicator box. It&#8217;s a small device found in a motorcycle, and it
+helps motorists when they want to turn right or left. It blinks. And I got a switch where I can
+switch on the lights, on and off. And that&#8217;s a small torch from a broken flashlight.<br><br>So
+I set up everything. As you can see, the solar panel<sup>3</sup> charges the battery, and the battery
+supplies the power to the small indicator box. I call it a transformer. And the indicator box makes
+the lights flash. As you can see, the bulbs face outside, because that&#8217;s where the lions come
+from. And that&#8217;s how it looks to lions when they come at night. The lights flash and trick the
+lions into thinking I was walking around the cowshed, but I was sleeping in my bed.<br><br><span
+style='font-size:9pt'><sup>1</sup> <b>cowshed</b>: <i>n. </i>a farm building used to house
+cows<br><sup>2</sup> <b>scarecrow</b>: <i>n.</i> an object that looks like a person meant to scare
+birds and other animals away from crops or livestock<br><sup>3</sup> <b>solar panel</b>: <i>n. </i>a
+device that uses sunlight to make electricity</span></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:27' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;27.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Richard Turere felt bad when he found the dead cow because . . .</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>it was the only male cow his family owned.</span></td></tr><tr
+valign='baseline'><td><div class='choice'>b.</div></td><td><span class='default'>it was his favorite
+cow.</span></td></tr><tr valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>the cow was a present to him from his father.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:28' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;28.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>According to Richard Turere, the use of fire . . .</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>could have destroyed the cowshed.</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>might have burned their
+livestock.</span></td></tr><tr valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>actually helped the lions hunt.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:29' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;29.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Why were the lions not afraid of the scarecrow?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>Because it didn&#8217;t move around.</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>Because it wasn&#8217;t big
+enough.</span></td></tr><tr valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>Because it didn&#8217;t look like a real person.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:30' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;30.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Richard Turere used his mother&#8217;s radio to . . .</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>scare away lions with loud noise.</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>get a part that he needed for his
+invention.</span></td></tr><tr valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>teach himself about electronics.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:31' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;31.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Which of the following is <b>NOT</b> a part used in Richard Turere&#8217;s
+invention?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>an old automobile battery</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>an engine from an old
+motorcycle</span></td></tr><tr valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>a switch to control the lights</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:32' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;32.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Richard Turere&#8217;s invention makes the lions think that . . .</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>there are no cows in the cowshed.</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>there is a person in the
+cowshed.</span></td></tr><tr valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>they will receive an electrical shock.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><span style='font-size:14pt'>Vocabulary <br><br></span>DIRECTIONS: Read the
+sentences below. If the sentence is true or logical, mark it YES. If the sentence is not true or not
+logical, mark it NO.</b></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='YN:33' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='Y'>Y
+			<option value='N'>N
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;33.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>A pet cat is a good example of a <u>wild</u> animal.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='YN:34' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='Y'>Y
+			<option value='N'>N
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;34.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>When birds <u>migrate</u>, they generally travel long distances.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='YN:35' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='Y'>Y
+			<option value='N'>N
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;35.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>If you <u>solve</u> a problem, you make it worse.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='YN:36' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='Y'>Y
+			<option value='N'>N
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;36.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>A president is the leader of a country&#8217;s <u>government</u>.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='YN:37' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='Y'>Y
+			<option value='N'>N
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;37.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>He&#8217;s <u>afraid</u> of flying, so he drives his car or takes a
+train.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='YN:38' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='Y'>Y
+			<option value='N'>N
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;38.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>If something <u>benefits</u> you, it helps you.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='YN:39' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='Y'>Y
+			<option value='N'>N
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;39.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>A <u>conflict</u> is a friendly discussion.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='YN:40' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='Y'>Y
+			<option value='N'>N
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;40.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>She didn&#8217;t <u>take</u> the plan <u>seriously</u>. She laughed at
+it.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+</table>
+<br clear='all'>
+<br>
+<br>
+<table align='left' width='100%' cellpadding='0' cellspacing='0' border='0'>
+<tr>
+    <td bgcolor='#000000'>
+    <div style='font-size:1pt'>&nbsp;</div>
+    </td>
+</tr>
+<tr>
+    <td><input type='image' src='Rl1T8_files/submit.gif' alt='Grade and Submit'>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href='#' onclick='Restart(); return false'><img
+	    src='Rl1T8_files/restart.gif' border='0' alt='Start Over'></a>
+    </td>
+</tr>
+</table>
+</form>
+</body>
+</html>

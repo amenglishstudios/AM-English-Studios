@@ -1,0 +1,1431 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<meta name='generator' content='ExamView HTML Generator 8.1.6.69144'>
+	<meta name='robots' content='noindex,nofollow'>
+	<title>Reading Level 1 Test 3</title>
+	<style type='text/css'>
+		.spacer { line-height:.7em; }
+		.title { font-size:13pt; font-weight:bold; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		.qnumber { font-size:12pt; font-family:"Times New Roman", "Times", serif; color:#000000; text-align:right; }
+		.choice { font-size:12pt; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		.default { font-size:12pt; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		.qinfo { font-size:12pt; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		.points { font-size:8pt; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		TD.pad { padding: 0pt 4pt 0pt 4pt; }
+		.font1 { font-family:"Times New Roman", "Times", serif; }
+		.font2 { font-family:"Times New Roman", "Times", serif; }
+		.font3 { font-family:"Times New Roman", "Times", serif; }
+	</style>
+<script type='text/javascript' language='JavaScript1.1'>
+<!--
+	// Copyright (c) 2000-2008 eInstruction Corp.
+	var listMap = '1111111111111111111100000011111100000000';
+	var qtypeMap = '2222222222228888888877777722222277777777';
+	var ansMap = new Array(40);
+	var ptsMap = new Array(40);
+	ansMap[0] = '43';
+	ptsMap[0] = 1;
+	ansMap[1] = '43';
+	ptsMap[1] = 1;
+	ansMap[2] = '42';
+	ptsMap[2] = 1;
+	ansMap[3] = '45';
+	ptsMap[3] = 1;
+	ansMap[4] = '47';
+	ptsMap[4] = 1;
+	ansMap[5] = '44';
+	ptsMap[5] = 1;
+	ansMap[6] = '46';
+	ptsMap[6] = 1;
+	ansMap[7] = '4c';
+	ptsMap[7] = 1;
+	ansMap[8] = '4b';
+	ptsMap[8] = 1;
+	ansMap[9] = '4b';
+	ptsMap[9] = 1;
+	ansMap[10] = '4a';
+	ptsMap[10] = 1;
+	ansMap[11] = '4f';
+	ptsMap[11] = 1;
+	ansMap[12] = '4f';
+	ptsMap[12] = 1;
+	ansMap[13] = '46';
+	ptsMap[13] = 1;
+	ansMap[14] = '45';
+	ptsMap[14] = 1;
+	ansMap[15] = '51';
+	ptsMap[15] = 1;
+	ansMap[16] = '57';
+	ptsMap[16] = 1;
+	ansMap[17] = '51';
+	ptsMap[17] = 1;
+	ansMap[18] = '57';
+	ptsMap[18] = 1;
+	ansMap[19] = '5d';
+	ptsMap[19] = 1;
+	ansMap[20] = '7d6078747b66';
+	ptsMap[20] = 1;
+	ansMap[21] = '747f797a637b7f78736575737862367a7f7073367079647b65';
+	ptsMap[21] = 1;
+	ansMap[22] = '717e6572717b7e7264';
+	ptsMap[22] = 1;
+	ansMap[23] = '7a746d7d357f6a7d7d763874717f706c';
+	ptsMap[23] = 1;
+	ansMap[24] = '6d717c396d6e7075707e716d396376777c';
+	ptsMap[24] = 1;
+	ansMap[25] = '6e727f3a7d76756d';
+	ptsMap[25] = 1;
+	ansMap[26] = '59';
+	ptsMap[26] = 1;
+	ansMap[27] = '5d';
+	ptsMap[27] = 1;
+	ansMap[28] = '5f';
+	ptsMap[28] = 1;
+	ansMap[29] = '5d';
+	ptsMap[29] = 1;
+	ansMap[30] = '5c';
+	ptsMap[30] = 1;
+	ansMap[31] = '40';
+	ptsMap[31] = 1;
+	ansMap[32] = '6e6b73776b66';
+	ptsMap[32] = 1;
+	ansMap[33] = '70666271606b6a6d64';
+	ptsMap[33] = 1;
+	ansMap[34] = '657070766567706d7261';
+	ptsMap[34] = 1;
+	ansMap[35] = '636c60776660';
+	ptsMap[35] = 1;
+	ansMap[36] = '676b677c6f6861';
+	ptsMap[36] = 1;
+	ansMap[37] = '746c6e69';
+	ptsMap[37] = 1;
+	ansMap[38] = '78697c7c6d7a66';
+	ptsMap[38] = 1;
+	ansMap[39] = '6b656c676d296067';
+	ptsMap[39] = 1;
+	function HandleSubmit(f)
+	{
+		var	MAGIC = 840;
+		var	totalCorrect = 0;
+		var	totalPossible = 0;
+		var	numCorrect = 0;
+		var	numPossible = 0;
+		var	numBlank = 0;
+		var	index;
+		var	msg;
+		var	i;
+
+		f.student_name.value = StripSpaces(f.student_name.value);
+		f.student_id.value = StripSpaces(f.student_id.value);
+		f.student_email.value = StripSpaces(f.student_email.value);
+
+		FixMR(f);
+		FixMTF(f);
+		index = 0;
+		for (i=0; i < f.length; ++i) {
+			if (f.elements[i].name.indexOf(":") > 0) {
+				if (listMap.charAt(index) == "1") {
+					listIndex = f.elements[i].selectedIndex;
+					text = StripSpaces(f.elements[i].options[listIndex].value);
+				} else {
+					f.elements[i].value = StripSpaces(f.elements[i].value);
+					text = f.elements[i].value;
+				}
+
+				if (text.length == 0)
+					++numBlank;
+				++index;
+			}
+		}
+
+		if (f.student_name.value == "") {
+			alert("Student name cannot be blank.");
+			return(false);
+		}
+
+		if (numBlank > 0) {
+			if (numBlank == 1)
+				msg = "1 question";
+			else
+				msg = numBlank + " questions";
+			if (!confirm("You have not answered " + msg +
+				"  Are you sure you want to end the test?"))
+				return(false);
+		}
+
+		index = 0;
+		var scoreDetails = new Array();
+		for (i=0; i < f.length; ++i) {
+			if (f.elements[i].name.indexOf(":") > 0) {
+				if (listMap.charAt(index) == "1") {
+					listIndex = f.elements[i].selectedIndex;
+					text = f.elements[i].options[listIndex].value;
+				} else
+					text = f.elements[i].value;
+
+				numPossible = ptsMap[index] * MAGIC;
+				if (ansMap[index] == "")
+					scoreDetails[index] = "?--";
+				else {
+					var scoreResult = ScoreAnswer(index, text, numPossible);
+					numCorrect = scoreResult.numPoints;
+					scoreDetails[index] = (scoreResult.isCorrect) ? " " : "X";
+					scoreDetails[index] += (Math.round(numCorrect * 100 / MAGIC) / 100).toString();
+					totalCorrect += numCorrect;
+					totalPossible += numPossible;
+				}
+
+				scoreDetails[index] += "/" + (numPossible / MAGIC);
+				++index;
+			}
+		}
+
+		f.score_details.value = scoreDetails.join("|");
+		f.score_correct.value = Math.round(totalCorrect * 100 / MAGIC) / 100;
+		f.score_possible.value = Math.round(totalPossible * 100 / MAGIC) / 100;
+		if (totalPossible > 0)
+			f.score_percent.value = Math.round(100.0 * totalCorrect / totalPossible);
+		else
+			f.score_percent.value = 0;
+
+		return(true);
+	}
+
+	function TranslateAnswer(s, answerIndex)
+	{
+		var	value;
+		var	newString;
+		var	code;
+		var	i;
+
+		value = (answerIndex % 31) + 1;
+		newString = "";
+		for (i=0; i < s.length; i += 2) {
+			code = parseInt(s.substring(i, i + 2), 16);
+			newString += String.fromCharCode(code ^ value);
+		}
+
+		return(newString);
+	}
+
+	function ScoreAnswer(answerIndex, responseText, pointsPossible)
+	{
+		var answerText = TranslateAnswer(ansMap[answerIndex], answerIndex);
+		var qtype = qtypeMap.charAt(answerIndex);
+		var nrExactMatch = false;
+		var result = new Array();
+
+		result.numPoints = 0;
+		result.isCorrect = false;
+
+		if (qtype == "3" && answerText.substring(0, 2) == "p:") {
+			answerText = answerText.substr(2);
+			if (responseText.toUpperCase() == answerText.toUpperCase())
+				result.isCorrect = true;
+			else
+				result.numPoints = MultiResponseCompare(responseText, answerText, pointsPossible);
+		} else if (qtype == "6") {
+			if (answerText.substring(0, 2) == "==") {
+				answerText = answerText.substr(2);
+				nrExactMatch = true;
+			}
+			if (NumericCompare(responseText, answerText, nrExactMatch))
+				result.isCorrect = true;
+		} else if (qtype == "7") {
+			if (CompletionCompare(responseText, answerText))
+				result.isCorrect = true;
+		} else if (responseText.toUpperCase() == answerText.toUpperCase())
+			result.isCorrect = true;
+
+		if (result.isCorrect)
+			result.numPoints = pointsPossible;
+
+		return(result);
+	}
+
+	function StripSpaces(s)
+	{
+		var	len;
+		var	i;
+
+		len = s.length;
+		for (i=len - 1; i >= 0 && s.charAt(i) == " "; --i)
+			len = i;
+
+		if (len == 0)
+			s = "";
+		else if (len != s.length)
+			s = s.substring(0, len);
+
+		return(s);
+	}
+
+	function MultiResponseCompare(responseText, answerText, pointsPossible)
+	{
+	}
+
+	function NumericCompare(response, answer, exactMatch)
+	{
+	}
+
+
+	function CompletionCompare(responseText, answerText)
+	{
+		var	startIndex;
+		var	endIndex;
+		var	partialText;
+       
+        responseText = StripLeadingSpaces(StripSpaces(responseText));        
+        responseText = responseText.toUpperCase();
+		answerText = answerText.toUpperCase();
+
+		startIndex = 0;
+		do {
+			endIndex = answerText.indexOf("\r", startIndex);
+			if (endIndex < 0)
+				partialText = answerText.substring(startIndex);
+			else
+				partialText = answerText.substring(startIndex, endIndex);
+            
+            partialText = StripLeadingSpaces(StripSpaces(partialText));
+			if ((responseText == partialText) && (responseText.length > 0))
+			     return(true);
+
+			startIndex = endIndex + 1;
+		} while (endIndex >= 0);
+		return(false);
+	}
+
+    function StripLeadingSpaces(s)
+	{
+		var	len;
+		var	i = 0;
+		var index = -1;
+
+		len = s.length;
+		while(i < len && s.charAt(i) == " ")
+		{
+			index = ++i;			
+	    }
+
+		if (len == 0)
+			s = "";
+		else if (index > -1)
+			s = s.substring(index, len);
+
+		return(s);
+	}
+	
+	function FixMTF(f)
+	{
+	}
+
+	function FixMR(f)
+	{
+	}
+
+	function AllowReset()
+	{
+		return(window.confirm("Do you want to clear all of your answers?"));
+	}
+
+	function Restart()
+	{
+		if (AllowReset()) {
+			document.TestForm.onreset = function() { };
+			document.TestForm.reset();
+			document.TestForm.onreset = function() { AllowReset(); };
+		}
+	}
+// -->
+</script>
+</head>
+<body onResize='if(document.layers && navigator.appVersion.indexOf("Win") < 0){history.go(0);}'
+bgcolor='#FFFFFF' style='background-image:url(RL1T3_files/header.gif); background-repeat:no-repeat'>
+<noscript>
+	<h3><font color='#FF0000'>Javascript not enabled</font></h3>
+</noscript>
+<script type='text/javascript' language='JavaScript'>
+<!--
+if (navigator.appName.indexOf("Netscape") >= 0) {
+	if (parseInt(navigator.appVersion.charAt(0)) < 4)
+		alert("This document requires Netscape Navigator version 4.0 or later.");
+} else if (navigator.appName.indexOf("Explorer") >= 0) {
+	if (parseInt(navigator.appVersion.charAt(0)) < 4)
+		alert("This document requires Internet Explorer version 4.0 or later.");
+}
+// -->
+</script>
+<form name='TestForm' action='http://score.examview.com/cgi-bin/results.cgi' method='POST'
+	onSubmit='return(HandleSubmit(this))' onReset='return(AllowReset())'>
+<input type='hidden' name='product_version' value='8.1.103.69470'>
+<input type='hidden' name='instructor_name' value='Matthew Manning'>
+<input type='hidden' name='instructor_formalname' value='Mr. Manning'>
+<input type='hidden' name='instructor_email' value='matthew.manning@m.kckps.org'>
+<input type='hidden' name='instructor_org' value='None'>
+<input type='hidden' name='instructor_city' value='None'>
+<input type='hidden' name='instructor_state' value='KS'>
+<input type='hidden' name='test_name' value='Reading Level 1 Test 3'>
+<input type='hidden' name='other_label' value='Other'>
+<input type='hidden' name='test_mixed_questions' value='1'>
+<input type='hidden' name='score_correct' value='0'>
+<input type='hidden' name='score_possible' value='0'>
+<input type='hidden' name='score_percent' value='0'>
+<input type='hidden' name='score_subjective' value='0'>
+<input type='hidden' name='score_details' value=''>
+<input type='hidden' name='score_showresults' value='1'>
+<div class='spacer'>&nbsp;</div>
+<div class='default'>
+	<div style='margin-left:1em'>
+	<b>Name:</b>&nbsp;<input type='text' name='student_name' size='30'> &nbsp;&nbsp;
+	<b>ID:</b>&nbsp;<input type='text' name='student_id' size='12'><br>
+	<div class='spacer'>&nbsp;</div>
+	<b>Email:</b>&nbsp;<input type='text' name='student_email' size='45'><br><br>
+	</div>
+</div>
+<div class='title'>Reading Level 1 Test 3</div>
+
+<table align='left' width='100%' border='0' cellpadding='0' cellspacing='0'>
+<tr><td colspan='3'><br></td></tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><span style='font-size:14pt'>Reading Comprehension
+Review<br><br></span>DIRECTIONS: Read the passage and answer the questions.<span
+style='font-size:14pt'><br></span></b><div style='text-align:center'><b><span
+style='font-size:14pt'><br>Messages from the Sea</span></b><br></div><br>In the warm, shallow waters
+of coral reefs live animals with an amazing ability. These animals, known as cephalopods, are able to
+change the appearance of their skin. Squid, octopi, and cuttlefish are all types of cephalopods. Each
+of these animals has special cells under its skin that contain pigment, a colored liquid. A
+cephalopod can move these cells toward or away from its skin. This allows it to change the pattern
+and color of its appearance.<br><br>Cephalopods mainly use these cells as camouflage to hide from
+predators. For example, cephalopods can blend in to the color of the sea floor, making them invisible
+to predators. They can also change color to scare predators away. For example, the skin of the
+Caribbean reef squid is usually a plain brown. When a predator passes close by, the squid makes large
+&#8220;eye&#8221; patterns on its skin. This makes the squid appear much bigger than it really is.
+Squid can also use these cells to communicate other messages. When two male reef squid fight, black
+and white lines appear on their skin. These send a message that the squid is fierce. A reef squid
+searching for a mate can flash colorful patterns, sending a message that it is
+attractive.<br><br>Amazingly, reef squid can send two messages at the same time. They can send one
+message on their right side and a different message on their left side. For example, when males are
+searching for a mate, they flash attractive patterns on one side of their body. This is the side a
+female sees. On the other side of their bodies, they can show their fierce zebra stripes. This is the
+side other males see. They can quickly flip the messages if the female swims to the other
+side!<br><br>With the ability to display 30 colors and patterns, the incredible Caribbean reef squid
+really is a master of disguise and a skillful communicator.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:1' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;1.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Of the cephalopods, only squid are able to change their appearance.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='46%'><span
+class='default'>True</span></td><td width='4%'><div class='choice'>b.</div></td><td width='46%'><span
+class='default'>False</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:2' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;2.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Cells under the skin of cephalopods contain pigments.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='46%'><span
+class='default'>True</span></td><td width='4%'><div class='choice'>b.</div></td><td width='46%'><span
+class='default'>False</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:3' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;3.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Cephalopods can become the same color as the ocean floor.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='46%'><span
+class='default'>True</span></td><td width='4%'><div class='choice'>b.</div></td><td width='46%'><span
+class='default'>False</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:4' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;4.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>The normal color of a Caribbean reef squid&#8217;s skin is brown.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='46%'><span
+class='default'>True</span></td><td width='4%'><div class='choice'>b.</div></td><td width='46%'><span
+class='default'>False</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:5' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;5.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>The large &#8220;eye&#8221; on a reef squid&#8217;s skin is used to detect
+predators.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='46%'><span
+class='default'>True</span></td><td width='4%'><div class='choice'>b.</div></td><td width='46%'><span
+class='default'>False</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:6' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;6.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Black and white markings on the skin of a reef squid indicate that it is looking
+for a mate.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='46%'><span
+class='default'>True</span></td><td width='4%'><div class='choice'>b.</div></td><td width='46%'><span
+class='default'>False</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:7' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;7.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Reef squid are able to communicate more then one message at a time.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='46%'><span
+class='default'>True</span></td><td width='4%'><div class='choice'>b.</div></td><td width='46%'><span
+class='default'>False</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:8' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;8.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Which paragraph describes the author&#8217;s opinion of reef squids?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='46%'><span
+class='default'>paragraph 1</span></td><td width='4%'><div class='choice'>c.</div></td><td
+width='46%'><span class='default'>paragraph 3</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>paragraph 2</span></td><td><div
+class='choice'>d.</div></td><td><span class='default'>paragraph 4</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:9' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;9.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Which paragraph gives a specific example of a reef animal that can change its
+pattern to protect itself from predators?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='46%'><span
+class='default'>paragraph 1</span></td><td width='4%'><div class='choice'>c.</div></td><td
+width='46%'><span class='default'>paragraph 3</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>paragraph 2</span></td><td><div
+class='choice'>d.</div></td><td><span class='default'>paragraph 4</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:10' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;10.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Which paragraph explains how cephalopods are able to change the way they
+look?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='46%'><span
+class='default'>paragraph 1</span></td><td width='4%'><div class='choice'>c.</div></td><td
+width='46%'><span class='default'>paragraph 3</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>paragraph 2</span></td><td><div
+class='choice'>d.</div></td><td><span class='default'>paragraph 4</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:11' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;11.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Which paragraph tells us the location where cephalopods live?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='46%'><span
+class='default'>paragraph 1</span></td><td width='4%'><div class='choice'>c.</div></td><td
+width='46%'><span class='default'>paragraph 3</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>paragraph 2</span></td><td><div
+class='choice'>d.</div></td><td><span class='default'>paragraph 4</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:12' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;12.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Which paragraph describes how some cephalopods can communicate with two types of
+animals at the same time?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='46%'><span
+class='default'>paragraph 1</span></td><td width='4%'><div class='choice'>c.</div></td><td
+width='46%'><span class='default'>paragraph 3</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>paragraph 2</span></td><td><div
+class='choice'>d.</div></td><td><span class='default'>paragraph 4</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><span style='font-size:14pt'>Reading Comprehension
+Extension<br><br></span></b><div style='text-align:center'><b><span style='font-size:14pt'>Artificial
+Reefs</span><br></b></div>People create reefs for three main reasons. The first is to protect
+the&#160;coastline. Reefs serve as barriers<sup>1</sup> between the coast and powerful
+ocean&#160;storms. Reefs also protect coastlines from&#160;erosion<sup>2</sup>. The Maldives,
+an&#160;island nation in the Indian Ocean, has built reefs to protect its coast from&#160;storms that
+may lead to&#160;beach&#160;erosion.<br><br>The second reason people construct reefs is to promote
+sea life for recreation and&#160;aquaculture. A reef&#160;contains many forms of life.
+Plants,&#160;plankton,&#160;algae, sponges, eels, fish, crabs, and sea turtles are just some of the
+organisms that live in healthy reefs. The wide variety of fish makes recreational
+fishing<sup>3</sup><i> </i>popular around reefs.&nbsp; Brightly colored fish also make reefs popular
+with divers and snorkelers. Artificial reefs off the Atlantic coast of the U.S. states of Florida,
+Georgia, and South Carolina have helped bring more&#160;forms of sea life&#160;to the area, and this
+has encouraged&#160;tourism.<br><br>Aquaculture&#8212;also called fish farming--is the cultivation of
+ocean life for&#160;food&#160;and&#160;industry. A reef provides shelter&#160;for many different
+kinds of fish, so fish farmers can increase their catch by building reefs. Japan creates artificial
+reefs to encourage the growth of schools<sup>4</sup> of snapper and other types of food fish, for
+instance. Japan is also a leader in creating artificial reefs for pearl-producing
+oysters.&#160;<br><br>A third reason for building reefs is to create waves that&#160;promote the
+sport of&#160;surfing. Surfers ride boards on top of waves.&#160;Artificial reefs can help make
+bigger waves and make surfing more fun. El Segundo, California, was the first area to try an
+artificial reef to improve surfing. Australian beaches at Perth and the Gold Coast have also built
+artificial reefs for this purpose.<br><br>Building underwater barriers is not new. For many years,
+people who live near the coast have depended on artificial reefs for protection. Two thousand years
+ago, the Greek historian Strabo wrote that&#160;the Persians built reef barriers across the Tigris
+River to prevent&#160;pirates from India from crossing it.&#160;<br><br>Ancient&#160;peoples like the
+Persians built artificial reefs out of&#160;organic&#160;material such as trees and inorganic
+material such as rocks. These days, engineers use a much wider&#8212;and stranger&#8212;variety of
+materials for reef-building.<br><br>Sunken ships have provided reef structures for hundreds of years.
+Today, the engineers who create these artificial reefs do not just sink them. They first remove all
+plastic and toxic materials from the ships. They then carefully place explosives&#160;to sink
+structures in just the right location. The old aircraft carrier<sup>5</sup>
+USS&#160;<i>Oriskany</i>&#160;is now a reef in the Gulf of Mexico. New York City subway cars have
+been sunk for reefs along the East Coast of the U.S. from New Jersey to Georgia. <br><br>Reef balls
+are another type of artificial reef. Reef balls are circular structures with holes for fish and other
+creatures to swim through and live in. They are constructed mainly of concrete. Reef balls can be
+used to build a new artificial reef or to help repair a damaged reef. They have been used in Prince
+William Sound, Alaska, and many other locations. <br><br><span style='font-size:9pt'><sup>1</sup>
+<b>barrier:</b> <i>n. </i>something that limits movement; something that makes it difficult to move
+forward<br><sup>2</sup> <b>erosion:</b> <i>n. </i>the process by which the surface of the Earth is
+worn away by the movement of waves, <br>&nbsp;&nbsp; wind, moving water, etc. <br><sup>3</sup>
+<b>recreational fishing:</b> fishing for fun or for sport, not as a professional
+activity<br><sup>4</sup> <b>schools of fish:</b> large groups of fish<br><sup>5</sup> <b>aircraft
+carrier:</b> <i>n.</i> a ship that carries military airplanes<br><br></span><b>DIRECTIONS: Read the
+article. Match the information below with the locations (a&#8211;j). Two locations are
+extra.</b><span style='font-size:9pt'><br></span></div><div class='default'><table cellpadding='0'
+cellspacing='0' width='95%' border='0'><tr valign='baseline'><td width='4%'><div
+class='choice'>a.</div></td><td width='96%'><span class='default'>the Maldives</span></td></tr><tr
+valign='baseline'><td><div class='choice'>b.</div></td><td><span class='default'>Florida, Georgia,
+and South Carolina</span></td></tr><tr valign='baseline'><td><div
+class='choice'>c.</div></td><td><span class='default'>Japan</span></td></tr><tr
+valign='baseline'><td><div class='choice'>d.</div></td><td><span class='default'>El Segundo,
+California</span></td></tr><tr valign='baseline'><td><div class='choice'>e.</div></td><td><span
+class='default'>Perth and the Gold Coast in Australia</span></td></tr><tr valign='baseline'><td><div
+class='choice'>f.</div></td><td><span class='default'>the Tigris River</span></td></tr><tr
+valign='baseline'><td><div class='choice'>g.</div></td><td><span
+class='default'>India</span></td></tr><tr valign='baseline'><td><div
+class='choice'>h.</div></td><td><span class='default'>New York City</span></td></tr><tr
+valign='baseline'><td><div class='choice'>i.</div></td><td><span class='default'>the Gulf of
+Mexico</span></td></tr><tr valign='baseline'><td><div class='choice'>j.</div></td><td><span
+class='default'>Prince William Sound, Alaska</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:13' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+			<option value='I'>I
+			<option value='J'>J
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;13.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>Visitors come here to see beautiful sea creatures attracted by an artificial
+reef.</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:14' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+			<option value='I'>I
+			<option value='J'>J
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;14.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>An unusual building material used to construct artificial reefs comes from
+here.</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:15' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+			<option value='I'>I
+			<option value='J'>J
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;15.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>Round, artificial habitats for sea life have been installed here.</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:16' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+			<option value='I'>I
+			<option value='J'>J
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;16.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>Artificial reefs were built here to protect beaches from storms.</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:17' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+			<option value='I'>I
+			<option value='J'>J
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;17.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>Artificial reefs here provided protection from human enemies.</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:18' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+			<option value='I'>I
+			<option value='J'>J
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;18.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>Artificial reefs here promote the growth of food fish and other valuable sea
+creatures.</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:19' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+			<option value='I'>I
+			<option value='J'>J
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;19.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>The first artificial reef designed to make surfing more enjoyable was created
+here.</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:20' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+			<option value='I'>I
+			<option value='J'>J
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;20.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>A large warship was sunk here to become an artificial reef.</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><span style='font-size:14pt'>Reading Skills<br><br></span></b><div
+style='text-align:center'><b><span style='font-size:14pt'>Bioluminescence<sup>1</sup>: Living
+Light<br></span></b></div><br>Animals that use sight to navigate<sup>2</sup> generally have a hard
+time getting around without light. Some, like owls, have very large&#160;eyes&#160;that they use to
+collect lots of light. They also use their other senses to gather information about their
+surroundings. Humans, on the other hand, have put a lot of effort into lighting <u>their</u> way by
+creating portable artificial light sources, from&#160;torches<sup>3</sup>&#160;to automobile
+headlights. Bioluminescent&#160;life forms have an entirely different approach&#8212;they make light
+<u>themselves</u> and carry it around in their bodies.<br><br>You can find bioluminescent life forms
+all over the world. Some are land animals, such as insects, centipedes, and worms. One of the most
+widely-known luminescent creatures is the&#160;firefly<sup>4</sup>. People who live near fireflies
+often think of <u>them</u> as brightly flashing adult insects, but firefly larvae<sup>5</sup> glow as
+well.&#160;<br><br>Most of the world&#039;s bioluminescence exists in the ocean, not on land, and
+most live in one particular depth&#8212;called the&#160;twilight&#160;zone<sup>6</sup>, or the
+disphotic, zone. It&#039;s deeper than the sunlit, or&#160;euphotic, zone, but shallower than the
+midnight, or&#160;aphotic&#160;zone. The twilight zone extends from about 200 meters to about 1000
+meters deep.<br><br>Only a small amount of light from the&#160;sun&#160;reaches the twilight zone.
+The light that does penetrate this far is bluish-green in color. This is partly because blue-green
+light has a short wavelength, so <u>it</u> has more energy with which to penetrate the water. Lots of
+bioluminescent animals live <u>here</u>, including&#160;jellyfish,&#160;squid, shrimp, marine worms,
+and fish. Most make light that matches the blue-green sunlight that exists in this part of the ocean.
+The glow produced by these animals can travel a long way, and <u>it</u> can blend in with the light
+from above. In some parts of the ocean, these animals, not the sun, are the primary source of
+light.<br><br><span style='font-size:9pt'><sup>1</sup> <b>bioluminescence: </b><i>n.</i> light that
+is made by living creatures<br><sup>2</sup> <b>navigate:</b> <i>v.</i> to move from place to
+place<br><sup>3</sup> <b>torches:</b> <i>n. </i>lights carried in the hand<br><sup>4</sup>
+<b>firefly:</b> <i>n.</i> a flying insect that emits a flashing light<br><sup>5</sup> <b>larvae:
+</b><i>n.</i> the immature forms of some insects<br><sup>6</sup> <b>twilight: </b><i>n.</i> a term
+usually used to mean the time between day and night. In this passage, &#8220;twilight zone&#8221;
+means the part of the ocean between the shallow, sunlit part of the ocean and the deep, dark part of
+the ocean.<br><br></span><b>DIRECTIONS: The sentences below come from the passage about
+bioluminescence. Read each sentence and look at the underlined reference word. Look back at the
+passage and find the word or words that it refers to. Write your asnwer on the line. Your answer
+should not contain more than three words.</b></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;21.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Humans, on the other hand, have put a lot of effort into lighting <u>their</u>
+way by creating portable artificial light sources, from&#160;torches&#160;to automobile
+headlights.&nbsp;&nbsp; __________________</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:21' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;22.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Bioluminescent&#160;life forms have an entirely different approach&#8212;they
+make light <u>themselves</u> and carry it around in their bodies.&nbsp;&nbsp;&nbsp;&nbsp;
+___________________</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:22' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;23.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>People who live near fireflies often think of <u>them</u> as brightly flashing
+adult insects, but firefly larvae glow as well.&#160;&nbsp;&nbsp;&nbsp;&nbsp;
+_____________________</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:23' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;24.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>This is partly because blue-green light has a short wavelength, so <u>it</u> has
+more energy with which to penetrate the water.&nbsp;&nbsp;&nbsp;&nbsp; ____________________</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:24' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;25.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Lots of bioluminescent animals live <u>here</u>,
+including&#160;jellyfish,&#160;squid, shrimp, marine worms, and fish.&nbsp;&nbsp;&nbsp;&nbsp;
+___________________</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:25' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;26.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>The glow produced by these animals can travel a long way, and <u>it</u> can
+blend in with the light from above.</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:26' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><span style='font-size:14pt'>TED Talk Comprehension<br><br></span><span
+style='font-size:12pt'>DIRECTIONS: Read the excerpt from David Gallo&#8217;s 2007 TED Talk and answer
+the questions.</span><span style='font-size:14pt'><br></span><span
+style='font-size:12pt'><br></span></b><div style='text-align:center'><b><span
+style='font-size:14pt'>David Gallo&#8212;Underwater Astonishments<br></span></b></div><b><br></b>. .
+. That&#8217;s the unknown world, and today we&#8217;ve only explored about three percent of
+what&#8217;s out there in the ocean. Already we&#8217;ve found the world&#8217;s highest mountains,
+the world&#8217;s deepest valleys, underwater lakes, underwater waterfalls&#8212;a lot of that we
+shared with you from the stage. And in a place where we thought no life at all, we find more life, we
+think, and diversity and density than the tropical rain forest, which tells us that we don&#8217;t
+know much about this planet at all. There&#8217;s still 97 percent, and either that 97 percent is
+empty or just full of surprises.<br><br>But I want to jump up to shallow water now and look at some
+creatures that are positively amazing. Cephalopods&#8212;headfoots. As a kid, I knew them as
+calamari, mostly. This is an octopus&#8212;this is the work of Dr. Roger Hanlon at the Marine
+Biological Lab&#8212;and it&#8217;s just fascinating how cephalopods can, with their incredible eyes,
+sense their surroundings, look at light, look at patterns. Here&#8217;s an octopus moving across the
+reef, finds a spot to settle down, curls up, and then disappears into the background. Tough thing to
+do. <br><br>. . . Cuttlefish. I love cuttlefish. This is a giant Australian cuttlefish. And there he
+is, his droopy little eyes up here. But they can do pretty amazing things, too. Here we&#8217;re
+going to see one backing into a crevice, and watch his tentacles&#8212;he just pulls them in, makes
+them look just like algae. Disappears right into the background. Positively amazing. Here&#8217;s two
+males fighting. Once again, they&#8217;re smart enough, these cephalopods; they know not to hurt each
+other. But look at the patterns that they can do with their skin. That&#8217;s an amazing
+thing.<br><br>Here&#8217;s an octopus. Sometimes they don&#8217;t want to be seen when they move
+because predators can see them. Here, this guy actually can make himself look like a rock, and,
+looking at his environment, can actually slide across the bottom, using the waves and the shadows so
+he can&#8217;t be seen . . . The shallow water&#8217;s full of predators&#8212;here&#8217;s a
+baracuda&#8212;and if you&#8217;re an octopus or a cephalopod, you need to really understand how to
+use your surroundings to hide.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:27' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;27.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>What is the main point of paragraph 1?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>to compare oceans and tropical rain forests</span></td></tr><tr
+valign='baseline'><td><div class='choice'>b.</div></td><td><span class='default'>to emphasize how
+little is known about oceans</span></td></tr><tr valign='baseline'><td><div
+class='choice'>c.</div></td><td><span class='default'>to describe some amazing underwater
+features</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:28' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;28.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>What can be said about David Gallo&#8217;s attitude towards the octopus
+mentioned in paragraph 2?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>He admires its astonishing abilities.</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>He doesn&#8217;t believe all that is said about
+it.</span></td></tr><tr valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>He is worried about its safety.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:29' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;29.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Which of the following is NOT given as one of the abilities of
+cuttlefish?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>They can disguise their tentacles.</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>They can make their eyes
+bigger.</span></td></tr><tr valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>They can change the appearance of their skin.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:30' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;30.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>An octopus can disguise itself to look like a . . .</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>shadow</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>wave</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>stone</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:31' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;31.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Which of the following is given as an example of a predatory animal?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>a cuttlefish</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>an octopus</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span class='default'>a
+barracuda</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:32' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;32.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Which of these statements would David Gallo probably agree with?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>Both shallow waters and the deep parts of the ocean should continue to be
+explored.</span></td></tr><tr valign='baseline'><td><div class='choice'>b.</div></td><td><span
+class='default'>It is more important to explore the shallow parts of the ocean than the deep
+parts.</span></td></tr><tr valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>More is now known about the ocean depths than about the shallow parts of the
+ocean.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><span style='font-size:14pt'>Vocabulary <br><br></span>DIRECTIONS: Complete
+the sentences with the words in the box.<br><br></b><div style='font-size:2pt'></div><table
+cellpadding='0' cellspacing='0' width='50%' border='0'><tr valign='top'><td valign='middle'
+class='pad' style=' border-left:0.8pt solid #000000; border-top:0.8pt solid #000000;'>amazing</td><td
+valign='middle' class='pad' style=' border-top:0.8pt solid #000000;'>attractive</td><td
+valign='middle' class='pad' style=' border-top:0.8pt solid #000000;'>blend in</td><td valign='middle'
+class='pad' style=' border-top:0.8pt solid #000000; border-right:0.8pt solid
+#000000;'>fierce</td></tr><tr valign='top'><td valign='middle' class='pad' style=' border-left:0.8pt
+solid #000000; border-bottom:0.8pt solid #000000;'>liquid</td><td valign='middle' class='pad' style='
+border-bottom:0.8pt solid #000000;'>pattern</td><td valign='middle' class='pad' style='
+border-bottom:0.8pt solid #000000;'>skin</td><td valign='middle' class='pad' style='
+border-right:0.8pt solid #000000; border-bottom:0.8pt solid #000000;'>searching</td></tr><tr
+height='0' style='border:none'><td width='30%'></td><td width='23%'></td><td width='22%'></td><td
+width='25%'></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;33.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>We usually think of water as being a(n) ____________________, but it can also be
+a gas (water vapor) or a solid (ice).</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:33' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;34.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>After years of ____________________, the scientist finally discovered a new
+species of fish.</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:34' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;35.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>It is important to protect beautiful animals such as leopards and cute animals
+such as pandas, but it is also important to protect animals that do not seem so
+____________________.</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:35' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;36.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Many people think that all sharks are ____________________ creatures, but some
+species, such as nurse sharks and whale sharks, are quite harmless to humans.</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:36' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;37.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Elephants have a(n) ____________________ sense of smell when it comes to water.
+They can smell water as far as 20 kilometers (12 miles) away.</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:37' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;38.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Chameleons are an interesting species of lizard. They can change the color of
+their ____________________ to hide themselves or to send signals to other chameleons.</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:38' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;39.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Tigers are almost invisible when they are standing in tall grass. The
+____________________ of stripes on their fur keeps them hidden from sight.</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:39' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;40.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>A tiger&#8217;s stripes allow it to ____________________ with its
+surroundings.</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:40' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+</table>
+<br clear='all'>
+<br>
+<br>
+<table align='left' width='100%' cellpadding='0' cellspacing='0' border='0'>
+<tr>
+    <td bgcolor='#000000'>
+    <div style='font-size:1pt'>&nbsp;</div>
+    </td>
+</tr>
+<tr>
+    <td><input type='image' src='RL1T3_files/submit.gif' alt='Grade and Submit'>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href='#' onclick='Restart(); return false'><img
+	    src='RL1T3_files/restart.gif' border='0' alt='Start Over'></a>
+    </td>
+</tr>
+</table>
+</form>
+</body>
+</html>
