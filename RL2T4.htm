@@ -1,0 +1,1489 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<meta name='generator' content='ExamView HTML Generator 8.1.6.69144'>
+	<meta name='robots' content='noindex,nofollow'>
+	<title>Reading Level 2 Test 4</title>
+	<style type='text/css'>
+		.spacer { line-height:.7em; }
+		.title { font-size:13pt; font-weight:bold; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		.qnumber { font-size:12pt; font-family:"Times New Roman", "Times", serif; color:#000000; text-align:right; }
+		.choice { font-size:12pt; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		.default { font-size:12pt; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		.qinfo { font-size:12pt; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		.points { font-size:8pt; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		TD.pad { padding: 0pt 4pt 0pt 4pt; }
+		.font1 { font-family:"Times New Roman", "Times", serif; }
+		.font2 { font-family:"Times New Roman", "Times", serif; }
+		.font3 { font-family:"Times New Roman", "Times", serif; }
+	</style>
+<script type='text/javascript' language='JavaScript1.1'>
+<!--
+	// Copyright (c) 2000-2008 eInstruction Corp.
+	var listMap = '111111111111111111111111111111111100001111';
+	var qtypeMap = '222222222222222222222222222222888877778888';
+	var ansMap = new Array(42);
+	var ptsMap = new Array(42);
+	ansMap[0] = '40';
+	ptsMap[0] = 1;
+	ansMap[1] = '43';
+	ptsMap[1] = 1;
+	ansMap[2] = '42';
+	ptsMap[2] = 1;
+	ansMap[3] = '47';
+	ptsMap[3] = 1;
+	ansMap[4] = '47';
+	ptsMap[4] = 1;
+	ansMap[5] = '45';
+	ptsMap[5] = 1;
+	ansMap[6] = '44';
+	ptsMap[6] = 1;
+	ansMap[7] = '4a';
+	ptsMap[7] = 1;
+	ansMap[8] = '48';
+	ptsMap[8] = 1;
+	ansMap[9] = '4b';
+	ptsMap[9] = 1;
+	ansMap[10] = '49';
+	ptsMap[10] = 1;
+	ansMap[11] = '4f';
+	ptsMap[11] = 1;
+	ansMap[12] = '4c';
+	ptsMap[12] = 1;
+	ansMap[13] = '4c';
+	ptsMap[13] = 1;
+	ansMap[14] = '4e';
+	ptsMap[14] = 1;
+	ansMap[15] = '53';
+	ptsMap[15] = 1;
+	ansMap[16] = '52';
+	ptsMap[16] = 1;
+	ansMap[17] = '50';
+	ptsMap[17] = 1;
+	ansMap[18] = '51';
+	ptsMap[18] = 1;
+	ansMap[19] = '57';
+	ptsMap[19] = 1;
+	ansMap[20] = '57';
+	ptsMap[20] = 1;
+	ansMap[21] = '57';
+	ptsMap[21] = 1;
+	ansMap[22] = '55';
+	ptsMap[22] = 1;
+	ansMap[23] = '59';
+	ptsMap[23] = 1;
+	ansMap[24] = '5b';
+	ptsMap[24] = 1;
+	ansMap[25] = '58';
+	ptsMap[25] = 1;
+	ansMap[26] = '5a';
+	ptsMap[26] = 1;
+	ansMap[27] = '5d';
+	ptsMap[27] = 1;
+	ansMap[28] = '5c';
+	ptsMap[28] = 1;
+	ansMap[29] = '5c';
+	ptsMap[29] = 1;
+	ansMap[30] = '5c';
+	ptsMap[30] = 1;
+	ansMap[31] = '43';
+	ptsMap[31] = 1;
+	ansMap[32] = '43';
+	ptsMap[32] = 1;
+	ansMap[33] = '47';
+	ptsMap[33] = 1;
+	ansMap[34] = '626b7669';
+	ptsMap[34] = 1;
+	ansMap[35] = '666d647764667160776c76716c66';
+	ptsMap[35] = 1;
+	ansMap[36] = '676565696b766a6f756e';
+	ptsMap[36] = 1;
+	ansMap[37] = '756274687275646274';
+	ptsMap[37] = 1;
+	ansMap[38] = '4b';
+	ptsMap[38] = 1;
+	ansMap[39] = '48';
+	ptsMap[39] = 1;
+	ansMap[40] = '4e';
+	ptsMap[40] = 1;
+	ansMap[41] = '49';
+	ptsMap[41] = 1;
+	function HandleSubmit(f)
+	{
+		var	MAGIC = 840;
+		var	totalCorrect = 0;
+		var	totalPossible = 0;
+		var	numCorrect = 0;
+		var	numPossible = 0;
+		var	numBlank = 0;
+		var	index;
+		var	msg;
+		var	i;
+
+		f.student_name.value = StripSpaces(f.student_name.value);
+		f.student_id.value = StripSpaces(f.student_id.value);
+		f.student_email.value = StripSpaces(f.student_email.value);
+
+		FixMR(f);
+		FixMTF(f);
+		index = 0;
+		for (i=0; i < f.length; ++i) {
+			if (f.elements[i].name.indexOf(":") > 0) {
+				if (listMap.charAt(index) == "1") {
+					listIndex = f.elements[i].selectedIndex;
+					text = StripSpaces(f.elements[i].options[listIndex].value);
+				} else {
+					f.elements[i].value = StripSpaces(f.elements[i].value);
+					text = f.elements[i].value;
+				}
+
+				if (text.length == 0)
+					++numBlank;
+				++index;
+			}
+		}
+
+		if (f.student_name.value == "") {
+			alert("Student name cannot be blank.");
+			return(false);
+		}
+
+		if (numBlank > 0) {
+			if (numBlank == 1)
+				msg = "1 question";
+			else
+				msg = numBlank + " questions";
+			if (!confirm("You have not answered " + msg +
+				"  Are you sure you want to end the test?"))
+				return(false);
+		}
+
+		index = 0;
+		var scoreDetails = new Array();
+		for (i=0; i < f.length; ++i) {
+			if (f.elements[i].name.indexOf(":") > 0) {
+				if (listMap.charAt(index) == "1") {
+					listIndex = f.elements[i].selectedIndex;
+					text = f.elements[i].options[listIndex].value;
+				} else
+					text = f.elements[i].value;
+
+				numPossible = ptsMap[index] * MAGIC;
+				if (ansMap[index] == "")
+					scoreDetails[index] = "?--";
+				else {
+					var scoreResult = ScoreAnswer(index, text, numPossible);
+					numCorrect = scoreResult.numPoints;
+					scoreDetails[index] = (scoreResult.isCorrect) ? " " : "X";
+					scoreDetails[index] += (Math.round(numCorrect * 100 / MAGIC) / 100).toString();
+					totalCorrect += numCorrect;
+					totalPossible += numPossible;
+				}
+
+				scoreDetails[index] += "/" + (numPossible / MAGIC);
+				++index;
+			}
+		}
+
+		f.score_details.value = scoreDetails.join("|");
+		f.score_correct.value = Math.round(totalCorrect * 100 / MAGIC) / 100;
+		f.score_possible.value = Math.round(totalPossible * 100 / MAGIC) / 100;
+		if (totalPossible > 0)
+			f.score_percent.value = Math.round(100.0 * totalCorrect / totalPossible);
+		else
+			f.score_percent.value = 0;
+
+		return(true);
+	}
+
+	function TranslateAnswer(s, answerIndex)
+	{
+		var	value;
+		var	newString;
+		var	code;
+		var	i;
+
+		value = (answerIndex % 31) + 1;
+		newString = "";
+		for (i=0; i < s.length; i += 2) {
+			code = parseInt(s.substring(i, i + 2), 16);
+			newString += String.fromCharCode(code ^ value);
+		}
+
+		return(newString);
+	}
+
+	function ScoreAnswer(answerIndex, responseText, pointsPossible)
+	{
+		var answerText = TranslateAnswer(ansMap[answerIndex], answerIndex);
+		var qtype = qtypeMap.charAt(answerIndex);
+		var nrExactMatch = false;
+		var result = new Array();
+
+		result.numPoints = 0;
+		result.isCorrect = false;
+
+		if (qtype == "3" && answerText.substring(0, 2) == "p:") {
+			answerText = answerText.substr(2);
+			if (responseText.toUpperCase() == answerText.toUpperCase())
+				result.isCorrect = true;
+			else
+				result.numPoints = MultiResponseCompare(responseText, answerText, pointsPossible);
+		} else if (qtype == "6") {
+			if (answerText.substring(0, 2) == "==") {
+				answerText = answerText.substr(2);
+				nrExactMatch = true;
+			}
+			if (NumericCompare(responseText, answerText, nrExactMatch))
+				result.isCorrect = true;
+		} else if (qtype == "7") {
+			if (CompletionCompare(responseText, answerText))
+				result.isCorrect = true;
+		} else if (responseText.toUpperCase() == answerText.toUpperCase())
+			result.isCorrect = true;
+
+		if (result.isCorrect)
+			result.numPoints = pointsPossible;
+
+		return(result);
+	}
+
+	function StripSpaces(s)
+	{
+		var	len;
+		var	i;
+
+		len = s.length;
+		for (i=len - 1; i >= 0 && s.charAt(i) == " "; --i)
+			len = i;
+
+		if (len == 0)
+			s = "";
+		else if (len != s.length)
+			s = s.substring(0, len);
+
+		return(s);
+	}
+
+	function MultiResponseCompare(responseText, answerText, pointsPossible)
+	{
+	}
+
+	function NumericCompare(response, answer, exactMatch)
+	{
+	}
+
+
+	function CompletionCompare(responseText, answerText)
+	{
+		var	startIndex;
+		var	endIndex;
+		var	partialText;
+       
+        responseText = StripLeadingSpaces(StripSpaces(responseText));        
+        responseText = responseText.toUpperCase();
+		answerText = answerText.toUpperCase();
+
+		startIndex = 0;
+		do {
+			endIndex = answerText.indexOf("\r", startIndex);
+			if (endIndex < 0)
+				partialText = answerText.substring(startIndex);
+			else
+				partialText = answerText.substring(startIndex, endIndex);
+            
+            partialText = StripLeadingSpaces(StripSpaces(partialText));
+			if ((responseText == partialText) && (responseText.length > 0))
+			     return(true);
+
+			startIndex = endIndex + 1;
+		} while (endIndex >= 0);
+		return(false);
+	}
+
+    function StripLeadingSpaces(s)
+	{
+		var	len;
+		var	i = 0;
+		var index = -1;
+
+		len = s.length;
+		while(i < len && s.charAt(i) == " ")
+		{
+			index = ++i;			
+	    }
+
+		if (len == 0)
+			s = "";
+		else if (index > -1)
+			s = s.substring(index, len);
+
+		return(s);
+	}
+	
+	function FixMTF(f)
+	{
+	}
+
+	function FixMR(f)
+	{
+	}
+
+	function AllowReset()
+	{
+		return(window.confirm("Do you want to clear all of your answers?"));
+	}
+
+	function Restart()
+	{
+		if (AllowReset()) {
+			document.TestForm.onreset = function() { };
+			document.TestForm.reset();
+			document.TestForm.onreset = function() { AllowReset(); };
+		}
+	}
+// -->
+</script>
+</head>
+<body onResize='if(document.layers && navigator.appVersion.indexOf("Win") < 0){history.go(0);}'
+bgcolor='#FFFFFF' style='background-image:url(RL2T4_files/header.gif); background-repeat:no-repeat'>
+<noscript>
+	<h3><font color='#FF0000'>Javascript not enabled</font></h3>
+</noscript>
+<script type='text/javascript' language='JavaScript'>
+<!--
+if (navigator.appName.indexOf("Netscape") >= 0) {
+	if (parseInt(navigator.appVersion.charAt(0)) < 4)
+		alert("This document requires Netscape Navigator version 4.0 or later.");
+} else if (navigator.appName.indexOf("Explorer") >= 0) {
+	if (parseInt(navigator.appVersion.charAt(0)) < 4)
+		alert("This document requires Internet Explorer version 4.0 or later.");
+}
+// -->
+</script>
+<form name='TestForm' action='http://score.examview.com/cgi-bin/results.cgi' method='POST'
+	onSubmit='return(HandleSubmit(this))' onReset='return(AllowReset())'>
+<input type='hidden' name='product_version' value='8.1.103.69470'>
+<input type='hidden' name='instructor_name' value='Matthew Manning'>
+<input type='hidden' name='instructor_formalname' value='Mr. Manning'>
+<input type='hidden' name='instructor_email' value='matthew.manning@m.kckps.org'>
+<input type='hidden' name='instructor_org' value='None'>
+<input type='hidden' name='instructor_city' value='None'>
+<input type='hidden' name='instructor_state' value='KS'>
+<input type='hidden' name='test_name' value='Reading Level 2 Test 4'>
+<input type='hidden' name='other_label' value='Other'>
+<input type='hidden' name='test_mixed_questions' value='1'>
+<input type='hidden' name='score_correct' value='0'>
+<input type='hidden' name='score_possible' value='0'>
+<input type='hidden' name='score_percent' value='0'>
+<input type='hidden' name='score_subjective' value='0'>
+<input type='hidden' name='score_details' value=''>
+<input type='hidden' name='score_showresults' value='1'>
+<div class='spacer'>&nbsp;</div>
+<div class='default'>
+	<div style='margin-left:1em'>
+	<b>Name:</b>&nbsp;<input type='text' name='student_name' size='30'> &nbsp;&nbsp;
+	<b>ID:</b>&nbsp;<input type='text' name='student_id' size='12'><br>
+	<div class='spacer'>&nbsp;</div>
+	<b>Email:</b>&nbsp;<input type='text' name='student_email' size='45'><br><br>
+	</div>
+</div>
+<div class='title'>Reading Level 2 Test 4</div>
+
+<table align='left' width='100%' border='0' cellpadding='0' cellspacing='0'>
+<tr><td colspan='3'><br></td></tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><span style='font-size:14pt'>Reading Comprehension
+Review<br><br></span></b><b><span style='font-size:12pt'>DIRECTIONS: Read the passage and answer the
+questions.</span><span style='font-size:14pt'><br></span></b><div style='text-align:center'><b><span
+style='font-size:14pt'><br>Is Gaming Good for You?</span><span
+style='font-size:12pt'><br></span></b></div>Researchers who study online gaming have shown that it is
+more than just a form of entertainment. In fact, people may benefit from online gaming in a number of
+ways. For example, multiplayer online gaming can improve social skills because players have to work
+together toward the same goals. In one study, researchers in the Netherlands surveyed teens who
+played <i>World of Warcraft</i>. They found that the more frequently most teens played, the more
+socially successful and less lonely they felt.<br>Online gaming may also improve thinking skills. In
+a recent study in Berlin, adults played a video game every day for two months.&nbsp; Afterwards,
+researchers scanned the players&#8217; brains. They noticed that the players had more neurons in the
+parts of the brain that are responsible for memory and planning. <br>Game designer Jane McGonigal has
+her own ideas about the benefits of gaming&#8212;not just for individual people, but for the whole
+world. She calls people who play online games for at least one hour a day &#8220;virtuoso&#8221;
+gamers. Currently, there are about 500 million virtuoso gamers in the world. McGonigal predicts that
+in ten years there will be 1.5 billion. <br>McGonigal believes that these gamers have four
+characteristics&#8212;&#8220;superpowers&#8221;&#8212;that make them better problem solvers. These
+characteristics are:<br>&#8226; Urgent <u>optimism</u>: Online gamers don&#8217;t wait to defeat a
+dragon. Instead, gamers face any problem immediately&#8212;and believe that they can
+succeed.<br>&#8226; Community builders: Players in an online game have the same goal&#8212;to win.
+They expect that everyone will play fairly and follow the same rules. This helps players build trust
+and improve cooperation.<br>&#8226; Blissful productivity: Gamers enjoy working hard to achieve
+online gaming goals. They feel a real sense of accomplishment when they do achieve these
+goals&#8212;the &#8220;epic win&#8221; feeling.<br>&#8226; Epic meaning: Gamers like being involved
+in an important mission. The larger-than-life worlds of online gaming make players feel that they are
+playing a part in a significant story. <br>Non-gamers may think online gaming is a waste of time and
+money. Some have argued online games contribute to problems like childhood obesity. However,
+McGonigal thinks online gamers could be an important global resource if we can design games that help
+them create &#8220;epic wins&#8221; in response to real-world problems.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:1' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;1.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>What is the purpose of this passage?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>to list the benefits of playing online games</span></td></tr><tr
+valign='baseline'><td><div class='choice'>b.</div></td><td><span class='default'>to compare different
+kinds of online games</span></td></tr><tr valign='baseline'><td><div
+class='choice'>c.</div></td><td><span class='default'>to tell a story about an online game
+designer</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:2' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;2.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>What does McGonigal<span style='font-size:14pt'> </span>believe about online
+gaming?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>Gaming can help the whole world.</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>The number of gamers will
+decrease.</span></td></tr><tr valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>Gaming should be taught in schools.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:3' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;3.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>In paragraph 2, what was the result of adults playing video games every day for
+two months?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>There was more activity in the memory and planning section of their
+brains.</span></td></tr><tr valign='baseline'><td><div class='choice'>b.</div></td><td><span
+class='default'>They had trouble making plans and remembering things.</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span class='default'>There were fewer
+neurons in their brains.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:4' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;4.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>What is McGonigal&#8217;s definition of &#8220;virtuoso&#8221; gamers?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>people who take part in online gaming competitions</span></td></tr><tr
+valign='baseline'><td><div class='choice'>b.</div></td><td><span class='default'>people who have been
+playing online games for more than ten years</span></td></tr><tr valign='baseline'><td><div
+class='choice'>c.</div></td><td><span class='default'>people who play online games for one hour a day
+or more</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:5' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;5.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Which phrase describes the feeling when you do really well in a game even though
+it was very difficult?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>&#8220;virtuoso&#8221;</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>&#8220;epic win&#8221;</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>&#8220;superpowers&#8221;</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:6' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;6.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Which characteristic of an online gamer refers to how gamers feel they are doing
+something important?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>urgent optimism</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>community builders</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span class='default'>epic
+meaning</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:7' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;7.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>What is the best definition of &#8220;Urgent Optimism&#8221;?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>understanding that you need to fail many times before you succeed</span></td></tr><tr
+valign='baseline'><td><div class='choice'>b.</div></td><td><span class='default'>carefully planning
+how you will successfully overcome a problem</span></td></tr><tr valign='baseline'><td><div
+class='choice'>c.</div></td><td><span class='default'>tackling a problem immediately and thinking
+you&#8217;ll be successful</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:8' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;8.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>What is the main idea of this passage?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>Gamers and non-gamers have been debating the usefulness of online gaming for a long
+time.</span></td></tr><tr valign='baseline'><td><div class='choice'>b.</div></td><td><span
+class='default'>Online gamers have several good characteristics which may help them solve world-wide
+problems.</span></td></tr><tr valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>Certain kinds of games are better than others because they help gamers solve problems
+and work together.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:9' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;9.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Which sentence gives a main idea, <b>NOT</b> a supporting detail?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'><i>Researchers who study online gaming have shown that it is more than just a form of
+entertainment. </i></span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'><i>In a recent study in Berlin, adults played a
+video game every day for two months.</i></span></td></tr><tr valign='baseline'><td><div
+class='choice'>c.</div></td><td><span class='default'><i>Currently, there are about 500 million
+virtuoso gamers in the world.</i></span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:10' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;10.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Which of the following is an example or argument for how online gaming is
+<b>NOT</b> good?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'><i>Some have argued online games contribute to problems like childhood
+obesity.</i></span></td></tr><tr valign='baseline'><td><div class='choice'>b.</div></td><td><span
+class='default'><i>They found that the more frequently most teens played, the more socially
+successful and less lonely they felt.</i></span></td></tr><tr valign='baseline'><td><div
+class='choice'>c.</div></td><td><span class='default'><i>For example, multiplayer online gaming can
+improve social skills because players have to work together toward the same goals.
+</i></span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><span style='font-size:14pt'>Reading Comprehension Extension<br></span><span
+style='font-size:12pt'><br></span></b><b><span style='font-size:12pt'>DIRECTIONS: Read the passage
+and answer the questions.<br></span><span style='font-size:14pt'><br></span></b><div
+style='text-align:center'><b><span style='font-size:14pt'>Alternate Reality Gaming</span><span
+style='font-size:12pt'><br></span></b></div>Jane McGonical is a computer game designer&#8212;but her
+games are different. She makes &#8220;alternate reality games,&#8221; which aim to harness the unique
+skills of gamers to solve problems in the real world.<br><b><i>Superbetter</i>
+(2012)<br></b>McGonigal was inspired to create her game <i>Superbetter </i>when she was recovering
+from a serious concussion injury. The game aims to encourage players to remain optimistic, even when
+facing the toughest challenges that life can throw at us. According to McGonigal, more than half a
+million players have played the game, and many found that it could help them overcome illnesses and
+other problems in their lives. A trial by The University of Pennsylvania supports her claim.
+Following a controlled trial of <i>Superbetter</i>, it was found that the game could help eliminate
+symptoms of depression in just six weeks of play.<br><b><i>Breakthrough to Cures</i> (2009)
+<br></b><i>Breakthrough to Cures</i> was designed to change the way we think about medical research.
+Players are thrust into a future where disease is threatening the lives of 100 million people in the
+U.S.A. Then, over a period of 24 hours, gamers are asked to work together to brainstorm solutions to
+the problem. Players can <u>level-up</u> and gain rewards for contributing useful ideas. As a result
+of the wide variety of creative ideas generated by the game, <i>Breakthrough to Cures</i> was named
+as one of the 10 most socially impactful games of 2010 by the organization Games for Change.<br>The
+success of <i>Breakthrough to Cures</i> has led to the development of other games for solving future
+problems. For example, <i>Smart Grid 2025</i> has been designed to help tackle the energy problems
+that the world may face in years to come.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:11' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;11.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Which gives the best definition of an &#8220;alternate reality&#8221;
+game?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>a computer game that has realistic graphics</span></td></tr><tr
+valign='baseline'><td><div class='choice'>b.</div></td><td><span class='default'>a computer game that
+tries to tackle problems in real life</span></td></tr><tr valign='baseline'><td><div
+class='choice'>c.</div></td><td><span class='default'>a computer game that puts gamers into a fantasy
+world</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:12' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;12.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>What motivated McGonigal to make the game <i>Superbetter</i>?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>the experiences of children she met in hospital</span></td></tr><tr
+valign='baseline'><td><div class='choice'>b.</div></td><td><span class='default'>a report by the
+University of Pennsylvania</span></td></tr><tr valign='baseline'><td><div
+class='choice'>c.</div></td><td><span class='default'>her own experience of recovering from an
+injury</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:13' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;13.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>What is the purpose of the game <i>Superbetter</i>?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>to give people confidence and motivation to overcome problems in their
+lives</span></td></tr><tr valign='baseline'><td><div class='choice'>b.</div></td><td><span
+class='default'>to provide hospitals with a free game that their patients can
+play</span></td></tr><tr valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>to give people advice about how they can improve their
+lives</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:14' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;14.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Which of these sentences best summarizes the findings of the University of
+Pennsylvania about <i>Superbetter</i>?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>If people play <i>Superbetter</i>, it will make them feel better for six
+weeks.</span></td></tr><tr valign='baseline'><td><div class='choice'>b.</div></td><td><span
+class='default'>If people suffering from depression play <i>Superbetter</i> for six weeks, they will
+feel better.</span></td></tr><tr valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>Depression has six symptoms that can be eliminated by playing
+<i>Superbetter</i>.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:15' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;15.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>According to the article, how many people have played <i>Superbetter</i>?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>five hundred thousand</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>fifty thousand</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span class='default'>five
+thousand</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:16' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;16.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>What was the aim of the game <i>Breakthrough to Cures</i>?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>to make people more confident when they are recovering from
+illness</span></td></tr><tr valign='baseline'><td><div class='choice'>b.</div></td><td><span
+class='default'>to help people choose the best medicines for common diseases</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span class='default'>to come up with
+ideas about how a country can deal with a deadly disease</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:17' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;17.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>In the game <i>Breakthrough to Cures</i>, how can players
+&#8220;level-up&#8221;?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>by eliminating a disease</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>by beating their opponents</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span class='default'>by thinking of
+useful ideas</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:18' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;18.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Which of the following statements is <b>NOT </b>true about <i>Breakthrough to
+Cures</i>?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>The game generated a wide variety of creative ideas.</span></td></tr><tr
+valign='baseline'><td><div class='choice'>b.</div></td><td><span class='default'>According to the
+organization Games for Change, it was the most socially impactful game of 2010.</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span class='default'>The game was set in
+a future where disease threatened the United States.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:19' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;19.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><i>Smart Grid 2025</i> was developed as a result of . . .</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>an increase in demand for energy in the United States</span></td></tr><tr
+valign='baseline'><td><div class='choice'>b.</div></td><td><span class='default'>the success of
+<i>Breakthrough to Cures</i></span></td></tr><tr valign='baseline'><td><div
+class='choice'>c.</div></td><td><span class='default'>a request from the organization Games for
+Change</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:20' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;20.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>What is the main aim of <i>Smart Grid 2025</i>?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>to encourage people to use less energy</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>to make energy available to people in poor
+countries</span></td></tr><tr valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>to help solve possible future energy problems</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><span style='font-size:14pt'>Reading Skills<br><br></span><span
+style='font-size:12pt'>DIRECTIONS: Read the passage below. Decide if each of the underlined phrases
+(A&#8211;G) is a pro or a con of computer gaming.</span><br></b><div
+style='text-align:center'><b><br><span style='font-size:14pt'>The Pros and Cons of Computer
+Games</span></b><br><br></div>Computer games have been around now for over 30 years, and the debate
+about their positive and negative effects upon society is just as old.<br><br>While some people argue
+that <b>(A)</b><u>gaming promotes an unhealthy, inactive lifestyle,</u> others suggest
+<b>(B)</b><u>it may increase our cognitive abilities</u>. Suggestions that <b>(C)</b><u>gaming turns
+people into loners with no social skills</u> are countered by those who highlight <b>(D)</b><u>the
+highly social online gaming community</u>. Parents who worry that <b>(E)</b><u>violent games may lead
+to violent behavior</u> are reminded that violent films have been around for decades. And while some
+believe that <b>(F)</b><u>the time and money spent by people playing games would be better used
+elsewhere</u>, people like Jane McGonigal believe that <b>(G)</b><u>certain games can help us solve
+global problems</u> like poverty and climate change.<br><br>Whatever your view, it is almost certain
+that as technology pushes ahead at great speed, computer games are here to stay.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:21' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;21.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>(A)</b></div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='46%'><span
+class='default'>pro</span></td><td width='4%'><div class='choice'>b.</div></td><td width='46%'><span
+class='default'>con</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:22' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;22.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>(B)</b> </div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='46%'><span
+class='default'>pro</span></td><td width='4%'><div class='choice'>b.</div></td><td width='46%'><span
+class='default'>con</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:23' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;23.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>(C)</b> </div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='46%'><span
+class='default'>pro</span></td><td width='4%'><div class='choice'>b.</div></td><td width='46%'><span
+class='default'>con</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:24' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;24.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>(D)</b> </div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='46%'><span
+class='default'>pro</span></td><td width='4%'><div class='choice'>b.</div></td><td width='46%'><span
+class='default'>con</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:25' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;25.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>(E)</b> </div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='46%'><span
+class='default'>pro</span></td><td width='4%'><div class='choice'>b.</div></td><td width='46%'><span
+class='default'>con</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:26' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;26.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>(F)</b> </div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='46%'><span
+class='default'>pro</span></td><td width='4%'><div class='choice'>b.</div></td><td width='46%'><span
+class='default'>con</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:27' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;27.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>(G)</b> </div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='46%'><span
+class='default'>pro</span></td><td width='4%'><div class='choice'>b.</div></td><td width='46%'><span
+class='default'>con</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><span style='font-size:14pt'>TED Talk Comprehension<br><br></span>DIRECTIONS:
+Read the following excerpt from Jane McGonigal&#8217;s 2010 TED Talk and answer the
+questions.<br><br></b><div style='text-align:center'><b><span style='font-size:14pt'>Jane
+McGonigal&#8212;Gaming Can Make a Better World</span><br></b></div><b><br></b>We feel that we are not
+as good in reality as we are in games. And I don&#8217;t mean just good as in successful, although
+that&#8217;s part of it. We do achieve more in game worlds. But I also mean good as in motivated to
+do something that matters, inspired to collaborate and to cooperate. And when we&#8217;re in game
+worlds I believe that many of us become <u>the best version of ourselves</u>, the most likely to help
+at a moment&#8217;s notice, the most likely to stick with a problem as long at it takes, to get up
+after failure and try again. And in real life, when we face failure, when we confront obstacles, we
+often don&#8217;t feel that way. We feel overcome, we feel overwhelmed, we feel anxious, maybe
+depressed, frustrated, or cynical. We never have those feelings when we&#8217;re playing games, they
+just don&#8217;t exist in games.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:28' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;28.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>What does McGonigal mean by being the &#8220;best version of
+ourselves&#8221;?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>We perform to the best of our abilities.</span></td></tr><tr
+valign='baseline'><td><div class='choice'>b.</div></td><td><span class='default'>We behave better
+than everyone else.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:29' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;29.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>According to McGonigal, what is true both in real life and in the game
+world?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>We often face problems.</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>We often feel
+anxious.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:30' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;30.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>What does McGonigal say about our feelings?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>We don&#8217;t have many strong feelings in the game world.</span></td></tr><tr
+valign='baseline'><td><div class='choice'>b.</div></td><td><span class='default'>We have more
+negative feelings in the real world.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><span style='font-size:12pt'>DIRECTIONS: The following four sentences come
+from a paragraph from McGonigal&#8217;s TED Talk. The sentences are not in the correct order. Read
+the sentences then answer the questions.</span></b></div><div class='default'><table cellpadding='0'
+cellspacing='0' width='95%' border='0'><tr valign='baseline'><td width='4%'><div
+class='choice'>a.</div></td><td width='96%'><span class='default'>And the only problem is that they
+believe that they are capable of changing virtual worlds and not the real world.</span></td></tr><tr
+valign='baseline'><td><div class='choice'>b.</div></td><td><span class='default'>These are people who
+believe that they are individually capable of changing the world.</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span class='default'>Gamers are
+super-empowered, hopeful individuals. </span></td></tr><tr valign='baseline'><td><div
+class='choice'>d.</div></td><td><span class='default'>That&#8217;s the problem that I&#8217;m trying
+to solve.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:31' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;31.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>Which sentence (a&#8211;d) is the <b>first</b> sentence of the
+paragraph?</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:32' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;32.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>Which sentence (a&#8211;d) is the <b>second</b> sentence of the
+paragraph?</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:33' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;33.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>Which sentence (a&#8211;d) is the <b>third</b> sentence of the
+paragraph?</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:34' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;34.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>Which sentence (a&#8211;d) is the <b>fourth</b> sentence of the
+paragraph?</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><span style='font-size:14pt'>Vocabulary <br><br></span><span
+style='font-size:12pt'>DIRECTIONS: Complete the sentences with a word from the box.&nbsp; One word is
+extra.</span><br><br></b><div style='font-size:2pt'></div><table cellpadding='0' cellspacing='0'
+width='83%' border='0'><tr valign='top'><td class='pad' style=' border-left:0.8pt solid #000000;
+border-top:0.8pt solid #000000; border-bottom:0.8pt solid #000000;'><div
+style='text-align:center'>accomplish</div></td><td class='pad' style=' border-top:0.8pt solid
+#000000; border-bottom:0.8pt solid #000000;'><div
+style='text-align:center'>characteristic</div></td><td class='pad' style=' border-top:0.8pt solid
+#000000; border-bottom:0.8pt solid #000000;'><div style='text-align:center'>form</div></td><td
+class='pad' style=' border-top:0.8pt solid #000000; border-bottom:0.8pt solid #000000;'><div
+style='text-align:center'>involved</div></td><td class='pad' style=' border-top:0.8pt solid #000000;
+border-right:0.8pt solid #000000; border-bottom:0.8pt solid #000000;'><div
+style='text-align:center'>resources</div></td></tr><tr height='0' style='border:none'><td
+width='20%'></td><td width='20%'></td><td width='20%'></td><td width='20%'></td><td
+width='20%'></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;35.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>What&#8217;s your favorite __________________ of entertainment: watching movies,
+reading books, playing video games, etc.?</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:35' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;36.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>One __________________ of a good game is that it is challenging&#8212;it
+isn&#8217;t too easy or too difficult.</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:36' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;37.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>You may be able to __________________ great things in a video game (e.g., win
+wars, build cities), but do nothing in real life.</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:37' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;38.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>A country&#8217;s _____________________ are not only its natural ones&#8212;such
+as land and oil&#8212;but also its people, such as skilled workers and great thinkers.</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:38' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b>DIRECTIONS: Match each word to its definition.</b></div><div
+class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>achieve</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>involved</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>significant</span></td></tr><tr valign='baseline'><td><div
+class='choice'>d.</div></td><td><span class='default'>cooperation</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:39' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;39.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>important</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:40' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;40.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>to reach a goal</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:41' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;41.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>the act of working together</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:42' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;42.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>being a part of something</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+</table>
+<br clear='all'>
+<br>
+<br>
+<table align='left' width='100%' cellpadding='0' cellspacing='0' border='0'>
+<tr>
+    <td bgcolor='#000000'>
+    <div style='font-size:1pt'>&nbsp;</div>
+    </td>
+</tr>
+<tr>
+    <td><input type='image' src='RL2T4_files/submit.gif' alt='Grade and Submit'>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href='#' onclick='Restart(); return false'><img
+	    src='RL2T4_files/restart.gif' border='0' alt='Start Over'></a>
+    </td>
+</tr>
+</table>
+</form>
+</body>
+</html>

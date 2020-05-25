@@ -1,0 +1,1352 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<meta name='generator' content='ExamView HTML Generator 8.1.6.69144'>
+	<meta name='robots' content='noindex,nofollow'>
+	<title>Reading Level 2 Test 1</title>
+	<style type='text/css'>
+		.spacer { line-height:.7em; }
+		.title { font-size:13pt; font-weight:bold; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		.qnumber { font-size:12pt; font-family:"Times New Roman", "Times", serif; color:#000000; text-align:right; }
+		.choice { font-size:12pt; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		.default { font-size:12pt; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		.qinfo { font-size:12pt; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		.points { font-size:8pt; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		TD.pad { padding: 0pt 4pt 0pt 4pt; }
+		.font1 { font-family:"Times New Roman", "Times", serif; }
+		.font2 { font-family:"Times New Roman", "Times", serif; }
+		.font3 { font-family:"Times New Roman", "Times", serif; }
+	</style>
+<script type='text/javascript' language='JavaScript1.1'>
+<!--
+	// Copyright (c) 2000-2008 eInstruction Corp.
+	var listMap = '1111111111111111111000001111111100000000';
+	var qtypeMap = '0000022222222222222999998888222277777777';
+	var ansMap = new Array(40);
+	var ptsMap = new Array(40);
+	ansMap[0] = '55';
+	ptsMap[0] = 1;
+	ansMap[1] = '44';
+	ptsMap[1] = 1;
+	ansMap[2] = '45';
+	ptsMap[2] = 1;
+	ansMap[3] = '50';
+	ptsMap[3] = 1;
+	ansMap[4] = '43';
+	ptsMap[4] = 1;
+	ansMap[5] = '47';
+	ptsMap[5] = 1;
+	ansMap[6] = '45';
+	ptsMap[6] = 1;
+	ansMap[7] = '49';
+	ptsMap[7] = 1;
+	ansMap[8] = '4b';
+	ptsMap[8] = 1;
+	ansMap[9] = '48';
+	ptsMap[9] = 1;
+	ansMap[10] = '48';
+	ptsMap[10] = 1;
+	ansMap[11] = '4d';
+	ptsMap[11] = 1;
+	ansMap[12] = '4e';
+	ptsMap[12] = 1;
+	ansMap[13] = '4d';
+	ptsMap[13] = 1;
+	ansMap[14] = '4d';
+	ptsMap[14] = 1;
+	ansMap[15] = '53';
+	ptsMap[15] = 1;
+	ansMap[16] = '50';
+	ptsMap[16] = 1;
+	ansMap[17] = '53';
+	ptsMap[17] = 1;
+	ansMap[18] = '51';
+	ptsMap[18] = 1;
+	ansMap[19] = '';
+	ptsMap[19] = 1;
+	ansMap[20] = '';
+	ptsMap[20] = 1;
+	ansMap[21] = '';
+	ptsMap[21] = 1;
+	ansMap[22] = '';
+	ptsMap[22] = 1;
+	ansMap[23] = '';
+	ptsMap[23] = 1;
+	ansMap[24] = '58';
+	ptsMap[24] = 1;
+	ansMap[25] = '58';
+	ptsMap[25] = 1;
+	ansMap[26] = '5f';
+	ptsMap[26] = 1;
+	ansMap[27] = '5f';
+	ptsMap[27] = 1;
+	ansMap[28] = '5c';
+	ptsMap[28] = 1;
+	ansMap[29] = '5d';
+	ptsMap[29] = 1;
+	ansMap[30] = '5d';
+	ptsMap[30] = 1;
+	ansMap[31] = '40';
+	ptsMap[31] = 1;
+	ansMap[32] = '716a6d756766227772';
+	ptsMap[32] = 1;
+	ansMap[33] = '6f6662676671706b6a73';
+	ptsMap[33] = 1;
+	ansMap[34] = '626b677177';
+	ptsMap[34] = 1;
+	ansMap[35] = '757077756a7660';
+	ptsMap[35] = 1;
+	ansMap[36] = '757269696226697372';
+	ptsMap[36] = 1;
+	ansMap[37] = '667373756664736263';
+	ptsMap[37] = 1;
+	ansMap[38] = '6e6d697c7d7a6d7b';
+	ptsMap[38] = 1;
+	ansMap[39] = '406729667d616c7b297e667b6d7a';
+	ptsMap[39] = 1;
+	function HandleSubmit(f)
+	{
+		var	MAGIC = 840;
+		var	totalCorrect = 0;
+		var	totalPossible = 0;
+		var	numCorrect = 0;
+		var	numPossible = 0;
+		var	numBlank = 0;
+		var	index;
+		var	msg;
+		var	i;
+
+		f.student_name.value = StripSpaces(f.student_name.value);
+		f.student_id.value = StripSpaces(f.student_id.value);
+		f.student_email.value = StripSpaces(f.student_email.value);
+
+		FixMR(f);
+		FixMTF(f);
+		index = 0;
+		for (i=0; i < f.length; ++i) {
+			if (f.elements[i].name.indexOf(":") > 0) {
+				if (listMap.charAt(index) == "1") {
+					listIndex = f.elements[i].selectedIndex;
+					text = StripSpaces(f.elements[i].options[listIndex].value);
+				} else {
+					f.elements[i].value = StripSpaces(f.elements[i].value);
+					text = f.elements[i].value;
+				}
+
+				if (text.length == 0)
+					++numBlank;
+				++index;
+			}
+		}
+
+		if (f.student_name.value == "") {
+			alert("Student name cannot be blank.");
+			return(false);
+		}
+
+		if (numBlank > 0) {
+			if (numBlank == 1)
+				msg = "1 question";
+			else
+				msg = numBlank + " questions";
+			if (!confirm("You have not answered " + msg +
+				"  Are you sure you want to end the test?"))
+				return(false);
+		}
+
+		index = 0;
+		var scoreDetails = new Array();
+		for (i=0; i < f.length; ++i) {
+			if (f.elements[i].name.indexOf(":") > 0) {
+				if (listMap.charAt(index) == "1") {
+					listIndex = f.elements[i].selectedIndex;
+					text = f.elements[i].options[listIndex].value;
+				} else
+					text = f.elements[i].value;
+
+				numPossible = ptsMap[index] * MAGIC;
+				if (ansMap[index] == "")
+					scoreDetails[index] = "?--";
+				else {
+					var scoreResult = ScoreAnswer(index, text, numPossible);
+					numCorrect = scoreResult.numPoints;
+					scoreDetails[index] = (scoreResult.isCorrect) ? " " : "X";
+					scoreDetails[index] += (Math.round(numCorrect * 100 / MAGIC) / 100).toString();
+					totalCorrect += numCorrect;
+					totalPossible += numPossible;
+				}
+
+				scoreDetails[index] += "/" + (numPossible / MAGIC);
+				++index;
+			}
+		}
+
+		f.score_details.value = scoreDetails.join("|");
+		f.score_correct.value = Math.round(totalCorrect * 100 / MAGIC) / 100;
+		f.score_possible.value = Math.round(totalPossible * 100 / MAGIC) / 100;
+		if (totalPossible > 0)
+			f.score_percent.value = Math.round(100.0 * totalCorrect / totalPossible);
+		else
+			f.score_percent.value = 0;
+
+		return(true);
+	}
+
+	function TranslateAnswer(s, answerIndex)
+	{
+		var	value;
+		var	newString;
+		var	code;
+		var	i;
+
+		value = (answerIndex % 31) + 1;
+		newString = "";
+		for (i=0; i < s.length; i += 2) {
+			code = parseInt(s.substring(i, i + 2), 16);
+			newString += String.fromCharCode(code ^ value);
+		}
+
+		return(newString);
+	}
+
+	function ScoreAnswer(answerIndex, responseText, pointsPossible)
+	{
+		var answerText = TranslateAnswer(ansMap[answerIndex], answerIndex);
+		var qtype = qtypeMap.charAt(answerIndex);
+		var nrExactMatch = false;
+		var result = new Array();
+
+		result.numPoints = 0;
+		result.isCorrect = false;
+
+		if (qtype == "3" && answerText.substring(0, 2) == "p:") {
+			answerText = answerText.substr(2);
+			if (responseText.toUpperCase() == answerText.toUpperCase())
+				result.isCorrect = true;
+			else
+				result.numPoints = MultiResponseCompare(responseText, answerText, pointsPossible);
+		} else if (qtype == "6") {
+			if (answerText.substring(0, 2) == "==") {
+				answerText = answerText.substr(2);
+				nrExactMatch = true;
+			}
+			if (NumericCompare(responseText, answerText, nrExactMatch))
+				result.isCorrect = true;
+		} else if (qtype == "7") {
+			if (CompletionCompare(responseText, answerText))
+				result.isCorrect = true;
+		} else if (responseText.toUpperCase() == answerText.toUpperCase())
+			result.isCorrect = true;
+
+		if (result.isCorrect)
+			result.numPoints = pointsPossible;
+
+		return(result);
+	}
+
+	function StripSpaces(s)
+	{
+		var	len;
+		var	i;
+
+		len = s.length;
+		for (i=len - 1; i >= 0 && s.charAt(i) == " "; --i)
+			len = i;
+
+		if (len == 0)
+			s = "";
+		else if (len != s.length)
+			s = s.substring(0, len);
+
+		return(s);
+	}
+
+	function MultiResponseCompare(responseText, answerText, pointsPossible)
+	{
+	}
+
+	function NumericCompare(response, answer, exactMatch)
+	{
+	}
+
+
+	function CompletionCompare(responseText, answerText)
+	{
+		var	startIndex;
+		var	endIndex;
+		var	partialText;
+       
+        responseText = StripLeadingSpaces(StripSpaces(responseText));        
+        responseText = responseText.toUpperCase();
+		answerText = answerText.toUpperCase();
+
+		startIndex = 0;
+		do {
+			endIndex = answerText.indexOf("\r", startIndex);
+			if (endIndex < 0)
+				partialText = answerText.substring(startIndex);
+			else
+				partialText = answerText.substring(startIndex, endIndex);
+            
+            partialText = StripLeadingSpaces(StripSpaces(partialText));
+			if ((responseText == partialText) && (responseText.length > 0))
+			     return(true);
+
+			startIndex = endIndex + 1;
+		} while (endIndex >= 0);
+		return(false);
+	}
+
+    function StripLeadingSpaces(s)
+	{
+		var	len;
+		var	i = 0;
+		var index = -1;
+
+		len = s.length;
+		while(i < len && s.charAt(i) == " ")
+		{
+			index = ++i;			
+	    }
+
+		if (len == 0)
+			s = "";
+		else if (index > -1)
+			s = s.substring(index, len);
+
+		return(s);
+	}
+	
+	function FixMTF(f)
+	{
+	}
+
+	function FixMR(f)
+	{
+	}
+
+	function AllowReset()
+	{
+		return(window.confirm("Do you want to clear all of your answers?"));
+	}
+
+	function Restart()
+	{
+		if (AllowReset()) {
+			document.TestForm.onreset = function() { };
+			document.TestForm.reset();
+			document.TestForm.onreset = function() { AllowReset(); };
+		}
+	}
+// -->
+</script>
+</head>
+<body onResize='if(document.layers && navigator.appVersion.indexOf("Win") < 0){history.go(0);}'
+bgcolor='#FFFFFF' style='background-image:url(untitled_files/header.gif); background-repeat:no-repeat'>
+<noscript>
+	<h3><font color='#FF0000'>Javascript not enabled</font></h3>
+</noscript>
+<script type='text/javascript' language='JavaScript'>
+<!--
+if (navigator.appName.indexOf("Netscape") >= 0) {
+	if (parseInt(navigator.appVersion.charAt(0)) < 4)
+		alert("This document requires Netscape Navigator version 4.0 or later.");
+} else if (navigator.appName.indexOf("Explorer") >= 0) {
+	if (parseInt(navigator.appVersion.charAt(0)) < 4)
+		alert("This document requires Internet Explorer version 4.0 or later.");
+}
+// -->
+</script>
+<form name='TestForm' action='http://score.examview.com/cgi-bin/results.cgi' method='POST'
+	onSubmit='return(HandleSubmit(this))' onReset='return(AllowReset())'>
+<input type='hidden' name='product_version' value='8.1.103.69470'>
+<input type='hidden' name='instructor_name' value='Matthew Manning'>
+<input type='hidden' name='instructor_formalname' value='Mr. Manning'>
+<input type='hidden' name='instructor_email' value='matthew.manning@m.kckps.org'>
+<input type='hidden' name='instructor_org' value='None'>
+<input type='hidden' name='instructor_city' value='None'>
+<input type='hidden' name='instructor_state' value='KS'>
+<input type='hidden' name='test_name' value='Reading Level 2 Test 1'>
+<input type='hidden' name='other_label' value='Other'>
+<input type='hidden' name='test_mixed_questions' value='1'>
+<input type='hidden' name='score_correct' value='0'>
+<input type='hidden' name='score_possible' value='0'>
+<input type='hidden' name='score_percent' value='0'>
+<input type='hidden' name='score_subjective' value='5'>
+<input type='hidden' name='score_details' value=''>
+<input type='hidden' name='score_showresults' value='1'>
+<div class='spacer'>&nbsp;</div>
+<div class='default'>
+	<div style='margin-left:1em'>
+	<b>Name:</b>&nbsp;<input type='text' name='student_name' size='30'> &nbsp;&nbsp;
+	<b>ID:</b>&nbsp;<input type='text' name='student_id' size='12'><br>
+	<div class='spacer'>&nbsp;</div>
+	<b>Email:</b>&nbsp;<input type='text' name='student_email' size='45'><br><br>
+	</div>
+</div>
+<div class='title'>Reading Level 2 Test 1</div>
+
+<table align='left' width='100%' border='0' cellpadding='0' cellspacing='0'>
+<tr><td colspan='3'><br></td></tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><span style='font-size:14pt'>Reading Comprehension Review<br><br></span><span
+style='font-size:12pt'>DIRECTIONS: Read the passage. Mark the sentences that follow TRUE or
+FALSE.</span><br><br></b><div style='text-align:center'><b><span style='font-size:14pt'>Inspired
+Leadership</span><span style='font-size:12pt'><br></span></b></div>In the summer of 1963, 250,000
+people showed up in Washington, D.C., to hear Martin Luther King Jr. speak. No emails were sent out,
+and there was no website to check the date. And yet thousands of people went. &#8220;How do you do
+that?&#8221; asks Simon Sinek.<br>FOCUS ON BELIEFS<br>Sinek, an author and consultant who studies
+leadership, has a theory about why some leaders are able to inspire others to action. He thinks that
+great leaders, above all, focus on what they believe. They answer questions like &#8220;What&#8217;s
+my purpose? Why does my organization exist? Why do I get out of bed in the morning?&#8221; For
+example, Martin Luther King Jr. stood out as a great leader because he told people what he&nbsp;
+believed&#8212;&#8220;I have a dream,&#8221; he said, not, &#8220;I have a plan.&#8221; Many people
+shared his belief that change was possible, and they decided to join him. <br>If you talk about what
+you believe, says Sinek, you will attract those who share the same beliefs. Most of us are followers,
+but that does not mean we are unthinking<sup>1</sup> or easily led. Sinek suggests that we
+don&#8217;t follow leaders because we have to, but because we want to. To illustrate this, he points
+out that thousands of people didn&#8217;t turn up for King himself, but for what he&#8212;and
+they&#8212;believed in. &#8220;It&#8217;s what they&nbsp; believed about America,&#8221; says Sinek,
+&#8220;that got them to travel in a bus for eight hours to stand in the sun in the middle of
+August.&#8221;<br>Organizations, says Sinek, can also inspire followers by focusing on beliefs. The
+most successful&nbsp; businesses do more than just describe the features and benefits of their
+products. Apple, for instance, communicates its belief in thinking differently and challenging the
+way things are normally done. This helps to explain, says Sinek, why people stood in line for six
+hours when the first iPhone came out. They did&nbsp; this not only because of the technology, but
+because they wanted to be part of a company they believed in.&nbsp; In other words, says Sinek,
+&#8220;people don&#8217;t buy <i>what </i>you do, they buy <i>why </i>you do it.&#8221;<br>NOT ALL
+LEADERS INSPIRE<br>So we make our choices based on why companies and individuals do what they do.
+Unless we feel a real connection to the leaders in our lives&#8212;and share in their
+beliefs&#8212;we won&#8217;t follow them. In the end, everyone wants to be part of something they
+believe in. &#8220;Because there are leaders and then there are those who lead,&#8221; says Sinek.
+&#8220;Leaders hold a position of power or authority, but those who lead inspire us &#091; . . .
+&#093; We follow those who lead, not for them but for ourselves.&#8221; <br><span
+style='font-size:9pt'><sup>1</sup> <b>unthinking: </b><i>adj. </i>acting or speaking without thinking
+first</span></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:1' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;1.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Simon Sinek claims that inspiring leaders focus on their beliefs.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:2' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;2.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Martin Luther King Jr. used social media (e.g., Facebook) to gather people
+together.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:3' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;3.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>People came to hear Martin Luther King Jr. speak mostly because they cared about
+Martin Luther King Jr.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:4' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;4.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Apple is an example of a successful organization that focuses on its
+beliefs.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:5' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;5.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>The author of the passage believes the word <i>leaders</i> means the same thing
+as &#8220;those who lead.&#8221;</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:6' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;6.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>DIRECTIONS: Read the phrases from the passage &#8220;Inspired
+Leadership.&#8221; Decide if the phrases are referring to Martin Luther King Jr. (A) or Apple
+(B).<br><br></b>&#8220;I have a dream.&#8221;</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>Martin Luther King Jr.</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>Apple</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:7' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;7.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>DIRECTIONS: Read the phrases from the passage &#8220;Inspired
+Leadership.&#8221; Decide if the phrases are referring to Martin Luther King Jr. (A) or Apple
+(B).<br><br></b>&#8220;thinking differently&#8221;</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>Martin Luther King Jr.</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>Apple</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:8' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;8.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>DIRECTIONS: Read the phrases from the passage &#8220;Inspired
+Leadership.&#8221; Decide if the phrases are referring to Martin Luther King Jr. (A) or Apple
+(B).<br><br></b>&#8220;change was possible&#8221;</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>Martin Luther King Jr.</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>Apple</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:9' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;9.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>DIRECTIONS: Read the phrases from the passage &#8220;Inspired
+Leadership.&#8221; Decide if the phrases are referring to Martin Luther King Jr. (A) or Apple
+(B).<br><br></b>&#8220;challenging the way things are normally done&#8221;</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>Martin Luther King Jr.</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>Apple</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:10' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;10.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>DIRECTIONS: Read the phrases from the passage &#8220;Inspired
+Leadership.&#8221; Decide if the phrases are referring to Martin Luther King Jr. (A) or Apple
+(B).<br><br></b>&#8220;people don&#8217;t buy <i>what </i>you do, they buy <i>why </i>you do
+it.&#8221;</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>Martin Luther King Jr.</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>Apple</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><span style='font-size:14pt'>Reading Comprehension Extension<br></span><span
+style='font-size:12pt'><br>DIRECTIONS: Read the passage and answer the questions.</span><br></b><div
+style='text-align:center'><b><br><span style='font-size:14pt'>The Fast to Slow Food
+Movement</span><br></b></div>Fast food is a global phenomenon.&nbsp; In major cities across the
+world, fast food restaurants like the iconic McDonald&#8217;s stand out in downtown areas.&nbsp; This
+has been a big problem for Italian Carlo Petrini.&nbsp; When he learned of a McDonald&#8217;s
+restaurant being built in a historic district of Rome in the 1980s, he protested.&nbsp; Others joined
+his campaign, and they began what is now known as the <i>slow food</i> movement. <br>About forty
+years earlier, the fast food movement was just beginning.&nbsp; McDonald&#8217;s founders and
+brothers Richard and Maurice McDonald developed an extremely <u>efficient</u> restaurant.&nbsp; Their
+kitchen was set up like a factory production line, and their menu featured only a handful of items:
+burgers, french fries, drinks, and apple pie.&nbsp; They sold cheap, fast, and tasty food.&nbsp;
+Their business took off, many more restaurants were built, and by the 1970s, McDonald&#8217;s
+restaurants were making over a billion dollars in sales.&nbsp; <br>The fast food movement became very
+profitable for companies like McDonald&#8217;s because people were <u>attracted</u> to the
+convenience of fast food.&nbsp; Their lives had become busier, and they had less time for food
+preparation.&nbsp; Fast food seemed like a good solution.&nbsp; <br>Carlo Petrini argues that fast
+food is not a good solution.&nbsp; Not only is it less healthy, but it negatively affects
+culture&#8212;in the way people prepare and enjoy food.&nbsp; The slow food movement focuses on
+making people aware of these issues.&nbsp; Their purpose is to encourage people to buy organic food
+from local farms.&nbsp; They focus on ethical buying; in other words, making sure the prices of the
+food are fair to both seller and buyer.&nbsp; Petrini believes that &#8220;slow food&#8221; is better
+for the stomach as well as for the community.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:11' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;11.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>What is the purpose of this passage?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>to persuade the reader to eat fast food</span></td></tr><tr
+valign='baseline'><td><div class='choice'>b.</div></td><td><span class='default'>to compare methods
+of food preparation</span></td></tr><tr valign='baseline'><td><div
+class='choice'>c.</div></td><td><span class='default'>to give the history of two food
+movements</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:12' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;12.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Which event happened first?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>McDonald&#8217;s began making over a billion dollars in sales.</span></td></tr><tr
+valign='baseline'><td><div class='choice'>b.</div></td><td><span class='default'>Carlo Petrini
+protested McDonald&#8217;s opening in Rome.</span></td></tr><tr valign='baseline'><td><div
+class='choice'>c.</div></td><td><span class='default'>The slow food movement
+began.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:13' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;13.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>What is <b>NOT</b> an example of how McDonald&#8217;s restaurants were
+efficient?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>how their kitchen was set up</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>how many items were on the
+menu</span></td></tr><tr valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>where their restaurants were located</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:14' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;14.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Which of the following is <b>NOT</b> mentioned by Carlo Petrini as a
+disadvantage of fast food?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>It affects culture in a negative way.</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>It is unhealthy.</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span class='default'>It is too
+expensive.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:15' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;15.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Why were people attracted to fast food?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>It was profitable.</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>It was convenient.</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span class='default'>It affected
+culture.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:16' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;16.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>What is paragraph 4 mainly about?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>why fast food is unhealthy</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>how local farms raise organic
+produce</span></td></tr><tr valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>the purpose of the slow food movement</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:17' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;17.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>What is another word for <i>ethical </i>in paragraph 4?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>fair</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>local</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>aware</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:18' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;18.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Which word is <b>NOT</b> used in relation to the slow food movement?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>efficient</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>ethical</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span class='default'>local
+</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:19' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;19.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Which paragraph is mainly about why people began eating fast food?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>Paragraph 1</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>Paragraph 3</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span class='default'>Paragraph
+4</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><span style='font-size:14pt'>Reading Skills<br><br></span></b><div
+style='text-align:center'><b><span style='font-size:12pt'>Qualities of a Good
+Leader<br></span></b></div>A good leader has the following three qualities: <br>&#8226; Communicates
+clearly<br>A good leader uses words carefully.&nbsp; He doesn&#8217;t say too much or too
+little.&nbsp; He understands who his audience is, and <u>he</u> changes the words he uses depending
+on the person he&#8217;s talking to.&nbsp; He listens well to other people to make sure they
+understand him and to make sure his decisions and actions meet <u>their</u> needs.<br>&#8226; Values
+people<br>A good leader understands that her greatest strengths are the people who follow her.&nbsp;
+Without these people, <u>she</u> could accomplish nothing.&nbsp; She speaks with people respectfully
+and listens to <u>their</u> concerns.&nbsp; She makes sure her followers have the resources they
+need.<br>&#8226; Knows what needs to happen<br>A great leader thinks about what steps need to be
+taken and how <u>they</u> will be taken.&nbsp; This leader is prepared for the future and has a plan
+for the many possible situations.&nbsp; She has many goals and knows what she
+wants.<br><br><b>DIRECTIONS: The sentences below come from the passage &#8220;Qualities of a
+Leader.&#8221; Read each sentence and look at the underlined reference word. Look back at the passage
+and find the word or words that the underlined word refers to and write it on the line. Your answer
+should not contain more than 3 words.</b></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;20.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>He understands who his audience is, and <u>he</u> changes the words he uses
+depending on the person he&#8217;s talking to.<br>________________________</div><div style='font-size:2pt'></div>
+		<textarea name='SA:20' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;21.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>He listens well to other people to make sure they understand him and to make
+sure his decisions and actions meet <u>their</u> needs.<br>________________________</div><div style='font-size:2pt'></div>
+		<textarea name='SA:21' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;22.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Without these people, <u>she</u> could accomplish
+nothing.<br>________________________</div><div style='font-size:2pt'></div>
+		<textarea name='SA:22' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;23.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>She speaks with people respectfully and listens to <u>their</u>
+concerns.<br>________________________</div><div style='font-size:2pt'></div>
+		<textarea name='SA:23' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;24.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>A great leader thinks about what steps need to be taken and how <u>they</u> will
+be taken.<br>________________________</div><div style='font-size:2pt'></div>
+		<textarea name='SA:24' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><span style='font-size:14pt'>TED Talk
+Comprehension<br><br></span></b><b>DIRECTIONS: Read the following excerpt from Derek Sivers&#8217;
+TED Talk. Then match the paragraph to the information contained in that paragraph. <span
+style='font-size:12pt'><br></span></b><div style='text-align:center'><b><span
+style='font-size:12pt'><br></span><span style='font-size:14pt'>Derek Sivers&#8212;How to Start a
+Movement</span><span style='font-size:12pt'><br></span></b></div><b>Paragraph A</b><br>So, ladies and
+gentlemen, at TED we talk a lot about leadership and how to make a movement. So let&#8217;s watch a
+movement happen, start to finish, in under three minutes and dissect some lessons from
+it.<br><br><b>Paragraph B</b><br>First, of course you know, a leader needs the guts to stand out and
+be ridiculed. But what he&#8217;s doing is so easy to follow. So here&#8217;s his first follower with
+a crucial role; he&#8217;s going to show everyone else how to follow.<br><br><b>Paragraph
+C</b><br>Now, notice that the leader embraces him as an equal. So, now it&#8217;s not about the
+leader anymore; it&#8217;s about them, plural. Now, there he is calling to his friends. Now, if you
+notice that the first follower is actually an underestimated form of leadership in itself. It takes
+guts to stand out like that. The first follower is what transforms a lone nut into a leader.
+<br><br><b>Paragraph D </b><br>And here comes a second follower. Now it&#8217;s not a lone nut,
+it&#8217;s not two nuts&#8212;three is a crowd, and a crowd is news. So a movement must be public.
+It&#8217;s important to show not just the leader, but the followers, because you find that new
+followers emulate the followers, not the leader.<br></div><div class='default'><table cellpadding='0'
+cellspacing='0' width='95%' border='0'><tr valign='baseline'><td width='4%'><div
+class='choice'>a.</div></td><td width='96%'><span class='default'>Paragraph A</span></td></tr><tr
+valign='baseline'><td><div class='choice'>b.</div></td><td><span class='default'>Paragraph
+B</span></td></tr><tr valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>Paragraph C</span></td></tr><tr valign='baseline'><td><div
+class='choice'>d.</div></td><td><span class='default'>Paragraph D</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:25' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;25.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>the purpose of the talk</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:26' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;26.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>how a leader takes the first risk</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:27' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;27.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>the number of people needed to make a movement</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:28' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;28.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>how the first follower is really a leader</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><span style='font-size:12pt'>DIRECTIONS: Read the following excerpt from
+Derek Sivers&#8217; TED Talk and answer the questions.<br></span></b><div
+style='text-align:center'><b><span style='font-size:12pt'><br></span><span
+style='font-size:14pt'>Derek Sivers&#8212;How to Start a Movement</span><span
+style='font-size:12pt'><br></span></b></div>So, ladies and gentlemen, at TED we talk a lot about
+leadership and how to make a movement. So let&#8217;s watch a movement happen, start to finish, in
+under three minutes and dissect some lessons from it.<br>First, of course you know, a leader needs
+the guts to stand out and be ridiculed. But what he&#8217;s doing is so easy to follow. So
+here&#8217;s his first follower with a crucial role; he&#8217;s going to show everyone else how to
+follow.<br>Now, notice that the leader embraces him as an equal. So, now it&#8217;s not about the
+leader anymore; it&#8217;s about them, plural. Now, there he is calling to his friends. Now, if you
+notice that the first follower is actually an underestimated form of leadership in itself. It takes
+guts to stand out like that. The first follower is what transforms a lone nut into a leader. <br>And
+here comes a second follower. Now it&#8217;s not a lone nut, it&#8217;s not two nuts&#8212;three is a
+crowd, and a crowd is news. So a movement must be public. It&#8217;s important to show not just the
+leader, but the followers, because you find that new followers emulate the followers, not the
+leader.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:29' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;29.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>What is true about the leader?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>He is willing to do something even though other people may laugh at
+him.</span></td></tr><tr valign='baseline'><td><div class='choice'>b.</div></td><td><span
+class='default'>He is doing something difficult for others to follow.</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span class='default'>He is a movement all
+by himself.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:30' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;30.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>What is <b>NOT</b> true of the first follower?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>He is equal to the leader.</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>He has the courage to
+follow.</span></td></tr><tr valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>He makes the leader a follower.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:31' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;31.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>According to the article, how many people make a crowd?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>2</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>3</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>4</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:32' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;32.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Who do new followers <i>emulate</i>, or copy?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>the followers</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>the leader</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span class='default'>the
+public</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><span style='font-size:14pt'>Vocabulary <br><br></span>DIRECTIONS: Complete
+the sentences with words from the box.<br><br></b><div style='font-size:2pt'></div><table
+cellpadding='0' cellspacing='0' width='83%' border='0'><tr valign='top'><td class='pad' style='
+border-left:0.8pt solid #000000; border-top:0.8pt solid #000000;'><div
+style='margin-left:18pt'>attracted</div></td><td class='pad' style=' border-top:0.8pt solid
+#000000;'>features</td><td class='pad' style=' border-top:0.8pt solid #000000;'>focus</td><td
+class='pad' style=' border-top:0.8pt solid #000000; border-right:0.8pt solid #000000;'>in other
+words</td></tr><tr valign='top'><td class='pad' style=' border-left:0.8pt solid #000000;
+border-bottom:0.8pt solid #000000;'><div style='text-align:right'>leadership</div></td><td
+class='pad' style=' border-bottom:0.8pt solid #000000;'><div
+style='text-align:right'>purpose</div></td><td class='pad' style=' border-bottom:0.8pt solid
+#000000;'><div style='text-align:right'>showed ups</div></td><td class='pad' style='
+border-right:0.8pt solid #000000; border-bottom:0.8pt solid #000000;'><div
+style='text-align:right;margin-right:18pt'>stood out</div></td></tr><tr height='0'
+style='border:none'><td width='26%'></td><td width='22%'></td><td width='20%'></td><td
+width='32%'></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;33.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>The speaker was prepared to give his speech, but no one _____________________ to
+hear him.</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:33' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;34.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>The young woman was selected to be manager because of her excellent
+________________ skills.</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:34' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;35.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Great leaders __________________ on what is important.&nbsp; They don&#8217;t
+pay much attention to anything else.</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:35' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;36.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>A good leader knows his or her _______________________&#8212;the reason why he
+or she exists.</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:36' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;37.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Back in ancient times, some leaders were chosen because they were the tallest or
+strongest&#8212;they ______________________ from all the others.</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:37' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;38.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Many people were _______________________ to the leader&#8217;s words.&nbsp; They
+liked his promises for change and hope for the future.</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:38' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;39.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>The mayor&#8217;s plan for the city has several important __________________,
+such as repairing roads and public buildings as well as adding more parks.</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:39' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;40.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>In order to follow someone, people have to believe him or her.&nbsp;
+___________________, they have to trust that person.</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:40' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+</table>
+<br clear='all'>
+<br>
+<br>
+<table align='left' width='100%' cellpadding='0' cellspacing='0' border='0'>
+<tr>
+    <td bgcolor='#000000'>
+    <div style='font-size:1pt'>&nbsp;</div>
+    </td>
+</tr>
+<tr>
+    <td><input type='image' src='untitled_files/submit.gif' alt='Grade and Submit'>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href='#' onclick='Restart(); return false'><img
+	    src='untitled_files/restart.gif' border='0' alt='Start Over'></a>
+    </td>
+</tr>
+</table>
+</form>
+</body>
+</html>
