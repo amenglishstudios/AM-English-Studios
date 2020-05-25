@@ -1,0 +1,1522 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<meta name='generator' content='ExamView HTML Generator 8.1.6.69144'>
+	<meta name='robots' content='noindex,nofollow'>
+	<title>Reading/Writing Level 2 Test 8</title>
+	<style type='text/css'>
+		.spacer { line-height:.7em; }
+		.title { font-size:13pt; font-weight:bold; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		.qnumber { font-size:12pt; font-family:"Times New Roman", "Times", serif; color:#000000; text-align:right; }
+		.choice { font-size:12pt; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		.default { font-size:12pt; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		.qinfo { font-size:12pt; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		.points { font-size:8pt; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		TD.pad { padding: 0pt 4pt 0pt 4pt; }
+		.font1 { font-family:"Times New Roman", "Times", serif; }
+		.font2 { font-family:"Times New Roman", "Times", serif; }
+	</style>
+<script type='text/javascript' language='JavaScript1.1'>
+<!--
+	// Copyright (c) 2000-2008 eInstruction Corp.
+	var listMap = '11111111111111111111111111111111111111111111110000';
+	var qtypeMap = '2222222222222222222222000000000000000000000000BBBB';
+	var ansMap = new Array(50);
+	var ptsMap = new Array(50);
+	ansMap[0] = '43';
+	ptsMap[0] = 1;
+	ansMap[1] = '43';
+	ptsMap[1] = 1;
+	ansMap[2] = '42';
+	ptsMap[2] = 1;
+	ansMap[3] = '47';
+	ptsMap[3] = 1;
+	ansMap[4] = '46';
+	ptsMap[4] = 1;
+	ansMap[5] = '44';
+	ptsMap[5] = 1;
+	ansMap[6] = '46';
+	ptsMap[6] = 1;
+	ansMap[7] = '4a';
+	ptsMap[7] = 1;
+	ansMap[8] = '4a';
+	ptsMap[8] = 1;
+	ansMap[9] = '4b';
+	ptsMap[9] = 1;
+	ansMap[10] = '4a';
+	ptsMap[10] = 1;
+	ansMap[11] = '4d';
+	ptsMap[11] = 1;
+	ansMap[12] = '4c';
+	ptsMap[12] = 1;
+	ansMap[13] = '4d';
+	ptsMap[13] = 1;
+	ansMap[14] = '4b';
+	ptsMap[14] = 1;
+	ansMap[15] = '52';
+	ptsMap[15] = 1;
+	ansMap[16] = '53';
+	ptsMap[16] = 1;
+	ansMap[17] = '53';
+	ptsMap[17] = 1;
+	ansMap[18] = '57';
+	ptsMap[18] = 1;
+	ansMap[19] = '55';
+	ptsMap[19] = 1;
+	ansMap[20] = '57';
+	ptsMap[20] = 1;
+	ansMap[21] = '55';
+	ptsMap[21] = 1;
+	ansMap[22] = '43';
+	ptsMap[22] = 1;
+	ansMap[23] = '5e';
+	ptsMap[23] = 1;
+	ansMap[24] = '5f';
+	ptsMap[24] = 1;
+	ansMap[25] = '4e';
+	ptsMap[25] = 1;
+	ansMap[26] = '4f';
+	ptsMap[26] = 1;
+	ansMap[27] = '5a';
+	ptsMap[27] = 1;
+	ansMap[28] = '49';
+	ptsMap[28] = 1;
+	ansMap[29] = '58';
+	ptsMap[29] = 1;
+	ansMap[30] = '59';
+	ptsMap[30] = 1;
+	ansMap[31] = '55';
+	ptsMap[31] = 1;
+	ansMap[32] = '56';
+	ptsMap[32] = 1;
+	ansMap[33] = '57';
+	ptsMap[33] = 1;
+	ansMap[34] = '42';
+	ptsMap[34] = 1;
+	ansMap[35] = '51';
+	ptsMap[35] = 1;
+	ansMap[36] = '52';
+	ptsMap[36] = 1;
+	ansMap[37] = '53';
+	ptsMap[37] = 1;
+	ansMap[38] = '4e';
+	ptsMap[38] = 1;
+	ansMap[39] = '5d';
+	ptsMap[39] = 1;
+	ansMap[40] = '4c';
+	ptsMap[40] = 1;
+	ansMap[41] = '4d';
+	ptsMap[41] = 1;
+	ansMap[42] = '4a';
+	ptsMap[42] = 1;
+	ansMap[43] = '59';
+	ptsMap[43] = 1;
+	ansMap[44] = '48';
+	ptsMap[44] = 1;
+	ansMap[45] = '5b';
+	ptsMap[45] = 1;
+	ansMap[46] = '';
+	ptsMap[46] = 1;
+	ansMap[47] = '';
+	ptsMap[47] = 1;
+	ansMap[48] = '';
+	ptsMap[48] = 1;
+	ansMap[49] = '';
+	ptsMap[49] = 1;
+	function HandleSubmit(f)
+	{
+		var	MAGIC = 840;
+		var	totalCorrect = 0;
+		var	totalPossible = 0;
+		var	numCorrect = 0;
+		var	numPossible = 0;
+		var	numBlank = 0;
+		var	index;
+		var	msg;
+		var	i;
+
+		f.student_name.value = StripSpaces(f.student_name.value);
+		f.student_id.value = StripSpaces(f.student_id.value);
+		f.student_email.value = StripSpaces(f.student_email.value);
+
+		FixMR(f);
+		FixMTF(f);
+		index = 0;
+		for (i=0; i < f.length; ++i) {
+			if (f.elements[i].name.indexOf(":") > 0) {
+				if (listMap.charAt(index) == "1") {
+					listIndex = f.elements[i].selectedIndex;
+					text = StripSpaces(f.elements[i].options[listIndex].value);
+				} else {
+					f.elements[i].value = StripSpaces(f.elements[i].value);
+					text = f.elements[i].value;
+				}
+
+				if (text.length == 0)
+					++numBlank;
+				++index;
+			}
+		}
+
+		if (f.student_name.value == "") {
+			alert("Student name cannot be blank.");
+			return(false);
+		}
+
+		if (numBlank > 0) {
+			if (numBlank == 1)
+				msg = "1 question";
+			else
+				msg = numBlank + " questions";
+			if (!confirm("You have not answered " + msg +
+				"  Are you sure you want to end the test?"))
+				return(false);
+		}
+
+		index = 0;
+		var scoreDetails = new Array();
+		for (i=0; i < f.length; ++i) {
+			if (f.elements[i].name.indexOf(":") > 0) {
+				if (listMap.charAt(index) == "1") {
+					listIndex = f.elements[i].selectedIndex;
+					text = f.elements[i].options[listIndex].value;
+				} else
+					text = f.elements[i].value;
+
+				numPossible = ptsMap[index] * MAGIC;
+				if (ansMap[index] == "")
+					scoreDetails[index] = "?--";
+				else {
+					var scoreResult = ScoreAnswer(index, text, numPossible);
+					numCorrect = scoreResult.numPoints;
+					scoreDetails[index] = (scoreResult.isCorrect) ? " " : "X";
+					scoreDetails[index] += (Math.round(numCorrect * 100 / MAGIC) / 100).toString();
+					totalCorrect += numCorrect;
+					totalPossible += numPossible;
+				}
+
+				scoreDetails[index] += "/" + (numPossible / MAGIC);
+				++index;
+			}
+		}
+
+		f.score_details.value = scoreDetails.join("|");
+		f.score_correct.value = Math.round(totalCorrect * 100 / MAGIC) / 100;
+		f.score_possible.value = Math.round(totalPossible * 100 / MAGIC) / 100;
+		if (totalPossible > 0)
+			f.score_percent.value = Math.round(100.0 * totalCorrect / totalPossible);
+		else
+			f.score_percent.value = 0;
+
+		return(true);
+	}
+
+	function TranslateAnswer(s, answerIndex)
+	{
+		var	value;
+		var	newString;
+		var	code;
+		var	i;
+
+		value = (answerIndex % 31) + 1;
+		newString = "";
+		for (i=0; i < s.length; i += 2) {
+			code = parseInt(s.substring(i, i + 2), 16);
+			newString += String.fromCharCode(code ^ value);
+		}
+
+		return(newString);
+	}
+
+	function ScoreAnswer(answerIndex, responseText, pointsPossible)
+	{
+		var answerText = TranslateAnswer(ansMap[answerIndex], answerIndex);
+		var qtype = qtypeMap.charAt(answerIndex);
+		var nrExactMatch = false;
+		var result = new Array();
+
+		result.numPoints = 0;
+		result.isCorrect = false;
+
+		if (qtype == "3" && answerText.substring(0, 2) == "p:") {
+			answerText = answerText.substr(2);
+			if (responseText.toUpperCase() == answerText.toUpperCase())
+				result.isCorrect = true;
+			else
+				result.numPoints = MultiResponseCompare(responseText, answerText, pointsPossible);
+		} else if (qtype == "6") {
+			if (answerText.substring(0, 2) == "==") {
+				answerText = answerText.substr(2);
+				nrExactMatch = true;
+			}
+			if (NumericCompare(responseText, answerText, nrExactMatch))
+				result.isCorrect = true;
+		} else if (qtype == "7") {
+			if (CompletionCompare(responseText, answerText))
+				result.isCorrect = true;
+		} else if (responseText.toUpperCase() == answerText.toUpperCase())
+			result.isCorrect = true;
+
+		if (result.isCorrect)
+			result.numPoints = pointsPossible;
+
+		return(result);
+	}
+
+	function StripSpaces(s)
+	{
+		var	len;
+		var	i;
+
+		len = s.length;
+		for (i=len - 1; i >= 0 && s.charAt(i) == " "; --i)
+			len = i;
+
+		if (len == 0)
+			s = "";
+		else if (len != s.length)
+			s = s.substring(0, len);
+
+		return(s);
+	}
+
+	function MultiResponseCompare(responseText, answerText, pointsPossible)
+	{
+	}
+
+	function NumericCompare(response, answer, exactMatch)
+	{
+	}
+
+
+	function CompletionCompare(responseText, answerText)
+	{
+		return(false);
+	}
+
+    function StripLeadingSpaces(s)
+	{
+		var	len;
+		var	i = 0;
+		var index = -1;
+
+		len = s.length;
+		while(i < len && s.charAt(i) == " ")
+		{
+			index = ++i;			
+	    }
+
+		if (len == 0)
+			s = "";
+		else if (index > -1)
+			s = s.substring(index, len);
+
+		return(s);
+	}
+	
+	function FixMTF(f)
+	{
+	}
+
+	function FixMR(f)
+	{
+	}
+
+	function AllowReset()
+	{
+		return(window.confirm("Do you want to clear all of your answers?"));
+	}
+
+	function Restart()
+	{
+		if (AllowReset()) {
+			document.TestForm.onreset = function() { };
+			document.TestForm.reset();
+			document.TestForm.onreset = function() { AllowReset(); };
+		}
+	}
+// -->
+</script>
+</head>
+<body onResize='if(document.layers && navigator.appVersion.indexOf("Win") < 0){history.go(0);}'
+bgcolor='#FFFFFF' style='background-image:url(RWL1T8_files/header.gif); background-repeat:no-repeat'>
+<noscript>
+	<h3><font color='#FF0000'>Javascript not enabled</font></h3>
+</noscript>
+<script type='text/javascript' language='JavaScript'>
+<!--
+if (navigator.appName.indexOf("Netscape") >= 0) {
+	if (parseInt(navigator.appVersion.charAt(0)) < 4)
+		alert("This document requires Netscape Navigator version 4.0 or later.");
+} else if (navigator.appName.indexOf("Explorer") >= 0) {
+	if (parseInt(navigator.appVersion.charAt(0)) < 4)
+		alert("This document requires Internet Explorer version 4.0 or later.");
+}
+// -->
+</script>
+<form name='TestForm' action='http://score.examview.com/cgi-bin/results.cgi' method='POST'
+	onSubmit='return(HandleSubmit(this))' onReset='return(AllowReset())'>
+<input type='hidden' name='product_version' value='8.1.103.69470'>
+<input type='hidden' name='instructor_name' value='Matthew Manning'>
+<input type='hidden' name='instructor_formalname' value='Mr. Manning'>
+<input type='hidden' name='instructor_email' value='matthew.manning@m.kckps.org'>
+<input type='hidden' name='instructor_org' value='None'>
+<input type='hidden' name='instructor_city' value='None'>
+<input type='hidden' name='instructor_state' value='KS'>
+<input type='hidden' name='test_name' value='Reading/Writing Level 2 Test 8'>
+<input type='hidden' name='other_label' value='Other'>
+<input type='hidden' name='test_mixed_questions' value='0'>
+<input type='hidden' name='score_correct' value='0'>
+<input type='hidden' name='score_possible' value='0'>
+<input type='hidden' name='score_percent' value='0'>
+<input type='hidden' name='score_subjective' value='4'>
+<input type='hidden' name='score_details' value=''>
+<input type='hidden' name='score_showresults' value='1'>
+<div class='spacer'>&nbsp;</div>
+<div class='default'>
+	<div style='margin-left:1em'>
+	<b>Name:</b>&nbsp;<input type='text' name='student_name' size='30'> &nbsp;&nbsp;
+	<b>ID:</b>&nbsp;<input type='text' name='student_id' size='12'><br>
+	<div class='spacer'>&nbsp;</div>
+	<b>Email:</b>&nbsp;<input type='text' name='student_email' size='45'><br><br>
+	</div>
+</div>
+<div class='title'>Reading/Writing Level 2 Test 8</div>
+
+<table align='left' width='100%' border='0' cellpadding='0' cellspacing='0'>
+<tr valign='top'>
+	<td colspan='3'><br>
+<div class='default'><b>Multiple Choice</b><span style='font-size:12pt'><br></span><i>Identify the
+choice that best completes the statement or answers the question.</i></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:1' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;1.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Henry Salt&#039;s 1892 book on animal rights ____.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>was read by all the schoolchildren in Britain</span></td></tr><tr
+valign='baseline'><td><div class='choice'>b.</div></td><td><span class='default'>began the animal
+rights movement</span></td></tr><tr valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>said animals had less rights than humans</span></td></tr><tr
+valign='baseline'><td><div class='choice'>d.</div></td><td><span class='default'>was in favor of
+humans eating meat</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:2' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;2.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>The chimpanzee Washoe learned ____.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>American Sign Language</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>to count to 1,000</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span class='default'>to build bridges
+with blocks</span></td></tr><tr valign='baseline'><td><div class='choice'>d.</div></td><td><span
+class='default'>to verbalize 100 words in English</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:3' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;3.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>The status of a &quot;sentient being&quot; means having ____.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>consciousness and emotions</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>emotions just related to
+family</span></td></tr><tr valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>the ability to meditate</span></td></tr><tr valign='baseline'><td><div
+class='choice'>d.</div></td><td><span class='default'>the ability to use
+language</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:4' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;4.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>The first European nation to include animal rights in their constitution was
+____.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>England</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>France</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>Germany</span></td></tr><tr valign='baseline'><td><div
+class='choice'>d.</div></td><td><span class='default'>Italy</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:5' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;5.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Animal rights activists point out that certain animals have a well-developed
+<i>consciousness</i>. The word consciousness means ____.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>purpose</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>memory</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>awareness</span></td></tr><tr valign='baseline'><td><div
+class='choice'>d.</div></td><td><span class='default'>education</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:6' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;6.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>When people <i>deliberately</i> harm animals, they do it ____.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>accidentally</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>intentionally</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>legally</span></td></tr><tr valign='baseline'><td><div
+class='choice'>d.</div></td><td><span class='default'>quietly</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:7' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;7.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>What&#039;s your opinion on the ____ of animal rights?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>issue</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>memory</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>production</span></td></tr><tr valign='baseline'><td><div
+class='choice'>d.</div></td><td><span class='default'>answer</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:8' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;8.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Germany has passed a law that adds tighter restrictions on using animals for
+cosmetic and drug testing. Another word for <i>restrictions</i> is ____.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>issues</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>rules</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>pursuits</span></td></tr><tr valign='baseline'><td><div
+class='choice'>d.</div></td><td><span class='default'>respect</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:9' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;9.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>The purpose of cloning chickens is to ____.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>treat chickens humanely</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>to gain more experience with
+cloning</span></td></tr><tr valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>to obtain increased yield of chicken meat and eggs</span></td></tr><tr
+valign='baseline'><td><div class='choice'>d.</div></td><td><span class='default'>to help chickens
+reproduce more successfully</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:10' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;10.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>A &quot;chimera&quot; contains ____.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>cells from a donor and a recipient</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>cells from only the donor</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span class='default'>cells from only the
+recipient</span></td></tr><tr valign='baseline'><td><div class='choice'>d.</div></td><td><span
+class='default'>only differentiated cells</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:11' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;11.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Animal welfare groups are opposed to cloning chickens because ____.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>it can cause disease and injury to the chickens</span></td></tr><tr
+valign='baseline'><td><div class='choice'>b.</div></td><td><span class='default'>the eggs will be
+unsafe to eat</span></td></tr><tr valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>its too expensive</span></td></tr><tr valign='baseline'><td><div
+class='choice'>d.</div></td><td><span class='default'>farms will produce more than they can
+sell</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><div style='text-align:center'><b>&quot;Concerns about Genetically Modified
+Foods&quot;<br></b></div><br>&#160;&#160;&#160;&#160;&#160;Did you know that two-thirds of American
+processed food contain genetically modified ingredients? Transferring a gene from one organism into
+the DNA of another makes genetically modified crops. In order for this to happen, a
+&quot;carrier,&quot; such as a virus is used to transfer the DNA material. Proponents of this
+technology say these advances could result in higher food yields, more nutritious foods, and more
+pesticide resistant crops. However, early evidence suggests that the process of genetically modifying
+crops can be dangerous to our health and the environment and I believe more research should be done
+before we use this technology widely.<br><br>&#160;&#160;&#160;&#160;&#160;One environmental area of
+concern is the inability to isolate genetically modified crops from other agricultural products.
+Recently, many corn-based products were found to be contaminated with a popular genetically modified
+corn feed. Unfortunately, this was an animal feed and was not approved for human consumption. So how
+did this corn feed get into these other foods? Scientists think that pollen drift and feed residues
+on farm equipment transferred the ingredient to other corn crops. Because of the contamination, over
+three hundred corn-based products were recalled.<br><br>&#160;&#160;&#160;&#160;&#160;This new
+technology also may affect the health of individuals in unpredictable ways. For example, the
+corn-feed contamination posed serious health hazards to allergic individuals; in fact, many consumers
+said they suffered serious allergic reactions from unknowingly eating these contaminated foods. Many
+of these individuals sought damages from the corn feed
+company.<br><br>&#160;&#160;&#160;&#160;&#160;Proponents of genetically modified foods say that
+labeling foods that are genetically modified could solve health problems. However, at this time,
+there are no U.S. laws that require labeling for domestically genetically modified products. The Food
+and Drug Agency has resisted mandatory U.S. labeling due to the costs involved. Instead, it has
+proposed voluntary labeling for companies that want to alert consumers to the presence or absence of
+genetically modified ingredients. Many claim that labeling can help prevent these health hazards.
+They also claim that better technology will prevent pollen spread and contamination.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:12' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;12.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>The product that contaminated corn based products was ____.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>a type of animal feed</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>a fast-growing weed</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span class='default'>a genetically
+modified fruit</span></td></tr><tr valign='baseline'><td><div class='choice'>d.</div></td><td><span
+class='default'>a. meat product</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:13' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;13.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>The corn-based crops got contaminated from ____.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>pollen drift and feed residue</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>farmers transporting boxes of
+corn</span></td></tr><tr valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>factory workers placing it in canned goods</span></td></tr><tr
+valign='baseline'><td><div class='choice'>d.</div></td><td><span class='default'>farmers spreading it
+over wheat crops</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:14' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;14.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>At this time, the FDA ____.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>requires full labeling of domestic genetically modified foods</span></td></tr><tr
+valign='baseline'><td><div class='choice'>b.</div></td><td><span class='default'>opposes voluntary
+labeling for domestic genetically modified foods</span></td></tr><tr valign='baseline'><td><div
+class='choice'>c.</div></td><td><span class='default'>does not require any labeling of genetically
+modified exports</span></td></tr><tr valign='baseline'><td><div class='choice'>d.</div></td><td><span
+class='default'>has no position on labeling of domestic genetically modified
+foods</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:15' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;15.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Opponents of genetically modified foods worry about ____.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>an increase in lawsuits against the government</span></td></tr><tr
+valign='baseline'><td><div class='choice'>b.</div></td><td><span class='default'>increased testing of
+DNA transfer from one organism to another</span></td></tr><tr valign='baseline'><td><div
+class='choice'>c.</div></td><td><span class='default'>an increased cost to
+consumers</span></td></tr><tr valign='baseline'><td><div class='choice'>d.</div></td><td><span
+class='default'>the unpredictability of results and potential health
+hazards</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:16' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;16.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Genetically modified foods are created by ____.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>transferring RNA from organism to organism</span></td></tr><tr
+valign='baseline'><td><div class='choice'>b.</div></td><td><span class='default'>inserting a gene
+from one organism into the DNA of another</span></td></tr><tr valign='baseline'><td><div
+class='choice'>c.</div></td><td><span class='default'>inserting a newly developed virus into an
+existing crop</span></td></tr><tr valign='baseline'><td><div class='choice'>d.</div></td><td><span
+class='default'>cloning an agricultural crop and duplicating it</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:17' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;17.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>The Royal Society for the Prevention of Cruelty to Animals was founded in
+____.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>1776</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>1824</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>1892</span></td></tr><tr valign='baseline'><td><div
+class='choice'>d.</div></td><td><span class='default'>the 1970s</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:18' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;18.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Which of the following creatures do chimpanzee researchers <u>not</u> include on
+their list of animals that are in some ways similar to humans?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>birds</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>gorillas</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>whales</span></td></tr><tr valign='baseline'><td><div
+class='choice'>d.</div></td><td><span class='default'>dolphins</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:19' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;19.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>The company&#8217;s profits increased because they _____ their sales.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>teamed up</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>abused</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>endowed</span></td></tr><tr valign='baseline'><td><div
+class='choice'>d.</div></td><td><span class='default'>scaled up</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:20' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;20.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>The young employee _____ having her own company.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>envisaged</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>rated</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>adopted</span></td></tr><tr valign='baseline'><td><div
+class='choice'>d.</div></td><td><span class='default'>restricted</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:21' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;21.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Foreign students sometimes _____ cultural characteristics of the host
+country.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>put off</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>adopt</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>prospect</span></td></tr><tr valign='baseline'><td><div
+class='choice'>d.</div></td><td><span class='default'>supply</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:22' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;22.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>This high technology _____ is rapidly changing the world.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>resistance</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>victim</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>era</span></td></tr><tr valign='baseline'><td><div
+class='choice'>d.</div></td><td><span class='default'>donor</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td colspan='3'><br>
+<div class='default'><b>True/False</b><span style='font-size:12pt'><br></span><i>Indicate whether the
+statement is true or false.</i></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:1' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;1.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>The FDA is not sure that meat and eggs from cloned chickens is safe for humans
+to eat.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:2' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;2.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>When writing body paragraphs for an argument essay, write the strongest argument
+first.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:3' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;3.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>The thesis statement for an argument essay is the same as in other types of
+essays.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:4' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;4.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>The conclusion in an argument essay ends with alternatives or a demand for
+action.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:5' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;5.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Britain passed laws preventing animal abuse before it passed laws about
+protecting children.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:6' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;6.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Scientists at Wayne State University found that human genes and ape genes had
+very little in common.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:7' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;7.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>An argument essay mentions both sides of an argument.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:8' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;8.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>The refutation in an argument essay usually follows the introduction.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:9' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;9.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>A strong argument essay can be developed without facts and statistics.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:10' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;10.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>An argument essay contains a refutation of the opposing side.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:11' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;11.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>If your team <i>prevails</i>, it wins the game.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:12' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;12.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Animal rights activists want to treat animals <i>humanely.</i></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:13' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;13.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>People are usually proud when they <i>abuse </i>an animal.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:14' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;14.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>If you are in <i>pursuit </i>of someone, you are chasing him or her.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:15' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;15.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Mount Everest is a <i>massive </i>mountain.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:16' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;16.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Sheep are more <i>vulnerable </i>to attack than lions.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:17' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;17.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>When the government <i>modifies </i>a law, the law stays the same.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:18' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;18.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Another word for <i>prospect </i>is &#8220;possibility.&#8221;</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:19' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;19.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>If you <i>team up </i>with someone, you disagree with their viewpoint.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:20' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;20.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>When a machine is used in the cloning process, about 75% of the clones
+die.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:21' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;21.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>In the current cloning process, the clone is 100% identical to the
+original.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:22' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;22.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>The National Institute of Science and Technology supports cloning
+research.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:23' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;23.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Origen provides farmers with genetically modified chickens as well as
+clones.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:24' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;24.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Embrex has machines that can inject vaccines into 50,000 eggs an hour.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td colspan='3'><br>
+<div class='default'><b>Essay</b></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><div style='text-align:center'><b>&quot;Concerns about Genetically Modified
+Foods&quot;<br></b></div><br>&#160;&#160;&#160;&#160;&#160;Did you know that already two-thirds of
+American processed food contains genetically modified ingredients? Transferring a gene from one
+organism into the DNA of another makes genetically modified crops. In order for this to happen, a
+&quot;carrier,&quot; such as a virus is used to transfer the DNA material. Proponents of this
+technology say these advances could result in higher food yields, more nutritious foods, and more
+pesticide resistant crops. However, early evidence suggests that the process of genetically modifying
+crops can be dangerous to our health and the environment and I believe more research should be done
+before we use this technology widely.<br><br>&#160;&#160;&#160;&#160;&#160;One environmental area of
+concern is the inability to isolate genetically modified crops from other agricultural products.
+Recently, many corn-based products were found to be contaminated with a popular genetically modified
+corn feed. Unfortunately, this was an animal feed and was not approved for human consumption. So how
+did this corn feed get into these other foods? Scientists think that pollen drift and feed residues
+on farm equipment transferred the ingredient to other corn crops. Because of the contamination, over
+three hundred corn-based products were recalled.<br><br>&#160;&#160;&#160;&#160;&#160;This new
+technology also may affect the health of individuals in unpredictable ways. For example, the
+corn-feed contamination posed serious health hazards to allergic individuals; in fact, many consumers
+said they suffered serious allergic reactions from unknowingly eating these contaminated foods. Many
+of these individuals sought damages from the corn feed
+company.<br><br>&#160;&#160;&#160;&#160;&#160;Proponents of genetically modified foods say that
+labeling foods that are genetically modified could solve health problems. However, at this time,
+there are no U.S. laws that require labeling for domestically genetically modified products. The Food
+and Drug Agency has resisted mandatory U.S. labeling due to the costs involved. Instead, it has
+proposed voluntary labeling for companies that want to alert consumers to the presence or absence of
+genetically modified ingredients. Many claim that labeling can help prevent these health hazards.
+They also claim that better technology will prevent pollen spread and contamination.</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;1.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Is this essay in favor or opposed to the use of genetically modified
+food?<br><div style='font-size:2pt'></div><table cellpadding='0' cellspacing='0' width='85%'
+border='0'><tr valign='top'><td class='pad' style=' border-bottom:0.8pt solid
+#000000;'>&nbsp;</td></tr><tr height='0' style='border:none'><td
+width='100%'></td></tr></table></div><div style='font-size:2pt'></div>
+		<textarea name='ES:1' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;2.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>What reasons does the writer give for his opinion?<br><div
+style='font-size:2pt'></div><table cellpadding='0' cellspacing='0' width='85%' border='0'><tr
+valign='top'><td class='pad' style=' border-bottom:0.8pt solid #000000;'>&nbsp;</td></tr><tr
+height='0' style='border:none'><td width='100%'></td></tr></table></div><div style='font-size:2pt'></div>
+		<textarea name='ES:2' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;3.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Write a conclusion for this argument essay. End with an alternative or demand
+for action.<br><div style='font-size:2pt'></div><table cellpadding='0' cellspacing='0' width='85%'
+border='0'><tr valign='top'><td class='pad' style=' border-bottom:0.8pt solid
+#000000;'>&nbsp;</td></tr><tr valign='top'><td class='pad' style=' border-bottom:0.8pt solid
+#000000;'>&nbsp;</td></tr><tr valign='top'><td class='pad' style=' border-bottom:0.8pt solid
+#000000;'>&nbsp;</td></tr><tr height='0' style='border:none'><td
+width='100%'></td></tr></table></div><div style='font-size:2pt'></div>
+		<textarea name='ES:3' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;4.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Write an argument essay in favor or opposed to banning the sale of cigarettes
+because of the health hazards it poses to the individuals who smoke and the people who are in contact
+with the smoke.</div><div style='font-size:2pt'></div>
+		<textarea name='ES:4' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+</table>
+<br clear='all'>
+<br>
+<br>
+<table align='left' width='100%' cellpadding='0' cellspacing='0' border='0'>
+<tr>
+    <td bgcolor='#000000'>
+    <div style='font-size:1pt'>&nbsp;</div>
+    </td>
+</tr>
+<tr>
+    <td><input type='image' src='RWL1T8_files/submit.gif' alt='Grade and Submit'>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href='#' onclick='Restart(); return false'><img
+	    src='RWL1T8_files/restart.gif' border='0' alt='Start Over'></a>
+    </td>
+</tr>
+</table>
+</form>
+</body>
+</html>
