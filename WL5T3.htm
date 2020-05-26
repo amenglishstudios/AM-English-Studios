@@ -1,0 +1,1355 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<meta name='generator' content='ExamView HTML Generator 8.1.6.69144'>
+	<meta name='robots' content='noindex,nofollow'>
+	<title>Writing Level 5 Test 3</title>
+	<style type='text/css'>
+		.spacer { line-height:.7em; }
+		.title { font-size:13pt; font-weight:bold; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		.qnumber { font-size:12pt; font-family:"Times New Roman", "Times", serif; color:#000000; text-align:right; }
+		.choice { font-size:12pt; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		.default { font-size:12pt; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		.qinfo { font-size:12pt; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		.points { font-size:8pt; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		TD.pad { padding: 0pt 4pt 0pt 4pt; }
+		.font1 { font-family:"Times New Roman", "Times", serif; }
+		.font2 { font-family:"Times New Roman", "Times", serif; }
+	</style>
+<script type='text/javascript' language='JavaScript1.1'>
+<!--
+	// Copyright (c) 2000-2008 eInstruction Corp.
+	var listMap = '0000011111111100000000000000000111111110';
+	var qtypeMap = '77777222222222999999999DDDDDDDD00000000B';
+	var ansMap = new Array(40);
+	var ptsMap = new Array(40);
+	ansMap[0] = '676e746f65';
+	ptsMap[0] = 1;
+	ansMap[1] = '4361616d70666b6c6522766d';
+	ptsMap[1] = 1;
+	ansMap[2] = '606c6d606f766766';
+	ptsMap[2] = 1;
+	ansMap[3] = '7365766a77';
+	ptsMap[3] = 1;
+	ansMap[4] = '6b6a716076';
+	ptsMap[4] = 1;
+	ansMap[5] = '47';
+	ptsMap[5] = 1;
+	ansMap[6] = '44';
+	ptsMap[6] = 1;
+	ansMap[7] = '4a';
+	ptsMap[7] = 1;
+	ansMap[8] = '48';
+	ptsMap[8] = 1;
+	ansMap[9] = '48';
+	ptsMap[9] = 1;
+	ansMap[10] = '4a';
+	ptsMap[10] = 1;
+	ansMap[11] = '4f';
+	ptsMap[11] = 1;
+	ansMap[12] = '4f';
+	ptsMap[12] = 1;
+	ansMap[13] = '4c';
+	ptsMap[13] = 1;
+	ansMap[14] = '';
+	ptsMap[14] = 1;
+	ansMap[15] = '';
+	ptsMap[15] = 1;
+	ansMap[16] = '';
+	ptsMap[16] = 1;
+	ansMap[17] = '';
+	ptsMap[17] = 1;
+	ansMap[18] = '';
+	ptsMap[18] = 1;
+	ansMap[19] = '';
+	ptsMap[19] = 1;
+	ansMap[20] = '';
+	ptsMap[20] = 1;
+	ansMap[21] = '';
+	ptsMap[21] = 1;
+	ansMap[22] = '';
+	ptsMap[22] = 2;
+	ansMap[23] = '';
+	ptsMap[23] = 1;
+	ansMap[24] = '';
+	ptsMap[24] = 1;
+	ansMap[25] = '';
+	ptsMap[25] = 1;
+	ansMap[26] = '';
+	ptsMap[26] = 1;
+	ansMap[27] = '';
+	ptsMap[27] = 1;
+	ansMap[28] = '';
+	ptsMap[28] = 1;
+	ansMap[29] = '';
+	ptsMap[29] = 1;
+	ansMap[30] = '';
+	ptsMap[30] = 1;
+	ansMap[31] = '47';
+	ptsMap[31] = 1;
+	ansMap[32] = '56';
+	ptsMap[32] = 1;
+	ansMap[33] = '45';
+	ptsMap[33] = 1;
+	ansMap[34] = '50';
+	ptsMap[34] = 1;
+	ansMap[35] = '51';
+	ptsMap[35] = 1;
+	ansMap[36] = '40';
+	ptsMap[36] = 1;
+	ansMap[37] = '53';
+	ptsMap[37] = 1;
+	ansMap[38] = '5c';
+	ptsMap[38] = 1;
+	ansMap[39] = '';
+	ptsMap[39] = 5;
+	function HandleSubmit(f)
+	{
+		var	MAGIC = 840;
+		var	totalCorrect = 0;
+		var	totalPossible = 0;
+		var	numCorrect = 0;
+		var	numPossible = 0;
+		var	numBlank = 0;
+		var	index;
+		var	msg;
+		var	i;
+
+		f.student_name.value = StripSpaces(f.student_name.value);
+		f.student_id.value = StripSpaces(f.student_id.value);
+		f.student_email.value = StripSpaces(f.student_email.value);
+
+		FixMR(f);
+		FixMTF(f);
+		index = 0;
+		for (i=0; i < f.length; ++i) {
+			if (f.elements[i].name.indexOf(":") > 0) {
+				if (listMap.charAt(index) == "1") {
+					listIndex = f.elements[i].selectedIndex;
+					text = StripSpaces(f.elements[i].options[listIndex].value);
+				} else {
+					f.elements[i].value = StripSpaces(f.elements[i].value);
+					text = f.elements[i].value;
+				}
+
+				if (text.length == 0)
+					++numBlank;
+				++index;
+			}
+		}
+
+		if (f.student_name.value == "") {
+			alert("Student name cannot be blank.");
+			return(false);
+		}
+
+		if (numBlank > 0) {
+			if (numBlank == 1)
+				msg = "1 question";
+			else
+				msg = numBlank + " questions";
+			if (!confirm("You have not answered " + msg +
+				"  Are you sure you want to end the test?"))
+				return(false);
+		}
+
+		index = 0;
+		var scoreDetails = new Array();
+		for (i=0; i < f.length; ++i) {
+			if (f.elements[i].name.indexOf(":") > 0) {
+				if (listMap.charAt(index) == "1") {
+					listIndex = f.elements[i].selectedIndex;
+					text = f.elements[i].options[listIndex].value;
+				} else
+					text = f.elements[i].value;
+
+				numPossible = ptsMap[index] * MAGIC;
+				if (ansMap[index] == "")
+					scoreDetails[index] = "?--";
+				else {
+					var scoreResult = ScoreAnswer(index, text, numPossible);
+					numCorrect = scoreResult.numPoints;
+					scoreDetails[index] = (scoreResult.isCorrect) ? " " : "X";
+					scoreDetails[index] += (Math.round(numCorrect * 100 / MAGIC) / 100).toString();
+					totalCorrect += numCorrect;
+					totalPossible += numPossible;
+				}
+
+				scoreDetails[index] += "/" + (numPossible / MAGIC);
+				++index;
+			}
+		}
+
+		f.score_details.value = scoreDetails.join("|");
+		f.score_correct.value = Math.round(totalCorrect * 100 / MAGIC) / 100;
+		f.score_possible.value = Math.round(totalPossible * 100 / MAGIC) / 100;
+		if (totalPossible > 0)
+			f.score_percent.value = Math.round(100.0 * totalCorrect / totalPossible);
+		else
+			f.score_percent.value = 0;
+
+		return(true);
+	}
+
+	function TranslateAnswer(s, answerIndex)
+	{
+		var	value;
+		var	newString;
+		var	code;
+		var	i;
+
+		value = (answerIndex % 31) + 1;
+		newString = "";
+		for (i=0; i < s.length; i += 2) {
+			code = parseInt(s.substring(i, i + 2), 16);
+			newString += String.fromCharCode(code ^ value);
+		}
+
+		return(newString);
+	}
+
+	function ScoreAnswer(answerIndex, responseText, pointsPossible)
+	{
+		var answerText = TranslateAnswer(ansMap[answerIndex], answerIndex);
+		var qtype = qtypeMap.charAt(answerIndex);
+		var nrExactMatch = false;
+		var result = new Array();
+
+		result.numPoints = 0;
+		result.isCorrect = false;
+
+		if (qtype == "3" && answerText.substring(0, 2) == "p:") {
+			answerText = answerText.substr(2);
+			if (responseText.toUpperCase() == answerText.toUpperCase())
+				result.isCorrect = true;
+			else
+				result.numPoints = MultiResponseCompare(responseText, answerText, pointsPossible);
+		} else if (qtype == "6") {
+			if (answerText.substring(0, 2) == "==") {
+				answerText = answerText.substr(2);
+				nrExactMatch = true;
+			}
+			if (NumericCompare(responseText, answerText, nrExactMatch))
+				result.isCorrect = true;
+		} else if (qtype == "7") {
+			if (CompletionCompare(responseText, answerText))
+				result.isCorrect = true;
+		} else if (responseText.toUpperCase() == answerText.toUpperCase())
+			result.isCorrect = true;
+
+		if (result.isCorrect)
+			result.numPoints = pointsPossible;
+
+		return(result);
+	}
+
+	function StripSpaces(s)
+	{
+		var	len;
+		var	i;
+
+		len = s.length;
+		for (i=len - 1; i >= 0 && s.charAt(i) == " "; --i)
+			len = i;
+
+		if (len == 0)
+			s = "";
+		else if (len != s.length)
+			s = s.substring(0, len);
+
+		return(s);
+	}
+
+	function MultiResponseCompare(responseText, answerText, pointsPossible)
+	{
+	}
+
+	function NumericCompare(response, answer, exactMatch)
+	{
+	}
+
+
+	function CompletionCompare(responseText, answerText)
+	{
+		var	startIndex;
+		var	endIndex;
+		var	partialText;
+       
+        responseText = StripLeadingSpaces(StripSpaces(responseText));        
+        responseText = responseText.toUpperCase();
+		answerText = answerText.toUpperCase();
+
+		startIndex = 0;
+		do {
+			endIndex = answerText.indexOf("\r", startIndex);
+			if (endIndex < 0)
+				partialText = answerText.substring(startIndex);
+			else
+				partialText = answerText.substring(startIndex, endIndex);
+            
+            partialText = StripLeadingSpaces(StripSpaces(partialText));
+			if ((responseText == partialText) && (responseText.length > 0))
+			     return(true);
+
+			startIndex = endIndex + 1;
+		} while (endIndex >= 0);
+		return(false);
+	}
+
+    function StripLeadingSpaces(s)
+	{
+		var	len;
+		var	i = 0;
+		var index = -1;
+
+		len = s.length;
+		while(i < len && s.charAt(i) == " ")
+		{
+			index = ++i;			
+	    }
+
+		if (len == 0)
+			s = "";
+		else if (index > -1)
+			s = s.substring(index, len);
+
+		return(s);
+	}
+	
+	function FixMTF(f)
+	{
+	}
+
+	function FixMR(f)
+	{
+	}
+
+	function AllowReset()
+	{
+		return(window.confirm("Do you want to clear all of your answers?"));
+	}
+
+	function Restart()
+	{
+		if (AllowReset()) {
+			document.TestForm.onreset = function() { };
+			document.TestForm.reset();
+			document.TestForm.onreset = function() { AllowReset(); };
+		}
+	}
+// -->
+</script>
+</head>
+<body onResize='if(document.layers && navigator.appVersion.indexOf("Win") < 0){history.go(0);}'
+bgcolor='#FFFFFF' style='background-image:url(WL5T3_files/header.gif); background-repeat:no-repeat'>
+<noscript>
+	<h3><font color='#FF0000'>Javascript not enabled</font></h3>
+</noscript>
+<script type='text/javascript' language='JavaScript'>
+<!--
+if (navigator.appName.indexOf("Netscape") >= 0) {
+	if (parseInt(navigator.appVersion.charAt(0)) < 4)
+		alert("This document requires Netscape Navigator version 4.0 or later.");
+} else if (navigator.appName.indexOf("Explorer") >= 0) {
+	if (parseInt(navigator.appVersion.charAt(0)) < 4)
+		alert("This document requires Internet Explorer version 4.0 or later.");
+}
+// -->
+</script>
+<form name='TestForm' action='http://score.examview.com/cgi-bin/results.cgi' method='POST'
+	onSubmit='return(HandleSubmit(this))' onReset='return(AllowReset())'>
+<input type='hidden' name='product_version' value='8.1.103.69470'>
+<input type='hidden' name='instructor_name' value='Matthew Manning'>
+<input type='hidden' name='instructor_formalname' value='Mr. Manning'>
+<input type='hidden' name='instructor_email' value='matthew.manning@m.kckps.org'>
+<input type='hidden' name='instructor_org' value='None'>
+<input type='hidden' name='instructor_city' value='None'>
+<input type='hidden' name='instructor_state' value='KS'>
+<input type='hidden' name='test_name' value='Writing Level 5 Test 3'>
+<input type='hidden' name='other_label' value='Other'>
+<input type='hidden' name='test_mixed_questions' value='0'>
+<input type='hidden' name='score_correct' value='0'>
+<input type='hidden' name='score_possible' value='0'>
+<input type='hidden' name='score_percent' value='0'>
+<input type='hidden' name='score_subjective' value='18'>
+<input type='hidden' name='score_details' value=''>
+<input type='hidden' name='score_showresults' value='1'>
+<div class='spacer'>&nbsp;</div>
+<div class='default'>
+	<div style='margin-left:1em'>
+	<b>Name:</b>&nbsp;<input type='text' name='student_name' size='30'> &nbsp;&nbsp;
+	<b>ID:</b>&nbsp;<input type='text' name='student_id' size='12'><br>
+	<div class='spacer'>&nbsp;</div>
+	<b>Email:</b>&nbsp;<input type='text' name='student_email' size='45'><br><br>
+	</div>
+</div>
+<div class='title'>Writing Level 5 Test 3</div>
+
+<table align='left' width='100%' border='0' cellpadding='0' cellspacing='0'>
+<tr valign='top'>
+	<td colspan='3'><br>
+<div class='default'><b>Completion</b><span style='font-size:12pt'><br></span><i>Complete each
+statement.</i></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><i>DIRECTIONS: Complete each sentence with the best word or words in
+parentheses.</i></b></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;1.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Dwyer and Peters (2004) ____________________&nbsp; (admitted / found) that a
+large number of students said studying abroad had an impact on their world view, increased their
+self-confidence, and gave them the skill sets they needed for the career they chose.</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:1' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;2.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>____________________ (According to / Pointing out) a recent report, not being
+able to speak more than one language can seriously hamper your ability to get a job in today&#039;s
+economy.</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:2' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;3.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Brewer and Cunningham (2009) ____________________&nbsp; (conclude / predict)
+that real learning is often triggered by a serious dilemma that causes the individuals involved to
+question assumptions they may have held for their entire lives (p. 9).</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:3' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;4.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>A recent study ____________________ (warns / admits) that there will be severe
+consequences if governments do not address the issue of global warming.</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:4' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;5.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>As <i>National Geographic</i> ____________________ (notes / disagrees),
+&quot;Demand for seafood and advances in technology have led to fishing practices that are depleting
+fish and shellfish populations around the world.&quot;</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:5' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td colspan='3'><br>
+<div class='default'><b>Multiple Choice</b><span style='font-size:12pt'><br></span><i>Identify the
+choice that best completes the statement or answers the question.</i></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><i>DIRECTIONS: Which underlined part of the citation is
+incorrect?</i></b></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:1' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;1.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><u>(2006)</u> As Celeste, Thornburgh, and Lin point out, <u>&quot;the
+desirability</u> of electronic voting systems should be judged on the basis of whether their use will
+significantly improve the process of election administration&quot; <u>(p. 131)</u>.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>(2006)</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>&quot;the desirability</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span class='default'>(p.
+131)</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:2' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;2.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Furthermore, animals that use camouflage for protection share a potential
+problem as well. As Street <u>(1977)</u> observes, &quot;The disadvantage of camouflage is that if
+any animal has to move from its normal surroundings, it may become very conspicuous against a
+different <u>background&quot;</u> <u>p. 7</u>.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>(1977)</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>background&quot;</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span class='default'>p.
+7</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:3' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;3.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>For effective studying, however, students&#039; notes must be meaningful and
+coherent. As Palmer <u>(2004)</u> points out: <u>All</u> notes that are not accompanied by solid
+understanding are useless&quot; <u>(p. 129)</u>.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>(2004)</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>All</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span class='default'>(p.
+129)</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:4' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;4.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Similarly, Pichegru and her colleagues <u>2012</u> researched the challenges
+facing fish populations due to industrial fishing, concluding that <u>&quot;the development</u> of
+industrial fishing in the twentieth century has reduced the total number of predatory fish globally
+to less than ten-percent of pre-industrial levels . . . and profoundly altered marine
+environments&quot; <u>(p. 117)</u>.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>2012</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>&quot;the development</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span class='default'>(p.
+117)</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:5' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;5.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Delgado <u>(2008)</u> describes legendary accounts of this event: &quot;The
+legend, oft repeated in countless history books, speaks of gigantic ships, numbering into the
+thousands, crewed by indomitable Mongol warriors, and of casualties on a massive scale, with more
+than 100,000 lives lost in the final invasion attempt of <u>1281</u> <u>(p. 4)</u>.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>(2008)</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>1281</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span class='default'>(p.
+4)</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><i>DIRECTIONS: Read &quot;Coffee Production.&quot; Then choose the best
+paraphrase for each sentence.<br></i></b><br><div style='font-size:2pt'></div><table cellpadding='0'
+cellspacing='0' width='87%' border='0'><tr valign='top'><td class='pad' style=' border-left:0.8pt
+solid #000000; border-top:0.8pt solid #000000; border-right:0.8pt solid #000000; border-bottom:0.8pt
+solid #000000;'><div style='text-align:center'><b>Coffee
+Production*<br><br></b></div>&nbsp;&nbsp;&nbsp;&nbsp; The Arabica&#160;species of coffee is
+cultivated mostly in Latin America, while the&#160;Robusta species predominates in Africa. Both
+coffee species are grown in India, Indonesia, and other Asian countries. There are many varieties,
+forms, and types of each. The effects of environment and cultivation further increase this
+diversity.<br>&nbsp;&nbsp;&nbsp;&nbsp; Climatic factors most important for coffee growth are
+temperature&#160;and rainfall. No variety can withstand a temperature in the vicinity of 32&#176;F.
+Temperatures between 73&#176; and 82&#176; F are the most favorable.&#160;Rainfall of 60 to 80 inches
+per year is required along with a dry period of two to three months for the Arabica. Irrigation is
+required where annual rainfall is less than 40 inches.<br>&nbsp;&nbsp;&nbsp;&nbsp; Plantations are
+usually established in cleared forestland. The young shrubs are planted in rows spaced so that the
+density varies between 500 and 750 plants per acre. Seedlings or cuttings raised in nurseries are
+carefully planted at the beginning of the rainy season. Until they start producing fruit three to
+four years later, their care is limited largely to the trimming required to give them a robust,
+balanced framework and to stimulate fruiting.<br>&nbsp;&nbsp;&nbsp;&nbsp; For a long time coffee was
+cultivated in the shade. This is still done in many areas but is losing popularity because better
+results can be obtained without shade or with very light shade if other practices, such as trimming,
+weeding, and fertilization are followed. Yields as high as 2,000 to 3,000 pounds per acre can be
+grown, compared to 450 to 900 pounds per acre by traditional methods.<br><br><i><b>*Adapted
+from:</b>&nbsp; http://www.britannica.com/EBchecked/topic/124337/coffee-production</i></td></tr><tr
+height='0' style='border:none'><td width='100%'></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:6' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;6.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><i>The&#160;Arabica&#160;species of coffee is cultivated mostly in Latin
+America, while the&#160;Robusta species predominates in Africa.</i></div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>Robusta is a type of coffee chiefly grown in Africa, whereas the Arabica type is
+primarily found in Latin America.</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>In Latin America the Arabica species of coffee
+is cultivated, while in Africa the Robusta species predominates.</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span class='default'>Although the Arabica
+type of coffee is popular in Latin America, most people prefer the more popular Robusta type from
+Africa.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:7' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;7.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><i>No variety can withstand a temperature in the vicinity of
+32&#176;F.</i></div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>A healthy temperature for coffee production is 32&#176;F.</span></td></tr><tr
+valign='baseline'><td><div class='choice'>b.</div></td><td><span class='default'>It is not clear if
+coffee can be successfully cultivated in the 32&#176;F range.</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span class='default'>If the temperature
+is around 32&#176;F, coffee cannot grow.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:8' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;8.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><i>Until they start producing fruit three to four years later, their care is
+limited largely to the trimming required to give them a robust, balanced framework and to stimulate
+fruiting.</i></div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>After about four years, it is necessary to start trimming the coffee plants so that
+they maintain a balanced structure leading to fruit production.</span></td></tr><tr
+valign='baseline'><td><div class='choice'>b.</div></td><td><span class='default'>The care of young
+coffee plants during their first three to four years is focused on keeping them trimmed and balanced
+so that healthy fruit can be produced.</span></td></tr><tr valign='baseline'><td><div
+class='choice'>c.</div></td><td><span class='default'>Coffee plants that are carefully maintained
+during their early years usually produce better fruit.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:9' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;9.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><i>This is still done in many areas but is losing popularity because better
+results can be obtained without shade or with very light shade if other practices, such as trimming,
+weeding, and fertilization are followed.</i></div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>Growing coffee in the shade continues to be very popular as long as various other
+cultivation practices are used in addition.</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>It is increasingly popular to cultivate coffee
+without shade, as long as other methods like trimming, weeding, and fertilization are
+implemented.</span></td></tr><tr valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>Trimming, weeding, and fertilization are no longer popular practices because it has
+been found that some level of shade is all that is necessary for positive results in coffee
+production.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td colspan='3'><br>
+<div class='default'><b>Short Answer</b></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><i>DIRECTIONS: Read the sentences. Write a paraphrase of each
+sentence.</i></b></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;1.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Around 400,000 people gathered in 1969 in the town of Bethel, New York to
+participate in one of America&#039;s most famous outdoor music
+festivals&#8212;Woodstock.<br>_______________________________________________________________________</div><div style='font-size:2pt'></div>
+		<textarea name='SA:1' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;2.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>In order to fully benefit from aerobic activity, it is important to train for a
+minimum of three one-hour sessions per week in which the heart rate is raised for at least twenty
+consecutive
+minutes.<br>_______________________________________________________________________</div><div style='font-size:2pt'></div>
+		<textarea name='SA:2' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;3.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>In the first year after Hurricane Sandy, more than 200 homes and community
+centers were repaired, thanks to the help of over 4,000
+volunteers.<br>_______________________________________________________________________</div><div style='font-size:2pt'></div>
+		<textarea name='SA:3' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;4.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>The first Aboriginal explorers had arrived and settled in Australia at least
+60,000 years before European explorers sailed into the South
+Pacific.<br>_______________________________________________________________________</div><div style='font-size:2pt'></div>
+		<textarea name='SA:4' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><i><b>DIRECTIONS: Read &quot;History of Cinco de Mayo.&quot; List four important
+facts or ideas about the paragraph that you would include in a summary.<br></b><br></i><br><div
+style='font-size:2pt'></div><table cellpadding='0' cellspacing='0' width='87%' border='0'><tr
+valign='top'><td class='pad' style=' border-left:0.8pt solid #000000; border-top:0.8pt solid #000000;
+border-right:0.8pt solid #000000; border-bottom:0.8pt solid
+#000000;'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+History of Cinco de Mayo (Spanish: &quot;Fifth of May&quot;)*<br></b><br>&nbsp;&nbsp;&nbsp;&nbsp;
+Cinco de Mayo, also known as the Anniversary of the Battle of Puebla, is a national holiday in Mexico
+in honor of a military victory in 1862 over the French forces of Napoleon III. When in 1861 Mexico
+declared a temporary moratorium on the repayment of foreign debts, English, Spanish, and French
+troops invaded the country. By April 1862, the English and Spanish had withdrawn, but the French,
+with the support of wealthy landowners, remained in an attempt to establish a monarchy under
+Maximilian of Austria and to curb U.S. power in North America. On May 5, 1862, a poorly equipped
+force under the command of General Ignacio Zaragoza defeated French troops at the Battle of Puebla,
+southeast of Mexico City. About 1,000 French troops were killed. Although the fighting continued and
+the French were not driven out for another five years, the victory at Puebla became a symbol of
+Mexican resistance to foreign domination. The city, which was later renamed Puebla de Zaragoza, is
+the site of a museum devoted to the battle, and the battlefield itself is maintained as a
+park.<br><br><i><b>*Adapted
+from</b>:<br></i>http://www.britannica.com/EBchecked/topic/118001/Cinco-de-Mayo<br></td></tr><tr
+height='0' style='border:none'><td width='100%'></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;5.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>First fact or idea about the history of Cinco de Mayo:
+<br>_______________________________________________________________________</div><div style='font-size:2pt'></div>
+		<textarea name='SA:5' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;6.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Second fact or idea about the history of Cinco de
+Mayo:<br>_______________________________________________________________________</div><div style='font-size:2pt'></div>
+		<textarea name='SA:6' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;7.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Third fact or idea about the history of Cinco de
+Mayo:<br>_______________________________________________________________________</div><div style='font-size:2pt'></div>
+		<textarea name='SA:7' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;8.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Fourth fact or idea about the history of Cinco de
+Mayo:<br>_______________________________________________________________________</div><div style='font-size:2pt'></div>
+		<textarea name='SA:8' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><i>DIRECTIONS: Read &quot;History of Cinco de Mayo&quot; again. Review your
+four important facts. Write 3-5 sentences that summarize the main idea of the original
+paragraph.</i></b></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;9.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Summarize the main idea of &quot;History of Cinco de Mayo.&quot;</div><div style='font-size:2pt'></div>
+		<textarea name='SA:9' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td colspan='3'><br>
+<div class='default'><b>Other</b></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><i>DIRECTIONS: Read the paragraphs from two different sources. Imagine that
+you will synthesize the information into your own paragraph. Write &quot;yes&quot; if the information
+is necessary to keep in your synthesis. Write &quot;no&quot; if the information is not
+necessary.</i></b><br><br><div style='font-size:2pt'></div><table cellpadding='0' cellspacing='0'
+width='87%' border='0'><tr valign='top'><td class='pad' style=' border-left:0.8pt solid #000000;
+border-top:0.8pt solid #000000; border-right:0.8pt solid #000000; border-bottom:0.8pt solid
+#000000;'>Source A<br><br><div style='text-align:center'><b>West Highland White
+Terrier*<br></b></div><br>&nbsp;&nbsp;&nbsp;&nbsp; The&#160;West Highland White Terrier, commonly
+known as the<b> </b>Westie, is a Scottish breed of dog with a distinctive white coat. The modern
+breed is descended from a number of breeding programs of white terriers in Scotland before the 20th
+century. Edward Donald Malcolm, 16th Laird of Poltalloch, is credited with the creation of the modern
+breed from his Poltalloch Terrier. It is a medium-sized terrier, although with longer legs than other
+Scottish breeds of terrier. It has a white double coat of fur which fills out the dog&#039;s face
+giving it a rounded appearance. The breed can be good with children, but will not always tolerate
+rough handling. The breeds of small white Scottish terriers were given its modern name for the first
+time in 1908, with recognition by major kennel clubs occurring around the same
+time.<br><br><i><b>*Adapted from</b>:</i>
+http://en.wikipedia.org/wiki/West_Highland_White_Terrier</td><td class='pad' style=' border-top:0.8pt
+solid #000000; border-right:0.8pt solid #000000; border-bottom:0.8pt solid #000000;'>Source
+B<b><br><br></b><div style='text-align:center'><b>West Highland White
+Terrier*<br></b></div><b><br>&nbsp;&nbsp;&nbsp; </b> The West Highland White Terrier is a<b>
+</b>breed of dog&#160;that probably originated at Poltalloch, in the former county of Argyll,
+Scotland, . It was bred there for many years by the Malcolm family, whose dogs appear to be traceable
+back to the time of King James I of England. Typically hardy and happy-spirited, the West Highland
+white terrier is a short-legged dog standing 10 to 11 inches and weighing 13 to 19 pounds. Its coat
+is pure white and consists of a soft, furry undercoat overlaid by a straight, hard outer coat. It is
+thought that the breed is descended from the same ancestral stock as the other Scottish
+terriers&#8212;the&#160;Dandie Dinmont, Scottish, and cairn terriers.<br><br><i><b>*Adapted
+from</b>:</i>
+http://www.britannica.com/EBchecked/topic/640173/West-Highland-white-terrier</td></tr><tr height='0'
+style='border:none'><td width='50%'></td><td width='50%'></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;1.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>From Source A: The West Highland Terrier is a Scottish breed of dog.<br>Is this
+information necessary?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+____________________</div><div style='font-size:2pt'></div>
+		<textarea name='OT:1' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;2.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>From Source A: The West Highland Terrier is medium-sized with a white coat of
+fur.<br>Is this information necessary?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+____________________</div><div style='font-size:2pt'></div>
+		<textarea name='OT:2' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;3.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>From Source A: Edward Donald Malcolm was the 16th Laird of Poltalloch.<br>Is
+this information necessary?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+____________________</div><div style='font-size:2pt'></div>
+		<textarea name='OT:3' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;4.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>From Source A: Major kennel clubs recognized the West Highland Terrier in
+1908.<br>Is this information necessary?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+____________________</div><div style='font-size:2pt'></div>
+		<textarea name='OT:4' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;5.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>From Source B: The Malcolm family bred the West Highland Terrier in
+Scotland.<br>Is this information necessary?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ____________________</div><div style='font-size:2pt'></div>
+		<textarea name='OT:5' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;6.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>From Source B: King James I may have had a West Highland Terrier.<br>Is this
+information necessary?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+____________________</div><div style='font-size:2pt'></div>
+		<textarea name='OT:6' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;7.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>From Source B: The West Highland Terrier has a pure white coat.<br>Is this
+information necessary?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+____________________</div><div style='font-size:2pt'></div>
+		<textarea name='OT:7' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;8.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>From Source B: The Dandie Dinmont, Scottish, and cairn terriers are related to
+the West Highland Terrier.<br>Is this information necessary?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ____________________</div><div style='font-size:2pt'></div>
+		<textarea name='OT:8' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td colspan='3'><br>
+<div class='default'><b>True/False</b><span style='font-size:12pt'><br></span><i>Indicate whether the
+statement is true or false.</i></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><i>DIRECTIONS: Read the sentences about citations. If the statement is true,
+write &quot;T.&quot; If it is false, write &quot;F.&quot;</i></b></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:1' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;1.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>A paraphrase contains quotation marks.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+_______________</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:2' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;2.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>A direct quotation in context should include the page number of the
+source.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _______________</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:3' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;3.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>It is good practice to include multiple quotations over ten lines in academic
+papers.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _______________</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:4' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;4.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Longer quotations are indented, without quotation
+marks.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _______________</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:5' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;5.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>In a paraphrase, you use your own words to restate another writer&#039;s
+idea.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _______________</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:6' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;6.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>When paraphrasing, you must state the name of the author, the date of
+publication, and the page number of the source.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _______________</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:7' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;7.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>You can use a phrase like &quot;according to&quot; to introduce both paraphrases
+and direct quotations.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _______________</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='TF:8' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='T'>T
+			<option value='F'>F
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;8.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>To avoid plagiarism, you must cite the source of any ideas that are not your
+own.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _______________</div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td colspan='3'><br>
+<div class='default'><b>Essay</b></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b>ESSAY WRITING</b></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;1.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Read the two paragraphs about polio. Synthesize the information. Organize your
+sentences logically and combine them into one continuous piece of writing. Do not forget to include
+your original ideas, too.<br><br><div style='font-size:2pt'></div><table cellpadding='0'
+cellspacing='0' width='85%' border='0'><tr valign='top'><td class='pad' style=' border-left:0.8pt
+solid #000000; border-top:0.8pt solid #000000; border-right:0.8pt solid #000000; border-bottom:0.8pt
+solid #000000;'>Source A<b> <br></b><div
+style='text-align:center'><b>Polio*<br></b></div><i><br></i>&nbsp;&nbsp;&nbsp;&nbsp; Poliomyelitis,
+often called polio or infantile paralysis, is an acute, viral, infectious disease spread from person
+to person. Although approximately 90 percent of polio infections cause no symptoms at all, affected
+individuals can exhibit a range of symptoms if the virus enters the blood stream. In about 1 percent
+of cases, the virus enters the central nervous system, infecting and destroying motor neurons,
+leading to muscle weakness and paralysis. Polio was first recognized as a distinct condition by Jakob
+Heine in 1840. Major polio epidemics started to appear in the late 19th century in Europe and soon
+after in the United States, and it became one of the most dreaded childhood diseases of the 20th
+century. Enhanced vaccination efforts hope to result in global eradication of the disease; however,
+in 2014 the World Health Organization declared a public health emergency due to outbreaks in Asia,
+Africa, and the Middle East.<i><b><br><br>*Adapted
+from</b>:<br></i>http://en.wikipedia.org/wiki/Polio</td><td class='pad' style=' border-top:0.8pt
+solid #000000; border-right:0.8pt solid #000000; border-bottom:0.8pt solid #000000;'>Source B<b>
+<br></b><div style='text-align:center'><b>Polio*<br></b></div><br>&nbsp;&nbsp;&nbsp;&nbsp; Polio is
+an acute viral infectious disease of the nervous system that usually begins with general symptoms
+such as fever, headache, nausea, fatigue, and muscle pains. It is sometimes followed by a more
+serious and permanent paralysis of muscles in one or more limbs, the throat, or the chest. More than
+half of all cases of polio occur in children under the age of five. The paralysis that is commonly
+associated with the disease actually affects fewer than 1 percent of persons infected by the
+poliovirus. For those infected by the poliovirus, there is no cure. In the mid-20th century, hundreds
+of thousands of children were struck by the disease every year. Since the 1960s, thanks to widespread
+use of polio vaccines, polio has been eliminated from most of the world. It is now endemic in only
+three countries: Nigeria, Afghanistan, and Pakistan. . <br><i><br><b>*Adapted
+from:<br></b></i>http://www.britannica.com/EBchecked/topic/467378/polio</td></tr><tr height='0'
+style='border:none'><td width='50%'></td><td width='50%'></td></tr></table></div><div style='font-size:2pt'></div>
+		<textarea name='ES:1' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+</table>
+<br clear='all'>
+<br>
+<br>
+<table align='left' width='100%' cellpadding='0' cellspacing='0' border='0'>
+<tr>
+    <td bgcolor='#000000'>
+    <div style='font-size:1pt'>&nbsp;</div>
+    </td>
+</tr>
+<tr>
+    <td><input type='image' src='WL5T3_files/submit.gif' alt='Grade and Submit'>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href='#' onclick='Restart(); return false'><img
+	    src='WL5T3_files/restart.gif' border='0' alt='Start Over'></a>
+    </td>
+</tr>
+</table>
+</form>
+</body>
+</html>

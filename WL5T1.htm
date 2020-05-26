@@ -1,0 +1,1410 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<meta name='generator' content='ExamView HTML Generator 8.1.6.69144'>
+	<meta name='robots' content='noindex,nofollow'>
+	<title>Writing Level 5 Test 1</title>
+	<style type='text/css'>
+		.spacer { line-height:.7em; }
+		.title { font-size:13pt; font-weight:bold; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		.qnumber { font-size:12pt; font-family:"Times New Roman", "Times", serif; color:#000000; text-align:right; }
+		.choice { font-size:12pt; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		.default { font-size:12pt; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		.qinfo { font-size:12pt; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		.points { font-size:8pt; font-family:"Times New Roman", "Times", serif; color:#000000; }
+		TD.pad { padding: 0pt 4pt 0pt 4pt; }
+		.font1 { font-family:"Times New Roman", "Times", serif; }
+		.font2 { font-family:"Times New Roman", "Times", serif; }
+	</style>
+<script type='text/javascript' language='JavaScript1.1'>
+<!--
+	// Copyright (c) 2000-2008 eInstruction Corp.
+	var listMap = '000000000011111111111111111111100000000000';
+	var qtypeMap = '7777777777888888888822222222222DDDDDDDDDDB';
+	var ansMap = new Array(42);
+	var ptsMap = new Array(42);
+	ansMap[0] = '7275607564';
+	ptsMap[0] = 1;
+	ansMap[1] = '6f636b6c';
+	ptsMap[1] = 1;
+	ansMap[2] = '676673666d6770';
+	ptsMap[2] = 1;
+	ansMap[3] = '6061776d7661';
+	ptsMap[3] = 1;
+	ansMap[4] = '776076706971';
+	ptsMap[4] = 1;
+	ansMap[5] = '756e746f686d';
+	ptsMap[5] = 1;
+	ansMap[6] = '69626066736e7162';
+	ptsMap[6] = 1;
+	ansMap[7] = '6d666267716d6c';
+	ptsMap[7] = 1;
+	ansMap[8] = '6a6c7b7d686067';
+	ptsMap[8] = 1;
+	ansMap[9] = '7f6463677a65787e6b647e';
+	ptsMap[9] = 1;
+	ansMap[10] = '43';
+	ptsMap[10] = 1;
+	ansMap[11] = '49';
+	ptsMap[11] = 1;
+	ansMap[12] = '4e';
+	ptsMap[12] = 1;
+	ansMap[13] = '44';
+	ptsMap[13] = 1;
+	ansMap[14] = '4e';
+	ptsMap[14] = 1;
+	ansMap[15] = '52';
+	ptsMap[15] = 1;
+	ansMap[16] = '57';
+	ptsMap[16] = 1;
+	ansMap[17] = '56';
+	ptsMap[17] = 1;
+	ansMap[18] = '5a';
+	ptsMap[18] = 1;
+	ansMap[19] = '53';
+	ptsMap[19] = 1;
+	ansMap[20] = '57';
+	ptsMap[20] = 1;
+	ansMap[21] = '57';
+	ptsMap[21] = 1;
+	ansMap[22] = '56';
+	ptsMap[22] = 1;
+	ansMap[23] = '5a';
+	ptsMap[23] = 1;
+	ansMap[24] = '5b';
+	ptsMap[24] = 1;
+	ansMap[25] = '58';
+	ptsMap[25] = 1;
+	ansMap[26] = '5a';
+	ptsMap[26] = 1;
+	ansMap[27] = '5f';
+	ptsMap[27] = 1;
+	ansMap[28] = '5e';
+	ptsMap[28] = 1;
+	ansMap[29] = '5d';
+	ptsMap[29] = 1;
+	ansMap[30] = '5c';
+	ptsMap[30] = 1;
+	ansMap[31] = '';
+	ptsMap[31] = 1;
+	ansMap[32] = '';
+	ptsMap[32] = 1;
+	ansMap[33] = '';
+	ptsMap[33] = 1;
+	ansMap[34] = '';
+	ptsMap[34] = 1;
+	ansMap[35] = '';
+	ptsMap[35] = 1;
+	ansMap[36] = '';
+	ptsMap[36] = 1;
+	ansMap[37] = '';
+	ptsMap[37] = 1;
+	ansMap[38] = '';
+	ptsMap[38] = 1;
+	ansMap[39] = '';
+	ptsMap[39] = 1;
+	ansMap[40] = '';
+	ptsMap[40] = 1;
+	ansMap[41] = '';
+	ptsMap[41] = 5;
+	function HandleSubmit(f)
+	{
+		var	MAGIC = 840;
+		var	totalCorrect = 0;
+		var	totalPossible = 0;
+		var	numCorrect = 0;
+		var	numPossible = 0;
+		var	numBlank = 0;
+		var	index;
+		var	msg;
+		var	i;
+
+		f.student_name.value = StripSpaces(f.student_name.value);
+		f.student_id.value = StripSpaces(f.student_id.value);
+		f.student_email.value = StripSpaces(f.student_email.value);
+
+		FixMR(f);
+		FixMTF(f);
+		index = 0;
+		for (i=0; i < f.length; ++i) {
+			if (f.elements[i].name.indexOf(":") > 0) {
+				if (listMap.charAt(index) == "1") {
+					listIndex = f.elements[i].selectedIndex;
+					text = StripSpaces(f.elements[i].options[listIndex].value);
+				} else {
+					f.elements[i].value = StripSpaces(f.elements[i].value);
+					text = f.elements[i].value;
+				}
+
+				if (text.length == 0)
+					++numBlank;
+				++index;
+			}
+		}
+
+		if (f.student_name.value == "") {
+			alert("Student name cannot be blank.");
+			return(false);
+		}
+
+		if (numBlank > 0) {
+			if (numBlank == 1)
+				msg = "1 question";
+			else
+				msg = numBlank + " questions";
+			if (!confirm("You have not answered " + msg +
+				"  Are you sure you want to end the test?"))
+				return(false);
+		}
+
+		index = 0;
+		var scoreDetails = new Array();
+		for (i=0; i < f.length; ++i) {
+			if (f.elements[i].name.indexOf(":") > 0) {
+				if (listMap.charAt(index) == "1") {
+					listIndex = f.elements[i].selectedIndex;
+					text = f.elements[i].options[listIndex].value;
+				} else
+					text = f.elements[i].value;
+
+				numPossible = ptsMap[index] * MAGIC;
+				if (ansMap[index] == "")
+					scoreDetails[index] = "?--";
+				else {
+					var scoreResult = ScoreAnswer(index, text, numPossible);
+					numCorrect = scoreResult.numPoints;
+					scoreDetails[index] = (scoreResult.isCorrect) ? " " : "X";
+					scoreDetails[index] += (Math.round(numCorrect * 100 / MAGIC) / 100).toString();
+					totalCorrect += numCorrect;
+					totalPossible += numPossible;
+				}
+
+				scoreDetails[index] += "/" + (numPossible / MAGIC);
+				++index;
+			}
+		}
+
+		f.score_details.value = scoreDetails.join("|");
+		f.score_correct.value = Math.round(totalCorrect * 100 / MAGIC) / 100;
+		f.score_possible.value = Math.round(totalPossible * 100 / MAGIC) / 100;
+		if (totalPossible > 0)
+			f.score_percent.value = Math.round(100.0 * totalCorrect / totalPossible);
+		else
+			f.score_percent.value = 0;
+
+		return(true);
+	}
+
+	function TranslateAnswer(s, answerIndex)
+	{
+		var	value;
+		var	newString;
+		var	code;
+		var	i;
+
+		value = (answerIndex % 31) + 1;
+		newString = "";
+		for (i=0; i < s.length; i += 2) {
+			code = parseInt(s.substring(i, i + 2), 16);
+			newString += String.fromCharCode(code ^ value);
+		}
+
+		return(newString);
+	}
+
+	function ScoreAnswer(answerIndex, responseText, pointsPossible)
+	{
+		var answerText = TranslateAnswer(ansMap[answerIndex], answerIndex);
+		var qtype = qtypeMap.charAt(answerIndex);
+		var nrExactMatch = false;
+		var result = new Array();
+
+		result.numPoints = 0;
+		result.isCorrect = false;
+
+		if (qtype == "3" && answerText.substring(0, 2) == "p:") {
+			answerText = answerText.substr(2);
+			if (responseText.toUpperCase() == answerText.toUpperCase())
+				result.isCorrect = true;
+			else
+				result.numPoints = MultiResponseCompare(responseText, answerText, pointsPossible);
+		} else if (qtype == "6") {
+			if (answerText.substring(0, 2) == "==") {
+				answerText = answerText.substr(2);
+				nrExactMatch = true;
+			}
+			if (NumericCompare(responseText, answerText, nrExactMatch))
+				result.isCorrect = true;
+		} else if (qtype == "7") {
+			if (CompletionCompare(responseText, answerText))
+				result.isCorrect = true;
+		} else if (responseText.toUpperCase() == answerText.toUpperCase())
+			result.isCorrect = true;
+
+		if (result.isCorrect)
+			result.numPoints = pointsPossible;
+
+		return(result);
+	}
+
+	function StripSpaces(s)
+	{
+		var	len;
+		var	i;
+
+		len = s.length;
+		for (i=len - 1; i >= 0 && s.charAt(i) == " "; --i)
+			len = i;
+
+		if (len == 0)
+			s = "";
+		else if (len != s.length)
+			s = s.substring(0, len);
+
+		return(s);
+	}
+
+	function MultiResponseCompare(responseText, answerText, pointsPossible)
+	{
+	}
+
+	function NumericCompare(response, answer, exactMatch)
+	{
+	}
+
+
+	function CompletionCompare(responseText, answerText)
+	{
+		var	startIndex;
+		var	endIndex;
+		var	partialText;
+       
+        responseText = StripLeadingSpaces(StripSpaces(responseText));        
+        responseText = responseText.toUpperCase();
+		answerText = answerText.toUpperCase();
+
+		startIndex = 0;
+		do {
+			endIndex = answerText.indexOf("\r", startIndex);
+			if (endIndex < 0)
+				partialText = answerText.substring(startIndex);
+			else
+				partialText = answerText.substring(startIndex, endIndex);
+            
+            partialText = StripLeadingSpaces(StripSpaces(partialText));
+			if ((responseText == partialText) && (responseText.length > 0))
+			     return(true);
+
+			startIndex = endIndex + 1;
+		} while (endIndex >= 0);
+		return(false);
+	}
+
+    function StripLeadingSpaces(s)
+	{
+		var	len;
+		var	i = 0;
+		var index = -1;
+
+		len = s.length;
+		while(i < len && s.charAt(i) == " ")
+		{
+			index = ++i;			
+	    }
+
+		if (len == 0)
+			s = "";
+		else if (index > -1)
+			s = s.substring(index, len);
+
+		return(s);
+	}
+	
+	function FixMTF(f)
+	{
+	}
+
+	function FixMR(f)
+	{
+	}
+
+	function AllowReset()
+	{
+		return(window.confirm("Do you want to clear all of your answers?"));
+	}
+
+	function Restart()
+	{
+		if (AllowReset()) {
+			document.TestForm.onreset = function() { };
+			document.TestForm.reset();
+			document.TestForm.onreset = function() { AllowReset(); };
+		}
+	}
+// -->
+</script>
+</head>
+<body onResize='if(document.layers && navigator.appVersion.indexOf("Win") < 0){history.go(0);}'
+bgcolor='#FFFFFF' style='background-image:url(WL5T1_files/header.gif); background-repeat:no-repeat'>
+<noscript>
+	<h3><font color='#FF0000'>Javascript not enabled</font></h3>
+</noscript>
+<script type='text/javascript' language='JavaScript'>
+<!--
+if (navigator.appName.indexOf("Netscape") >= 0) {
+	if (parseInt(navigator.appVersion.charAt(0)) < 4)
+		alert("This document requires Netscape Navigator version 4.0 or later.");
+} else if (navigator.appName.indexOf("Explorer") >= 0) {
+	if (parseInt(navigator.appVersion.charAt(0)) < 4)
+		alert("This document requires Internet Explorer version 4.0 or later.");
+}
+// -->
+</script>
+<form name='TestForm' action='http://score.examview.com/cgi-bin/results.cgi' method='POST'
+	onSubmit='return(HandleSubmit(this))' onReset='return(AllowReset())'>
+<input type='hidden' name='product_version' value='8.1.103.69470'>
+<input type='hidden' name='instructor_name' value='Matthew Manning'>
+<input type='hidden' name='instructor_formalname' value='Mr. Manning'>
+<input type='hidden' name='instructor_email' value='matthew.manning@m.kckps.org'>
+<input type='hidden' name='instructor_org' value='None'>
+<input type='hidden' name='instructor_city' value='None'>
+<input type='hidden' name='instructor_state' value='KS'>
+<input type='hidden' name='test_name' value='Writing Level 5 Test 1'>
+<input type='hidden' name='other_label' value='Other'>
+<input type='hidden' name='test_mixed_questions' value='0'>
+<input type='hidden' name='score_correct' value='0'>
+<input type='hidden' name='score_possible' value='0'>
+<input type='hidden' name='score_percent' value='0'>
+<input type='hidden' name='score_subjective' value='11'>
+<input type='hidden' name='score_details' value=''>
+<input type='hidden' name='score_showresults' value='1'>
+<div class='spacer'>&nbsp;</div>
+<div class='default'>
+	<div style='margin-left:1em'>
+	<b>Name:</b>&nbsp;<input type='text' name='student_name' size='30'> &nbsp;&nbsp;
+	<b>ID:</b>&nbsp;<input type='text' name='student_id' size='12'><br>
+	<div class='spacer'>&nbsp;</div>
+	<b>Email:</b>&nbsp;<input type='text' name='student_email' size='45'><br><br>
+	</div>
+</div>
+<div class='title'>Writing Level 5 Test 1</div>
+
+<table align='left' width='100%' border='0' cellpadding='0' cellspacing='0'>
+<tr valign='top'>
+	<td colspan='3'><br>
+<div class='default'><b>Completion</b><span style='font-size:12pt'><br></span><i>Complete each
+statement.</i></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><i><b>DIRECTIONS: Choose the best synonym for the underlined word in each
+sentence. There are two extra words.</b><br></i><br><div style='font-size:2pt'></div><table
+cellpadding='0' cellspacing='0' width='92%' border='0'><tr valign='top'><td class='pad' style='
+border-left:0.8pt solid #000000; border-top:0.8pt solid #000000; border-right:0.8pt solid #000000;
+border-bottom:0.8pt solid #000000;'>depends</td><td class='pad' style=' border-top:0.8pt solid
+#000000; border-right:0.8pt solid #000000; border-bottom:0.8pt solid #000000;'>desire</td><td
+class='pad' style=' border-top:0.8pt solid #000000; border-right:0.8pt solid #000000;
+border-bottom:0.8pt solid #000000;'>explains</td><td class='pad' style=' border-top:0.8pt solid
+#000000; border-right:0.8pt solid #000000; border-bottom:0.8pt solid #000000;'>main</td><td
+class='pad' style=' border-top:0.8pt solid #000000; border-right:0.8pt solid #000000;
+border-bottom:0.8pt solid #000000;'>result</td><td class='pad' style=' border-top:0.8pt solid
+#000000; border-right:0.8pt solid #000000; border-bottom:0.8pt solid #000000;'>state</td><td
+class='pad' style=' border-top:0.8pt solid #000000; border-right:0.8pt solid #000000;
+border-bottom:0.8pt solid #000000;'>valuable</td></tr><tr height='0' style='border:none'><td
+width='15%'></td><td width='15%'></td><td width='14%'></td><td width='14%'></td><td
+width='14%'></td><td width='14%'></td><td width='14%'></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;1.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>The job requirements do not <u>specify</u> whether or not you need a college
+degree. ____________________</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:1' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;2.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Their <u>primary</u> reason for taking the Spanish class was to prepare for
+their summer vacation in Mexico. ____________________</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:2' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;3.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Since Henry doesn&#8217;t have a car, he <u>relies</u> on public transportation
+to get to and from work. ____________________</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:3' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;4.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Gloria had to resist the <u>urge</u> to make corrections during her
+co-worker&#8217;s presentation. ____________________</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:4' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;5.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>The students didn&#8217;t follow the instructions carefully, which certainly
+affected the <u>outcome</u> of the experiment. ____________________</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:5' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><i>DIRECTIONS: Choose the best antonym for the underlined word in each
+sentence. There are two extra words.<br></i><br></b><div style='font-size:2pt'></div><table
+cellpadding='0' cellspacing='0' width='87%' border='0'><tr valign='top'><td class='pad' style='
+border-left:0.8pt solid #000000; border-top:0.8pt solid #000000; border-right:0.8pt solid #000000;
+border-bottom:0.8pt solid #000000;'>certain</td><td class='pad' style=' border-top:0.8pt solid
+#000000; border-right:0.8pt solid #000000; border-bottom:0.8pt solid #000000;'>displayed</td><td
+class='pad' style=' border-top:0.8pt solid #000000; border-right:0.8pt solid #000000;
+border-bottom:0.8pt solid #000000;'>enjoyed</td><td class='pad' style=' border-top:0.8pt solid
+#000000; border-right:0.8pt solid #000000; border-bottom:0.8pt solid #000000;'>negative</td><td
+class='pad' style=' border-top:0.8pt solid #000000; border-right:0.8pt solid #000000;
+border-bottom:0.8pt solid #000000;'>probable</td><td class='pad' style=' border-top:0.8pt solid
+#000000; border-right:0.8pt solid #000000; border-bottom:0.8pt solid #000000;'>shrink</td><td
+class='pad' style=' border-top:0.8pt solid #000000; border-right:0.8pt solid #000000;
+border-bottom:0.8pt solid #000000;'>unimportant</td></tr><tr height='0' style='border:none'><td
+width='13%'></td><td width='15%'></td><td width='13%'></td><td width='14%'></td><td
+width='15%'></td><td width='13%'></td><td width='17%'></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;6.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Although the leather shoes felt tight when I tried them on, the salesperson
+assured me that they would <u>stretch</u> over time. ____________________</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:6' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;7.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>With your <u>positive</u> attitude, you will be able to accomplish anything you
+set your mind to.&nbsp; ____________________</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:7' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;8.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Albert <u>dreaded</u> going to work the next day when he knew that a number of
+people would be laid off. ____________________</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:8' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;9.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Nora was <u>puzzled</u> that the lights were on when she returned home. She was
+sure she had turned them off before leaving.&nbsp; ____________________</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:9' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;10.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>It was <u>crucial</u> for the players to work together as a team if they were
+going to win the tournament. ____________________</div><div style='font-size:2pt'></div>
+<div style='font-size:4pt'>&nbsp;</div>
+		<input type='text' name='CO:10' size='60' maxlength='60'><br>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td colspan='3'><br>
+<div class='default'><b>Matching</b></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><i>DIRECTIONS: Match the words to the choice that best completes the
+collocation.</i></b></div><div class='default'><table cellpadding='0' cellspacing='0' width='95%'
+border='0'><tr valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td
+width='96%'><span class='default'>access</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>computers</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>goal</span></td></tr><tr valign='baseline'><td><div
+class='choice'>d.</div></td><td><span class='default'>ideas</span></td></tr><tr
+valign='baseline'><td><div class='choice'>e.</div></td><td><span
+class='default'>in</span></td></tr><tr valign='baseline'><td><div
+class='choice'>f.</div></td><td><span class='default'>make</span></td></tr><tr
+valign='baseline'><td><div class='choice'>g.</div></td><td><span
+class='default'>optical</span></td></tr><tr valign='baseline'><td><div
+class='choice'>h.</div></td><td><span class='default'>period</span></td></tr><tr
+valign='baseline'><td><div class='choice'>i.</div></td><td><span
+class='default'>range</span></td></tr><tr valign='baseline'><td><div
+class='choice'>j.</div></td><td><span class='default'>time</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:1' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+			<option value='I'>I
+			<option value='J'>J
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;1.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>over a(n) _____ of time</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:2' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+			<option value='I'>I
+			<option value='J'>J
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;2.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>blend _____ with the trees</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:3' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+			<option value='I'>I
+			<option value='J'>J
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;3.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>accomplish a(n) _____</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:4' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+			<option value='I'>I
+			<option value='J'>J
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;4.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>save precious _____</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:5' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+			<option value='I'>I
+			<option value='J'>J
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;5.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>gain _____ to</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:6' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+			<option value='I'>I
+			<option value='J'>J
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;6.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>the advent of _____</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:7' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+			<option value='I'>I
+			<option value='J'>J
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;7.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>_____ people&#8217;s lives easier</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:8' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+			<option value='I'>I
+			<option value='J'>J
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;8.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>express my _____</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:9' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+			<option value='I'>I
+			<option value='J'>J
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;9.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>a(n) _____ of materials</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MA:10' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+			<option value='D'>D
+			<option value='E'>E
+			<option value='F'>F
+			<option value='G'>G
+			<option value='H'>H
+			<option value='I'>I
+			<option value='J'>J
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;10.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<span class='default'>a(n) _____ illusion</span>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td colspan='3'><br>
+<div class='default'><b>Multiple Choice</b><span style='font-size:12pt'><br></span><i>Identify the
+choice that best completes the statement or answers the question.</i></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><i>DIRECTIONS: Decide whether each of the following is a topic or a thesis
+statement for an essay.</i></b></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:1' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;1.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>While New Year&#8217;s Day celebrations may be observed in different ways, they
+are common to many cultures around the world.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>topic</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>thesis
+statement</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:2' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;2.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Moving away from our dependency on oil.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>topic</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>thesis
+statement</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:3' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;3.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>How to make our food safer to eat.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>topic</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>thesis
+statement</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:4' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;4.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>When parents divorce, it can have a deep and lasting impact on a child&#8217;s
+life.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>topic</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>thesis
+statement</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:5' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;5.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Voting is critically important to the effective and honest maintenance of
+democracy.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>topic</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>thesis
+statement</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><i><b>DIRECTIONS: This essay contains five paragraphs. Read the introduction and
+conclusion. Then number the three body paragraphs 2, 3, and 4 to indicate the correct sequence.
+Answer the other questions about the essay.</b><br></i><b><br></b><div
+style='font-size:2pt'></div><table cellpadding='0' cellspacing='0' align='center' width='83%'
+border='0'><tr valign='top'><td class='pad' style=' border-left:0.8pt solid #000000; border-top:0.8pt
+solid #000000; border-right:0.8pt solid #000000; border-bottom:0.8pt solid #000000;'><b><br></b><div
+style='text-align:center'><b>Modern Music Technology: Downloading or
+Stealing?<br></b></div><b><br>&#091;introduction&#093;<br></b><div style='text-indent:36pt'>The
+recording industry is in a <b>slump</b>. Albums and CDs are not selling as much as they were several
+years ago, and this trend shows no sign of reversing. For the industry as a whole, profits are down
+ten percent within the last three years. What has caused this downward spiral for the music industry?
+The answer is the same piece of equipment with which I am writing this essay: the personal computer.
+There are three reasons that the computer has had a <b>deleterious </b>effect on the recording
+industry.<br></div><div
+style='text-align:center'><b>****************************************<br></b></div><b>&#091;conclusion&#093;<br></b><div
+style='text-indent:36pt'>If the downward trends in the recording industry continue, will there still
+be a recording industry? It is quite possible that the recording industry will die over time if it
+becomes no longer profitable to market and sell music. Performing artists might have to advertise
+themselves through smaller venues, and consumers might need to seek out new music if it is no longer
+marketed directly to them. The computer has brought about tremendous changes to the recording
+industry, and the industry will have to move quickly to retain its relevance in today&#8217;s
+economy.<br></div></td></tr><tr height='0' style='border:none'><td
+width='100%'></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:6' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;6.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>In addition, computers allow musicians to market and sell their own music.
+Musicians can record and create their own CDs at a relatively modest cost these days. Before the
+development of the personal computer, most musicians could not afford to record their own music, but
+now the costs are much more reasonable. For this reason, it makes less sense for musicians to give
+away a part of their profits to a record company for activities that they can accomplish
+themselves.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>This is the first body paragraph in the essay.</span></td></tr><tr
+valign='baseline'><td><div class='choice'>b.</div></td><td><span class='default'>This is the second
+body paragraph in the essay.</span></td></tr><tr valign='baseline'><td><div
+class='choice'>c.</div></td><td><span class='default'>This is the third body paragraph in the
+essay.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:7' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;7.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Because of the popularity of sharing computer sound files, consumers no longer
+feel that they need to purchase music. Many people think it is morally acceptable&#8212;not to
+mention convenient&#8212;to download music files for free via file-sharing services. A couple clicks
+and presto! Now you &#8220;own&#8221; on your own computer that catchy little tune that you have been
+humming. Then it is just a couple more clicks until it is burned on a CD for you. With this level of
+convenience, it is easy to see why record companies are feeling the pinch.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>This is the first body paragraph in the essay.</span></td></tr><tr
+valign='baseline'><td><div class='choice'>b.</div></td><td><span class='default'>This is the second
+body paragraph in the essay.</span></td></tr><tr valign='baseline'><td><div
+class='choice'>c.</div></td><td><span class='default'>This is the third body paragraph in the
+essay.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:8' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;8.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Furthermore, the recording industry bears some of the blame for its own problems
+simply because it has been recalcitrant<b> </b>about using personal computers to sell its products.
+It has long annoyed me that record companies primarily sell whole albums when only one of the songs
+is of interest to me. I do not like to waste my money on an entire album and then find out that the
+album has just one good song on it. The recording industry should package and sell music in a way
+that consumers want and take advantage of personal computers to market songs to individual
+consumers.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>This is the first body paragraph in the essay.</span></td></tr><tr
+valign='baseline'><td><div class='choice'>b.</div></td><td><span class='default'>This is the second
+body paragraph in the essay.</span></td></tr><tr valign='baseline'><td><div
+class='choice'>c.</div></td><td><span class='default'>This is the third body paragraph in the
+essay.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:9' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;9.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>The thesis statement in the first paragraph is:</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>The recording industry is in a slump.</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>What has caused this downward spiral for the
+music industry?</span></td></tr><tr valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>There are three reasons that the computer has had a deleterious effect on the
+recording industry.</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:10' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;10.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>The concluding statement &#8220;The computer has brought about tremendous
+changes to the recording industry, and the industry will have to move quickly to retain its relevance
+in today&#8217;s economy.&#8221; offers ____.</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>a suggestion</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>an option</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span class='default'>a
+prediction</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+		<select name='MC:11' align='top' onmousewheel='return(false);'>
+			<option value=' '> 
+			<option value='A'>A
+			<option value='B'>B
+			<option value='C'>C
+		</select>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;11.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>What kind of essay is this an example of?</div>
+<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
+valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
+class='default'>process</span></td></tr><tr valign='baseline'><td><div
+class='choice'>b.</div></td><td><span class='default'>comparison</span></td></tr><tr
+valign='baseline'><td><div class='choice'>c.</div></td><td><span
+class='default'>cause-effect</span></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td colspan='3'><br>
+<div class='default'><b>Other</b></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><i>DIRECTIONS: Read the paragraph. If the underlined transition or connector
+in the sentence is correct, write &quot;C.&quot; If it is incorrect, write
+&quot;I.&quot;<br></i></b><br><br><div style='font-size:2pt'></div><table cellpadding='0'
+cellspacing='0' width='83%' border='0'><tr valign='top'><td class='pad' style=' border-left:0.8pt
+solid #000000; border-top:0.8pt solid #000000; border-right:0.8pt solid #000000; border-bottom:0.8pt
+solid #000000;'><br>&nbsp;&nbsp;&nbsp;&nbsp; (1) <u>Before</u> launching any new product,
+Raphael&#8217;s Pizza Company always gathers data by asking selected groups of people about the
+concept and the taste. (2) <u>In addition</u>, before introducing their new Milan basil-flavored
+crust pizza, the company elicited comments from groups of consumers and analyzed the results. (3)
+<u>After that</u>, they invited other groups to taste and discuss various samples. (4) <u>On the
+other hand</u>, Raphael&#8217;s Pizza Company tested actual customer response by offering the product
+in a limited number of stores before the company made it available throughout North America. (5)
+<u>As a result of</u> their astute marketing strategies, Raphael&#8217;s Pizza Company has
+successfully developed several new products for each of the ten years they&#8217;ve been in
+business.<br></td></tr><tr height='0' style='border:none'><td width='100%'></td></tr></table></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;1.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Before&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __________</div><div style='font-size:2pt'></div>
+		<textarea name='OT:1' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;2.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>In addition&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __________</div><div style='font-size:2pt'></div>
+		<textarea name='OT:2' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;3.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>After that&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __________</div><div style='font-size:2pt'></div>
+		<textarea name='OT:3' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;4.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>On the other hand&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __________</div><div style='font-size:2pt'></div>
+		<textarea name='OT:4' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;5.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>As a result of&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __________</div><div style='font-size:2pt'></div>
+		<textarea name='OT:5' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b><i>DIRECTIONS: If the collocation in the sentence is correct, write
+&quot;C.&quot; If it is incorrect, write &quot;I.&quot;</i></b></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;6.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>I think I <u>did a mistake</u> on the essay portion of the
+exam.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __________</div><div style='font-size:2pt'></div>
+		<textarea name='OT:6' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;7.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Nick trained for the marathon <u>over the time of a
+year</u>.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __________</div><div style='font-size:2pt'></div>
+		<textarea name='OT:7' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;8.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Computers are supposed to <u>cause people&#039;s lives
+easier</u>.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __________</div><div style='font-size:2pt'></div>
+		<textarea name='OT:8' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;9.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>His explanation for being late didn&#8217;t <u>make sense</u> to
+me.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __________</div><div style='font-size:2pt'></div>
+		<textarea name='OT:9' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;10.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Due to <u>a lack of</u> interest, the elective course on the history of music
+has been cancelled.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __________</div><div style='font-size:2pt'></div>
+		<textarea name='OT:10' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td colspan='3'><br>
+<div class='default'><b>Essay</b></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='top'>
+	<td></td>
+	<td></td>
+	<td>
+<div class='spacer'>&nbsp;</div>
+<div class='default'><b>ESSAY WRITING</b><br><b><br><i>DIRECTIONS: Read the prompt. Write your
+essay.</i></b></div>
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;1.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'>Consider your opinion about the use of cell phones in schools. Should
+students&#8217; use of cell phones in schools be prohibited? Consider good essay organization,
+including an introduction with a thesis statement, a body, and a conclusion.</div><div style='font-size:2pt'></div>
+		<textarea name='ES:1' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+</table>
+<br clear='all'>
+<br>
+<br>
+<table align='left' width='100%' cellpadding='0' cellspacing='0' border='0'>
+<tr>
+    <td bgcolor='#000000'>
+    <div style='font-size:1pt'>&nbsp;</div>
+    </td>
+</tr>
+<tr>
+    <td><input type='image' src='WL5T1_files/submit.gif' alt='Grade and Submit'>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href='#' onclick='Restart(); return false'><img
+	    src='WL5T1_files/restart.gif' border='0' alt='Start Over'></a>
+    </td>
+</tr>
+</table>
+</form>
+</body>
+</html>
