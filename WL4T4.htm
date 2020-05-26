@@ -148,9 +148,6 @@
 		var	i;
 
 		f.student_name.value = StripSpaces(f.student_name.value);
-		f.student_id.value = StripSpaces(f.student_id.value);
-		f.student_email.value = StripSpaces(f.student_email.value);
-
 		FixMR(f);
 		FixMTF(f);
 		index = 0;
@@ -418,7 +415,7 @@
 </script>
 </head>
 <body onResize='if(document.layers && navigator.appVersion.indexOf("Win") < 0){history.go(0);}'
-bgcolor='#FFFFFF' style='background-image:url(WL4T4_files/header.gif); background-repeat:no-repeat'>
+bgcolor='#FFFFFF' style='background-image:url(header.gif); background-repeat:no-repeat'>
 <noscript>
 	<h3><font color='#FF0000'>Javascript not enabled</font></h3>
 </noscript>
@@ -455,9 +452,6 @@ if (navigator.appName.indexOf("Netscape") >= 0) {
 <div class='default'>
 	<div style='margin-left:1em'>
 	<b>Name:</b>&nbsp;<input type='text' name='student_name' size='30'> &nbsp;&nbsp;
-	<b>ID:</b>&nbsp;<input type='text' name='student_id' size='12'><br>
-	<div class='spacer'>&nbsp;</div>
-	<b>Email:</b>&nbsp;<input type='text' name='student_email' size='45'><br><br>
 	</div>
 </div>
 <div class='title'>Writing Level 4 Test 4</div>
@@ -1713,10 +1707,10 @@ for effects.</b></div>
     </td>
 </tr>
 <tr>
-    <td><input type='image' src='WL4T4_files/submit.gif' alt='Grade and Submit'>
+    <td><input type='image' src='submit.gif' alt='Grade and Submit'>
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	<a href='#' onclick='Restart(); return false'><img
-	    src='WL4T4_files/restart.gif' border='0' alt='Start Over'></a>
+	    src='restart.gif' border='0' alt='Start Over'></a>
     </td>
 </tr>
 </table>
