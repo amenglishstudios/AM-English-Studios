@@ -1,10 +1,13 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
+<html lang="en" translate="no">
 <head>
 	<meta name='generator' content='ExamView HTML Generator 8.1.6.69144'>
 	<meta name='robots' content='noindex,nofollow'>
 	<title>Level 1 Reading Test 1</title>
-	<style type='text/css'>
+
+    <!-- Disable text selection, copying, translating -->
+    <meta name="google" content="notranslate">
+    <style type='text/css'>
 		.spacer { line-height:.7em; }
 		.title { font-size:13pt; font-weight:bold; font-family:"Times New Roman", "Times", serif; color:#000000; }
 		.qnumber { font-size:12pt; font-family:"Times New Roman", "Times", serif; color:#000000; text-align:right; }
@@ -16,7 +19,23 @@
 		.font1 { font-family:"Times New Roman", "Times", serif; }
 		.font2 { font-family:"Times New Roman", "Times", serif; }
 		.font3 { font-family:"Arial", "Helvetica", sans-serif; }
+
+        /* block selection/callout everywhere except answer fields */
+        html, body, body *:not(input):not(textarea):not(select) {
+          -webkit-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          -webkit-touch-callout: none;
+        }
+        /* allow normal editing/selection in inputs and textareas */
+        input, textarea, select {
+          -webkit-user-select: text;
+          -ms-user-select: text;
+          user-select: text;
+          -webkit-touch-callout: default;
+        }
 	</style>
+
 <script type='text/javascript' language='JavaScript1.1'>
 <!--
 	// Copyright (c) 2000-2008 eInstruction Corp.
@@ -255,7 +274,6 @@
 	{
 	}
 
-
 	function CompletionCompare(responseText, answerText)
 	{
 		return(false);
@@ -304,8 +322,45 @@
 	}
 // -->
 </script>
+
+<!-- Anti-copy / anti-translate JS layer -->
+<script>
+// Block selecting text that is not an answer field
+document.addEventListener('selectstart', (e) => {
+  if (!e.target.closest('input, textarea, select')) {
+    e.preventDefault();
+  }
+}, { passive: false });
+
+// Block right click menu on page text
+document.addEventListener('contextmenu', (e) => {
+  if (!e.target.closest('input, textarea, select')) {
+    e.preventDefault();
+  }
+});
+
+// Block copy / cut / drag of page text
+['copy','cut','dragstart'].forEach(type => {
+  document.addEventListener(type, (e) => {
+    if (!e.target.closest('input, textarea, select')) {
+      e.preventDefault();
+    }
+  });
+});
+
+// Block Ctrl/Cmd+C etc. outside of inputs
+document.addEventListener('keydown', (e) => {
+  const inField = !!e.target.closest('input, textarea, select');
+  if (inField) return;
+  const k = e.key.toLowerCase();
+  if ((e.ctrlKey || e.metaKey) && ['c','x','a','s','p','u'].includes(k)) {
+    e.preventDefault();
+  }
+});
+</script>
+
 </head>
-<body onResize='if(document.layers && navigator.appVersion.indexOf("Win") < 0){history.go(0);}'
+<body class="notranslate" onResize='if(document.layers && navigator.appVersion.indexOf("Win") < 0){history.go(0);}'
 bgcolor='#FFFFFF' style='background-image:url(header.gif); background-repeat:no-repeat'>
 <noscript>
 	<h3><font color='#FF0000'>Javascript not enabled</font></h3>
@@ -326,7 +381,7 @@ if (navigator.appName.indexOf("Netscape") >= 0) {
 <input type='hidden' name='product_version' value='8.1.103.69470'>
 <input type='hidden' name='instructor_name' value='Matthew Manning'>
 <input type='hidden' name='instructor_formalname' value='Mr. Manning'>
-<input type='hidden' name='instructor_email' value='matthew.manning@kckps.org'>
+<input type='hidden' name='instructor_email' value='mdmanning@gbaps.org'>
 <input type='hidden' name='instructor_org' value='None'>
 <input type='hidden' name='instructor_city' value='None'>
 <input type='hidden' name='instructor_state' value='KS'>
@@ -950,24 +1005,76 @@ least he finished it.</span></td></tr></table></div>
 </tr>
 <tr valign='baseline'>
 	<td>
-		<select name='MC:26' align='top' onmousewheel='return(false);'>
-			<option value=' '> 
-			<option value='A'>A
-			<option value='B'>B
-			<option value='C'>C
-		</select>
 	</td>
 	<td>
-		<p class='qnumber'>&nbsp;26.&nbsp;</p>
+		<p class='qnumber'>&nbsp;11.&nbsp;</p>
 	</td>
 	<td width='100%'>
-<div class='default'>The phrase &#8220;give it a shot&#8221; in the last paragraph means...</div>
-<div class='default'><table cellpadding='0' cellspacing='0' width='95%' border='0'><tr
-valign='baseline'><td width='4%'><div class='choice'>a.</div></td><td width='96%'><span
-class='default'>attempt something</span></td></tr><tr valign='baseline'><td><div
-class='choice'>b.</div></td><td><span class='default'>think about something</span></td></tr><tr
-valign='baseline'><td><div class='choice'>c.</div></td><td><span class='default'>suggest
-something</span></td></tr></table></div>
+<div class='default'><b>DIRECTIONS: Write Fact if the statement is a fact and Opinion if the
+statement is an opinion.<br><br></b>Morgan Spurlock has more than one job.&nbsp;&nbsp;&nbsp;&nbsp;
+__________</div><div style='font-size:2pt'></div>
+		<textarea name='SA:11' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;12.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>DIRECTIONS: Write Fact if the statement is a fact and Opinion if the
+statement is an opinion.<br><br></b>People changed their opinion of fast food because of
+Spurlock&#8217;s movie.&nbsp;&nbsp;&nbsp;&nbsp; ___________</div><div style='font-size:2pt'></div>
+		<textarea name='SA:12' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;13.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>DIRECTIONS: Write Fact if the statement is a fact and Opinion if the
+statement is an opinion.<br><br></b><i>Supersize Me</i> did not win an Academy Award for the best
+documentary of 2004.&nbsp;&nbsp;&nbsp;&nbsp; ____________</div><div style='font-size:2pt'></div>
+		<textarea name='SA:13' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;14.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>DIRECTIONS: Write Fact if the statement is a fact and Opinion if the
+statement is an opinion.<br><br></b>Thirty days is not enough time to really explore the experience
+of being in prison or working in a mine.&nbsp;&nbsp;&nbsp;&nbsp; ___________</div><div style='font-size:2pt'></div>
+		<textarea name='SA:14' rows='5' cols='60' wrap='virtual'></textarea>
+
+<div class='spacer'>&nbsp;</div>
+	</td>
+</tr>
+<tr valign='baseline'>
+	<td>
+	</td>
+	<td>
+		<p class='qnumber'>&nbsp;15.&nbsp;</p>
+	</td>
+	<td width='100%'>
+<div class='default'><b>DIRECTIONS: Write Fact if the statement is a fact and Opinion if the
+statement is an opinion.<br><br></b>The show <i>Thirty Days</i> provided a useful view into the lives
+of other people.&nbsp;&nbsp;&nbsp;&nbsp; __________</div><div style='font-size:2pt'></div>
+		<textarea name='SA:15' rows='5' cols='60' wrap='virtual'></textarea>
+
 <div class='spacer'>&nbsp;</div>
 	</td>
 </tr>
