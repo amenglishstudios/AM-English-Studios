@@ -389,7 +389,7 @@ if (navigator.appName.indexOf("Netscape") >= 0) {
 -->
 
 <form name='TestForm'
-      action='https://score.examview.com/cgi-bin/results.cgi'
+      action='http://score.examview.com/cgi-bin/results.cgi'
       method='POST'
       onSubmit='return(HandleSubmit(this))'
       onReset='return(AllowReset())'>
@@ -416,6 +416,11 @@ if (navigator.appName.indexOf("Netscape") >= 0) {
 	<div style='margin-left:1em'>
 	<b>Name:</b>&nbsp;<input type='text' name='student_name' size='30'> &nbsp;&nbsp;
 	</div>
+	<div style="border:2px solid #cc0000; padding:8px; margin:10px 0; font-family:Arial, sans-serif; font-size:12pt; background:#fff6f6;">
+  <b>IMPORTANT:</b> Your browser may say
+  "This form is not secure." This is normal for this test.
+  Please press Submit anyway so your score can be sent to your teacher.
+</div>
 </div>
 <div class='title'>Reading Level 1 Test 2</div>
 
